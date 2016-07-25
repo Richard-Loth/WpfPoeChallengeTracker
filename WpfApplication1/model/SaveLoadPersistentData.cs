@@ -7,6 +7,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Serialization;
 
 namespace Poe_Challenge_Tracker.model
 {
@@ -33,21 +34,29 @@ namespace Poe_Challenge_Tracker.model
             //await saveFile.DeleteAsync();
         }
 
-        public static async Task saveProgressAndOrderAsync(List<ChallengeProgress> progress, List<int> order, Settings settings, string leaguename)
+        public static void saveProgressAndOrderAsync(List<ChallengeProgress> progress, List<int> order, Settings settings, string leaguename)
         {
             var data = new ProgressOrderContainer(progress, order, settings);
-            await saveData(data,leaguename);
+            saveData(data, leaguename);
         }
 
-        private static async Task saveData(ProgressOrderContainer data, string leaguename)
+        private static void saveData(ProgressOrderContainer data, string leaguename)
         {
             try
             {
+                //uwp implementation:
                 //StorageFile saveFile = await ApplicationData.Current.LocalFolder.CreateFileAsync(makeFilename(leaguename), CreationCollisionOption.ReplaceExisting);
                 //DataContractSerializer serializer = new DataContractSerializer(data.GetType());
                 //var targetStream = await saveFile.OpenStreamForWriteAsync();
                 //serializer.WriteObject(targetStream, data);
                 //targetStream.Dispose();
+                var savePath = getSavePath();
+                XmlSerializer serializer = new XmlSerializer(data.GetType());
+                var filepath = Path.Combine(savePath, makeFilename(leaguename));
+                Directory.CreateDirectory(savePath);
+                var writer = new StreamWriter(filepath);
+                serializer.Serialize(writer, data);
+                writer.Dispose();
             }
             catch (Exception e)
             {
@@ -56,7 +65,12 @@ namespace Poe_Challenge_Tracker.model
             }
         }
 
-        public static async Task<ProgressOrderContainer> loadData(string leaguename)
+        private static string getSavePath()
+        {
+            return System.AppDomain.CurrentDomain.BaseDirectory + "\\save";
+        }
+
+        public static ProgressOrderContainer loadData(string leaguename)
         {
             try
             {
@@ -74,17 +88,30 @@ namespace Poe_Challenge_Tracker.model
                 //ProgressOrderContainer container = (ProgressOrderContainer)serializer.ReadObject(stream);
                 //stream.Dispose();
                 //return container;
+
+                string savepath = getSavePath();
+                var filepath = Path.Combine(savepath, makeFilename(leaguename));
+                if (!File.Exists(filepath))
+                {
+                    //no saved data
+                    return null;
+                }
+
+                var deserializer = new XmlSerializer(typeof(ProgressOrderContainer));
+                var reader = new StreamReader(filepath);
+                var savedObject = deserializer.Deserialize(reader);
+                reader.Dispose();
+                return (ProgressOrderContainer) savedObject;
             }
             catch (Exception e)
             {
                 System.Diagnostics.Debug.WriteLine("Error during loading. Reason: " + e.Message);
                 return null;
             }
-            return null;
         }
     }
 
-    class ProgressOrderContainer
+    public class ProgressOrderContainer
     {
         public List<ChallengeProgress> progress;
         public List<int> order;

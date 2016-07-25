@@ -454,7 +454,9 @@ namespace Poe_Challenge_Tracker.viewmodel
             }
             catch (InvalidOperationException e)
             {
+                Debug.WriteLine("InvalidOperation: " + e.GetBaseException());
                 if (e.Message == ErrorMessages.PROGRESS_DIFFERENT_SIZE || e.Message == ErrorMessages.SUBPROGRESS_DIFFERENT_SIZE)
+
                 {
                     await SaveLoadPersistentData.deleteSavedProgress(model.LeagueInfo.Leaguename);
                     await model.initModel(xmlUri);

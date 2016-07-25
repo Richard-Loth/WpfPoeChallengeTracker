@@ -50,7 +50,7 @@ namespace WpfPoeChallengeTracker
             filterStringHolder = new FilterStringHolder();
             filterTimer = new Timer(filterTimerCallback, filterStringHolder, Timeout.Infinite, Timeout.Infinite);
             this.InitializeComponent();
-            DataContext = this;
+            DataContext = viewmodel;
         }
 
         private Timer filterTimer;
@@ -111,7 +111,21 @@ namespace WpfPoeChallengeTracker
             //{
             //    await viewmodel.resetProgressAndOrder();
             //}
+            
+            var msg = "Do you really want to reset the progress and the ordering of the challenges of the current league?";
 
+            string caption = "Reset Progress";
+            MessageBoxButton button = MessageBoxButton.OKCancel;
+            MessageBoxImage icon = MessageBoxImage.Warning;
+            MessageBoxResult result = MessageBox.Show(msg, caption, button, icon);
+            switch (result)
+            {
+                case MessageBoxResult.OK:
+                    viewmodel.resetProgressAndOrder();
+                    break;
+                case MessageBoxResult.Cancel:
+                    break;
+            }
         }
 
         private void changeLeagueButton_Click(object sender, RoutedEventArgs e)
@@ -148,6 +162,8 @@ namespace WpfPoeChallengeTracker
                         viewmodel.subChallengeDescriptionTapped(subView);
                     }
                 }
+                var listview = (ListView)sender;
+                listview.SelectedItem = null;
             }
         }
 

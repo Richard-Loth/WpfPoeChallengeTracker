@@ -57,51 +57,68 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="MenuBaseStyle" TargetType="Control">
+            <Setter Property="Background" Value="#FF83107E"/>
+            <Setter Property="Foreground" Value="#FF040830"/>
+        </Style>
+        <Style x:Key="MenuStyle" TargetType="Menu" BasedOn="{StaticResource MenuBaseStyle}"/>
+        <Style x:Key="MenuItemStyle" TargetType="MenuItem" BasedOn="{StaticResource MenuBaseStyle}" />
+        <Style x:Key="SeparatorStyle" TargetType="Separator" BasedOn="{StaticResource MenuBaseStyle}" />
+
     </Window.Resources>
-    <Grid Background="{StaticResource OverallBackgroundBrush}" Margin="0,0,0,0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Black" Margin="0,4" />
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding ViewModel.Leaguename, Mode=OneWay}"  HorizontalAlignment="Left" Foreground="{StaticResource ChallengeDescriptionBrush}" VerticalAlignment="Center" Margin="8,0,0,0" />
-
-        <StackPanel Grid.Row="0" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button x:Name="collapseAllButton"   Content="&#x25BC;"    ToolTipService.ToolTip="Collapse All" HorizontalAlignment="Right" Click="collapseAllButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4"/>
-            <Button x:Name="unCollapseAllButton"   Content="&#x25B2;"    ToolTipService.ToolTip="Uncollapse All" HorizontalAlignment="Right" Click="unCollapseAllButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4"/>
-            <Button x:Name="changeLeagueButton"   Content="&#x21C4;"    ToolTipService.ToolTip="Select League" HorizontalAlignment="Right"  Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4" Visibility="Collapsed"/>
-            <Button x:Name="resetButton" Content="&#x21BB;"   ToolTipService.ToolTip="Reset" HorizontalAlignment="Right" Click="resetButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="8,4,16,4"/>
-        </StackPanel>
-        <StackPanel  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal"  Margin="0,0,0,0" Visibility="{Binding ViewModel.IsInitialized, Mode=OneWay, Converter={StaticResource ReverseBoolVisibilityConverter}}" HorizontalAlignment="Center">
-            <TextBlock  Text="Loading challenge data and progress" HorizontalAlignment="Center"  Foreground="{StaticResource ChallengeDescriptionBrush}" />
-
-        </StackPanel>
-
-        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Visibility="{Binding ViewModel.IsInitialized, Mode=OneWay, Converter={StaticResource BoolVisibilityConverter}}" Background="{StaticResource InsideChallengeBackgrundBrush}" >
+ 
+           
+        <Grid Background="{StaticResource OverallBackgroundBrush}" Margin="0,0,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10" />
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"  Text="{Binding ViewModel.Headerline, Mode=OneWay}" Foreground="{StaticResource ChallengeDescriptionBrush}" />
-            <TextBlock Grid.Row="1" Grid.Column="1" Text="Automatic Sorting:" Foreground="{StaticResource ChallengeDescriptionBrush}" VerticalAlignment="Center" />
-            <CheckBox Grid.Row="1" Grid.Column="3" x:Name="autoSortCheck" Content="Sort completed challenges to the end" IsChecked="{Binding ViewModel.AutoSortEnabled, Mode=TwoWay}" Foreground="{StaticResource ChallengeDescriptionBrush}"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Text="Filter:" VerticalAlignment="Center" Foreground="{StaticResource ChallengeDescriptionBrush}"/>
-            <TextBox Grid.Row="2" Grid.Column="3" x:Name="filterTextBox" Width="Auto" HorizontalAlignment="Stretch" Margin="0,0,0,4" TextChanged="filterTextBox_TextChanged"  />
-        </Grid>
-            <ListView ScrollViewer.CanContentScroll="True"  x:Name="challengesListview" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"    Margin="4" Visibility="{Binding ViewModel.IsInitialized, Mode=OneWay, Converter={StaticResource BoolVisibilityConverter}}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ViewModel.ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="2" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" IsMainMenu="True" Style="{StaticResource MenuStyle}">
+            <MenuItem Header="File" Style="{StaticResource MenuItemStyle}">
+                <MenuItem Header="Reset Progress" Style="{StaticResource MenuItemStyle}"/>
+                <Separator Style="{StaticResource SeparatorStyle}"/>
+                <MenuItem Header="Exit" Style="{StaticResource MenuItemStyle}"/>
+            </MenuItem>
+        </Menu>
+        <!--<Border Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Black" Margin="0,4" />
+            <TextBlock Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding ViewModel.Leaguename, Mode=OneWay}"  HorizontalAlignment="Left" Foreground="{StaticResource ChallengeDescriptionBrush}" VerticalAlignment="Center" Margin="8,0,0,0" />
+
+            <StackPanel Visibility="Collapsed" Grid.Row="0" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="collapseAllButton"   Content="&#x25BC;"    ToolTipService.ToolTip="Collapse All" HorizontalAlignment="Right" Click="collapseAllButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4"/>
+                <Button x:Name="unCollapseAllButton"   Content="&#x25B2;"    ToolTipService.ToolTip="Uncollapse All" HorizontalAlignment="Right" Click="unCollapseAllButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4"/>
+                <Button x:Name="changeLeagueButton"   Content="&#x21C4;"    ToolTipService.ToolTip="Select League" HorizontalAlignment="Right"  Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4" Visibility="Collapsed"/>
+                <Button x:Name="resetButton" Content="&#x21BB;"   ToolTipService.ToolTip="Reset" HorizontalAlignment="Right" Click="resetButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="8,4,16,4"/>
+            </StackPanel>-->
+            <StackPanel  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal"  Margin="0,0,0,0" Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource ReverseBoolVisibilityConverter}}" HorizontalAlignment="Center">
+                <TextBlock  Text="Loading challenge data and progress" HorizontalAlignment="Center"  Foreground="{StaticResource ChallengeDescriptionBrush}" />
+
+            </StackPanel>
+
+            <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource BoolVisibilityConverter}}" Background="{StaticResource InsideChallengeBackgrundBrush}" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"  Text="{Binding Headerline, Mode=OneWay}" Foreground="{StaticResource ChallengeDescriptionBrush}" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Automatic Sorting:" Foreground="{StaticResource ChallengeDescriptionBrush}" VerticalAlignment="Center" />
+                <CheckBox Grid.Row="1" Grid.Column="3" x:Name="autoSortCheck" Content="Sort completed challenges to the end" IsChecked="{Binding AutoSortEnabled, Mode=TwoWay}" Foreground="{StaticResource ChallengeDescriptionBrush}"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="Filter:" VerticalAlignment="Center" Foreground="{StaticResource ChallengeDescriptionBrush}"/>
+                <TextBox Grid.Row="2" Grid.Column="3" x:Name="filterTextBox" Width="Auto" HorizontalAlignment="Stretch" Margin="0,0,0,4" TextChanged="filterTextBox_TextChanged"  />
+            </Grid>
+            <ListView ScrollViewer.CanContentScroll="True"  x:Name="challengesListview" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"    Margin="4" Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource BoolVisibilityConverter}}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="2" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -209,6 +226,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        
-    </Grid>
+
+        </Grid>
+   
 </Window>

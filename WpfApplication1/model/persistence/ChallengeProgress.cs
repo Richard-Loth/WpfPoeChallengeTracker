@@ -31,6 +31,7 @@ namespace Poe_Challenge_Tracker.model
             }
         }
 
+
         private List<SubChallengeProgress> subChallengesProgress;
 
         public List<SubChallengeProgress> SubChallengesProgress
@@ -49,12 +50,34 @@ namespace Poe_Challenge_Tracker.model
             subProgress.PropertyChanged += SubProgress_PropertyChanged;
         }
 
+        /// <summary>
+        /// When the progress is loaded from deserialized file, subprogress is no longer watched. 
+        /// So we need to watch it again.
+        /// </summary>
+
+        public void rewatchSubprogress()
+        {
+            foreach (var item in subChallengesProgress)
+            {
+                item.PropertyChanged += SubProgress_PropertyChanged;
+            }
+        }
+
         private void SubProgress_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             NotifyPropertyChanged("SubProgress");
         }
 
+
+
         private ChallengeType type;
+
+        public ChallengeType Type
+        {
+            get { return type; }
+            set { type = value; }
+        }
+            
         private bool isDone;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -76,6 +99,10 @@ namespace Poe_Challenge_Tracker.model
             }
         }
 
+        public ChallengeProgress()
+        {
+
+        }
 
         public ChallengeProgress(ChallengeType type)
         {

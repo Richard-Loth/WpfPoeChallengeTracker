@@ -67,16 +67,20 @@ namespace Poe_Challenge_Tracker.model
         public async Task initModel(Uri xmlUri)
         {
             var creator = new DataCreator();
-            var info =  creator.createChallengeDataListFromXml(xmlUri);
+            var info = creator.createChallengeDataListFromXml(xmlUri);
             this.leagueInfo = info;
-            
+
             //try to load saved progress
-            var container = await SaveLoadPersistentData.loadData(info.Leaguename);
+            var container =  SaveLoadPersistentData.loadData(info.Leaguename);
             if (container != null)
             {
                 challengeProgresses = container.progress;
                 viewOrder = container.order;
                 settings = container.settings;
+                foreach (var item in challengeProgresses)
+                {
+                    item.rewatchSubprogress();
+                }
             }
 
             //create new progress if failed
@@ -120,14 +124,14 @@ namespace Poe_Challenge_Tracker.model
             IsInitialized = false;
         }
 
-        private async void saveProgressTimerCallback(object state)
+        private void saveProgressTimerCallback(object state)
         {
             if (hasChanged)
             {
                 try
                 {
-                
-                    await SaveLoadPersistentData.saveProgressAndOrderAsync(challengeProgresses, viewOrder, settings,LeagueInfo.Leaguename);
+
+                    SaveLoadPersistentData.saveProgressAndOrderAsync(challengeProgresses, viewOrder, settings, LeagueInfo.Leaguename);
                     hasChanged = false;
                 }
                 catch (Exception e)

@@ -15,7 +15,7 @@ namespace Poe_Challenge_Tracker.model
                 if (completionType != value)
                 {
                     completionType = value;
-                    PropertyChanged(this, new PropertyChangedEventArgs("CompletionType"));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CompletionType"));
                 }
             }
         }
@@ -25,7 +25,7 @@ namespace Poe_Challenge_Tracker.model
 
         public SubChallengeProgress()
         {
-            completionType = SubChallengeCompletionType.Not;
+            
         }
     }
 }

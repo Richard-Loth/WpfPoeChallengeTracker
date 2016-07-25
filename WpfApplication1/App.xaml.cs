@@ -35,6 +35,7 @@ namespace WpfPoeChallengeTracker
             var bitmap = BitmapFrame.Create(uri);
             window.Icon = bitmap;
             window.Show();
+            
         }
         private async void appInitTimerCallback(object state)
         {

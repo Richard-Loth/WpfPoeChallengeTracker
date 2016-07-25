@@ -139,7 +139,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         public event PropertyChangedEventHandler PropertyChanged;
         public void NotifyPropertyChanged([CallerMemberName]string propertyName = "")
         {
-            if (PropertyChanged != null)
+             if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
