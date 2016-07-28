@@ -35,6 +35,68 @@ namespace Poe_Challenge_Tracker.viewmodel
             private set { model = value; }
         }
 
+        private bool viewStatus;
+
+        public bool ViewStatus
+        {
+            get { return viewStatus; }
+            set
+            {
+                viewStatus = value;
+                NotifyPropertyChanged("IsStatusVisible");
+            }
+        }
+
+        private bool viewOptions;
+
+        public bool ViewOptions
+        {
+            get { return viewOptions; }
+            set { viewOptions = value;
+                NotifyPropertyChanged("IsOptionsVisible");
+            }
+        }
+
+        private bool viewChallenges;
+
+        public bool ViewChallenges
+        {
+            get { return viewChallenges; }
+            set { viewChallenges = value;
+                NotifyPropertyChanged("IsChallengesVisible");
+            }
+        }
+
+        public Visibility IsStatusVisible
+        {
+            get
+            {
+                if (isInitialized && viewStatus)
+                    return Visibility.Visible;
+                return Visibility.Collapsed;
+            }
+        }
+        public Visibility IsOptionsVisible
+        {
+            get
+            {
+                if (isInitialized && viewOptions)
+                    return Visibility.Visible;
+                return Visibility.Collapsed;
+            }
+        }
+
+        public Visibility IsChallengesVisible
+        {
+            get
+            {
+                if (isInitialized && viewChallenges) return Visibility.Visible;
+                return Visibility.Collapsed;
+            }
+        }
+
+
+
         public bool? AutoSortEnabled
         {
             get
@@ -84,13 +146,6 @@ namespace Poe_Challenge_Tracker.viewmodel
         }
 
         private List<ChallengeView> backupList;
-
-
-
-
-
-
-
 
         public void applyNewFilterText(string filter)
 
@@ -473,7 +528,7 @@ namespace Poe_Challenge_Tracker.viewmodel
                     await model.initModel(xmlUri);
                     generateChallengeViews();
                 }
-;
+
             }
             foreach (var item in challengeViews)
             {
@@ -489,6 +544,9 @@ namespace Poe_Challenge_Tracker.viewmodel
             NotifyPropertyChanged("LeagueName");
             NotifyPropertyChanged("CountCompleted");
             NotifyPropertyChanged("AutoSortEnabled");
+            NotifyPropertyChanged("IsStatusVisible");
+            NotifyPropertyChanged("IsOptionsVisible");
+            NotifyPropertyChanged("IsChallengesVisible");
 
             //remaining time things
             remainingTime = calculateRemainingTime(model.LeagueInfo.LeagueEndsOn);
@@ -530,6 +588,9 @@ namespace Poe_Challenge_Tracker.viewmodel
         {
             Model = model;
             IsInitialized = false;
+            viewStatus = true;
+            viewOptions = true;
+            viewChallenges = true;
         }
 
         private void ChallengeViewItemChanged(object sender, PropertyChangedEventArgs e)

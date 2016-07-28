@@ -187,6 +187,8 @@ namespace WpfPoeChallengeTracker
             Application.Current.Shutdown();
         }
 
+        
+
         //private void subChallengesListView_ItemClick(object sender, ItemClickEventArgs e)
         //{
         //    
