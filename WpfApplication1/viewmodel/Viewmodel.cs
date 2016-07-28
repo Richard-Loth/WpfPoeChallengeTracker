@@ -144,11 +144,11 @@ namespace Poe_Challenge_Tracker.viewmodel
             updateHeaderTimer.Dispose();
         }
 
-        public void resume()
-        {
-            model.resume();
-            NotifyPropertyChanged("Headerline");
-        }
+        //public void resume()
+        //{
+        //    model.resume();
+        //    NotifyPropertyChanged("Headerline");
+        //}
 
         private ISet<int> calculateVisibleViews(string filter)
         {
@@ -197,7 +197,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         }
 
 
-        public string Leaguename
+        public string LeagueName
         {
             get
             {
@@ -250,7 +250,7 @@ namespace Poe_Challenge_Tracker.viewmodel
             model.resetProgress();
         }
 
-        private void  resetOrder()
+        private void resetOrder()
         {
             applyNewFilterText("");
             challengeViews.OrderBy(x => x.Id);
@@ -356,7 +356,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         }
         Timer updateHeaderTimer;
 
-        public string Headerline
+        public string CountCompleted
         {
             get
             {
@@ -373,7 +373,53 @@ namespace Poe_Challenge_Tracker.viewmodel
                 {
                     relevantList = backupList;
                 }
-                string challengePart = relevantList.Count(n => n.IsDone) + "/" + relevantList.Count + " completed - ";
+                return relevantList.Count(n => n.IsDone) + "/" + relevantList.Count + " completed";
+
+            }
+        }
+
+        public string RemainingDays
+        {
+            get
+            {
+                return remainingTime?.Days.ToString("00");
+            }
+        }
+
+        public string RemainingHours
+        {
+            get
+            {
+                return remainingTime?.Hours.ToString("00");
+            }
+        }
+
+        public string RemainingMinutes
+        {
+            get
+            {
+                return remainingTime?.Minutes.ToString("00");
+            }
+        }
+
+        public string RemainingSeconds
+        {
+            get
+            {
+                return remainingTime?.Seconds.ToString("00");
+            }
+        }
+
+        private TimeSpan? remainingTime;
+
+        public string Headerline
+        {
+            get
+            {
+                if (!IsInitialized)
+                {
+                    return "";
+                }
                 var endTime = model.LeagueInfo.LeagueEndsOn;
                 bool isApprox;
                 bool hasEnded = false; ;
@@ -391,33 +437,7 @@ namespace Poe_Challenge_Tracker.viewmodel
                 }
                 string remainingPart = "";
                 var days = remaining.Days;
-                if (days > 3)
-                {
-                    remainingPart = days + " days";
-                    updateHeaderTimer = new Timer(updateHeaderline, null, (remaining.Hours + 1) * 60 * 60 * 1000, Timeout.Infinite);
-                }
-                else
-                {
-                    int hours = (int)remaining.TotalHours;
-                    if (hours > 2)
-                    {
-                        remainingPart = hours + " hours";
-                        updateHeaderTimer = new Timer(updateHeaderline, null, 20 * 60 * 1000, Timeout.Infinite);
-                    }
-                    else
-                    {
-                        if (remaining.TotalSeconds > 0)
-                        {
-                            int minutes = (int)remaining.TotalMinutes;
-                            remainingPart = minutes + " minutes";
-                            updateHeaderTimer = new Timer(updateHeaderline, null, 1 * 60 * 1000, Timeout.Infinite);
-                        }
-                        else
-                        {
-                            hasEnded = true;
-                        }
-                    }
-                }
+
                 if (!hasEnded)
                 {
                     remainingPart += " remaining " + (isApprox ? "(approx.)" : "");
@@ -426,21 +446,12 @@ namespace Poe_Challenge_Tracker.viewmodel
                 {
                     remainingPart = "League has ended";
                 }
-                return challengePart + remainingPart;
+                return remainingPart;
             }
         }
 
-        private  void updateHeaderline(object state)
-        {
-            Debug.WriteLine("updateheadercallback");
-            updateHeaderTimer.Dispose();
-            Application.Current.Dispatcher.Invoke(
-            () =>
-            {
-                NotifyPropertyChanged("Headerline");
-            });
 
-        }
+
 
         public async Task initViewodel(Uri xmlUri)
         {
@@ -469,16 +480,51 @@ namespace Poe_Challenge_Tracker.viewmodel
                 item.PropertyChanged += ChallengeViewItemChanged;
             }
             orderViews();
-            Application.Current.Dispatcher.Invoke(
-             () =>
-           {
-               IsInitialized = true;
-               NotifyPropertyChanged("Leaguename");
-               NotifyPropertyChanged("ChallengeViews");
-               NotifyPropertyChanged("Headerline");
-               NotifyPropertyChanged("AutoSortEnabled");
-           });
+            // Application.Current.Dispatcher.Invoke(
+            //  () =>
+            //{
+            IsInitialized = true;
+            NotifyPropertyChanged("Leaguename");
+            NotifyPropertyChanged("ChallengeViews");
+            NotifyPropertyChanged("LeagueName");
+            NotifyPropertyChanged("CountCompleted");
+            NotifyPropertyChanged("AutoSortEnabled");
+
+            //remaining time things
+            remainingTime = calculateRemainingTime(model.LeagueInfo.LeagueEndsOn);
+            NotifyPropertyChanged("RemainingSeconds");
+            NotifyPropertyChanged("RemainingMinutes");
+            NotifyPropertyChanged("RemainingHours");
+            NotifyPropertyChanged("RemainingDays");
+            //});
+            remainingTimer = new Timer(remainingTimerCallBack, null, 1000, 1000);
         }
+
+        private Timer remainingTimer;
+
+        private void remainingTimerCallBack(object sender)
+        {
+            var oldMinutes = remainingTime?.Minutes;
+            var oldHours = remainingTime?.Hours;
+            var oldDays = remainingTime?.Days;
+            var remain = calculateRemainingTime(model.LeagueInfo.LeagueEndsOn);
+            remainingTime = remain;
+            NotifyPropertyChanged("RemainingSeconds");
+            if (remain.Minutes != oldMinutes)
+            {
+                NotifyPropertyChanged("RemainingMinutes");
+            }
+            if (remain.Hours != oldHours)
+            {
+                NotifyPropertyChanged("RemainingHours");
+            }
+            if (remain.Days != oldDays)
+            {
+                NotifyPropertyChanged("RemainingDays");
+            }
+        }
+
+
 
         public Viewmodel(Model model)
         {
@@ -490,7 +536,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         {
             if (e.PropertyName == "IsDone")
             {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Headerline"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CountCompleted"));
             }
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(e.PropertyName));
         }
@@ -589,7 +635,6 @@ namespace Poe_Challenge_Tracker.viewmodel
         public void subChallengeDescriptionTapped(SubChallengeView subView)
         {
             model.toogleSubChallengeProgress(subView.Progress);
-
         }
 
 

@@ -179,6 +179,14 @@ namespace WpfPoeChallengeTracker
             listview.SelectedItem = null;
         }
 
+       
+
+        private void MenuItemExit_Click(object sender, RoutedEventArgs e)
+        {
+            viewmodel.suspend();
+            Application.Current.Shutdown();
+        }
+
         //private void subChallengesListView_ItemClick(object sender, ItemClickEventArgs e)
         //{
         //    
