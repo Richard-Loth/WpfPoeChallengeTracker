@@ -15,8 +15,25 @@ using Windows.Foundation;
 
 namespace Poe_Challenge_Tracker.viewmodel
 {
+    public enum CompletedBehaviour
+    {
+        DO_NOTHING, SORT_TO_END, HIDE
+    }
+
+
     public class Viewmodel : INotifyPropertyChanged
     {
+        private CompletedBehaviour completedBehaviour;
+
+        public void changeCompletedBehaviour(CompletedBehaviour newBehaviour)
+        {
+            completedBehaviour = newBehaviour;
+            applyNewChallengeFiltering(filterText, newBehaviour);
+            if (newBehaviour == CompletedBehaviour.SORT_TO_END)
+            {
+                doAutoSort();
+            }
+        }
 
         private ObservableCollection<ChallengeView> challengeViews;
 
@@ -52,7 +69,9 @@ namespace Poe_Challenge_Tracker.viewmodel
         public bool ViewOptions
         {
             get { return viewOptions; }
-            set { viewOptions = value;
+            set
+            {
+                viewOptions = value;
                 NotifyPropertyChanged("IsOptionsVisible");
             }
         }
@@ -62,7 +81,9 @@ namespace Poe_Challenge_Tracker.viewmodel
         public bool ViewChallenges
         {
             get { return viewChallenges; }
-            set { viewChallenges = value;
+            set
+            {
+                viewChallenges = value;
                 NotifyPropertyChanged("IsChallengesVisible");
             }
         }
@@ -84,6 +105,12 @@ namespace Poe_Challenge_Tracker.viewmodel
                     return Visibility.Visible;
                 return Visibility.Collapsed;
             }
+        }
+
+        internal void changeFilterText(string filter)
+        {
+            this.filterText = filter;
+            applyNewChallengeFiltering(filter, completedBehaviour);
         }
 
         public Visibility IsChallengesVisible
@@ -146,11 +173,16 @@ namespace Poe_Challenge_Tracker.viewmodel
         }
 
         private List<ChallengeView> backupList;
+        private string filterText;
 
-        public void applyNewFilterText(string filter)
+
+        private void applyNewChallengeFiltering(string filter, CompletedBehaviour completedBehaviour)
 
         {
-
+            if (!isInitialized)
+            {
+                return;
+            }
             if (backupList == null)
             {
                 backupList = new List<ChallengeView>();
@@ -180,12 +212,16 @@ namespace Poe_Challenge_Tracker.viewmodel
                      challengeViews.Clear();
                      foreach (var item in backupList)
                      {
+                         if (completedBehaviour == CompletedBehaviour.HIDE && item.IsDone)
+                         {
+                             continue;
+                         }
                          if (filter.Length == 0 || visibleViews.Contains(item.Id))
                          {
                              challengeViews.Add(item);
                          }
                      }
-                     if (model.AutoSortEnabled)
+                     if (completedBehaviour == CompletedBehaviour.SORT_TO_END)
                      {
                          doAutoSort();
                      }
@@ -196,7 +232,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         public void suspend()
         {
             model.suspend();
-            updateHeaderTimer.Dispose();
+            remainingTimer.Dispose();
         }
 
         //public void resume()
@@ -307,7 +343,7 @@ namespace Poe_Challenge_Tracker.viewmodel
 
         private void resetOrder()
         {
-            applyNewFilterText("");
+            applyNewChallengeFiltering("", CompletedBehaviour.DO_NOTHING);
             challengeViews.OrderBy(x => x.Id);
 
             var tempList = new System.Collections.Generic.List<ChallengeView>();
@@ -409,7 +445,6 @@ namespace Poe_Challenge_Tracker.viewmodel
             var end = start.Add(approxLeagueLength);
             return end.Subtract(now);
         }
-        Timer updateHeaderTimer;
 
         public string CountCompleted
         {
@@ -508,7 +543,7 @@ namespace Poe_Challenge_Tracker.viewmodel
 
 
 
-        public async Task initViewodel(Uri xmlUri)
+        public async Task initViewmodel(Uri xmlUri)
         {
             challengeViewsInitialized = false;
             challengeViews = new ObservableCollection<ChallengeView>();
@@ -591,6 +626,7 @@ namespace Poe_Challenge_Tracker.viewmodel
             viewStatus = true;
             viewOptions = true;
             viewChallenges = true;
+            filterText = "";
         }
 
         private void ChallengeViewItemChanged(object sender, PropertyChangedEventArgs e)
@@ -598,6 +634,14 @@ namespace Poe_Challenge_Tracker.viewmodel
             if (e.PropertyName == "IsDone")
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CountCompleted"));
+                if (completedBehaviour == CompletedBehaviour.HIDE)
+                {
+                    applyNewChallengeFiltering(filterText, completedBehaviour);
+                }
+                if (completedBehaviour == CompletedBehaviour.SORT_TO_END)
+                {
+                    doAutoSort();
+                }
             }
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(e.PropertyName));
         }
@@ -680,24 +724,16 @@ namespace Poe_Challenge_Tracker.viewmodel
                     }
                 }
                 challengeViews.Add(newView);
-                newView.PropertyChanged += view_PropertyChanged;
+                //newView.PropertyChanged += view_PropertyChanged;
             }
             challengeViewsInitialized = true;
         }
 
-        private void view_PropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName == "IsDone" && model.AutoSortEnabled)
-            {
-                doAutoSort();
-            }
-        }
+        
 
         public void subChallengeDescriptionTapped(SubChallengeView subView)
         {
             model.toogleSubChallengeProgress(subView.Progress);
         }
-
-
     }
 }

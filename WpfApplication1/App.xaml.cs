@@ -41,7 +41,7 @@ namespace WpfPoeChallengeTracker
         {
             var uri = new Uri("pack://application:,,,/challengedata/ChallengeData.prophecy.xml");
             await model.initModel(uri);
-            await viewmodel.initViewodel(uri);
+            await viewmodel.initViewmodel(uri);
             appInitTimer.Dispose();
         }
     }
