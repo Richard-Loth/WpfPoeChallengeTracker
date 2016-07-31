@@ -1,4 +1,4 @@
-﻿using Poe_Challenge_Tracker.viewmodel;
+﻿using WpfPoeChallengeTracker.viewmodel;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

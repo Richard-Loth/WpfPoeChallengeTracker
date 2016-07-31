@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.Serialization;
 
-namespace Poe_Challenge_Tracker.model
+namespace WpfPoeChallengeTracker.model
 {
     public class SubChallengeProgress : INotifyPropertyChanged
     {

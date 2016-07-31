@@ -1,4 +1,4 @@
-﻿using Poe_Challenge_Tracker.model;
+﻿using WpfPoeChallengeTracker.model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace Poe_Challenge_Tracker.viewmodel
+namespace WpfPoeChallengeTracker.viewmodel
 {
     public class ChallengeView : INotifyPropertyChanged
     {

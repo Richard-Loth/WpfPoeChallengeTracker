@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfPoeChallengeTracker"
-        xmlns:v="clr-namespace:Poe_Challenge_Tracker.view"
+        xmlns:v="clr-namespace:WpfPoeChallengeTracker.view"
         xmlns:vm="using:Poe_Challenge_Tracker.viewmodel"
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="525" MinWidth="500">
@@ -64,11 +64,11 @@
             <Setter Property="BorderThickness" Value="0"/>
         </Style>
         <Style x:Key="MenuStyle" TargetType="Menu" BasedOn="{StaticResource MenuBaseStyle}">
-            
+
         </Style>
         <Style x:Key="MenuItemStyle" TargetType="MenuItem" BasedOn="{StaticResource MenuBaseStyle}" >
             <Setter Property="BorderThickness" Value="0" />
-            
+
         </Style>
         <Style x:Key="MenuSubItemStyle" TargetType="MenuItem" BasedOn="{StaticResource MenuBaseStyle}" >
             <Setter Property="BorderThickness" Value="0" />
@@ -140,9 +140,9 @@
                 <MenuItem Header="Exit" Style="{StaticResource MenuSubItemStyle}" Click="MenuItemExit_Click"/>
             </MenuItem>
             <MenuItem Header="View" Style="{StaticResource MenuItemStyle}">
-                <MenuItem Header="Status" IsCheckable="True" IsChecked="{Binding ViewStatus, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}"  />
-                <MenuItem Header="Options" IsCheckable="True" IsChecked="{Binding ViewOptions, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}" />
-                <MenuItem Header="Challenges" IsCheckable="True" IsChecked="{Binding ViewChallenges, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}" />
+                <MenuItem Header="Status" IsCheckable="True" IsChecked="{Binding TileVisibilityProp.ViewStatus, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}"  />
+                <MenuItem Header="Options" IsCheckable="True" IsChecked="{Binding TileVisibilityProp.ViewOptions, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}" />
+                <MenuItem Header="Challenges" IsCheckable="True" IsChecked="{Binding TileVisibilityProp.ViewChallenges, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}" />
 
             </MenuItem>
         </Menu>
@@ -155,11 +155,8 @@
                 <Button x:Name="changeLeagueButton"   Content="&#x21C4;"    ToolTipService.ToolTip="Select League" HorizontalAlignment="Right"  Style="{StaticResource ButtonmenuStyle}" Margin="0,4,16,4" Visibility="Collapsed"/>
                 <Button x:Name="resetButton" Content="&#x21BB;"   ToolTipService.ToolTip="Reset" HorizontalAlignment="Right" Click="resetButton_Click" Style="{StaticResource ButtonmenuStyle}" Margin="8,4,16,4"/>
             </StackPanel>-->
-        <StackPanel  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal"  Margin="0,0,0,0" Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource ReverseBoolVisibilityConverter}}" HorizontalAlignment="Center">
-            <TextBlock  Text="Loading challenge data and progress" HorizontalAlignment="Center"  Foreground="{StaticResource ChallengeDescriptionBrush}" />
-
-        </StackPanel>
-        <Border MaxWidth="500" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="2" BorderBrush="{DynamicResource ChallengeStackBorder}" Margin="{DynamicResource TileMargin}" Visibility="{Binding IsStatusVisible}" >
+        <TextBlock Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource ReverseBoolVisibilityConverter}}" HorizontalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"  Text="Loading challenge data and progress"   Foreground="{StaticResource ChallengeDescriptionBrush}" />
+        <Border MaxWidth="500" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="2" BorderBrush="{DynamicResource ChallengeStackBorder}" Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsStatusVisible}" >
             <Grid x:Name="statusGrid"  Background="{DynamicResource InsideChallengeBackgrundBrush}"  >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -185,10 +182,10 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="Remaining" FontSize="11" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
-                    <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding RemainingDays}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
-                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding RemainingHours}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
-                    <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding RemainingMinutes}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
-                    <TextBlock Grid.Row="1" Grid.Column="3" Text="{Binding RemainingSeconds}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Remaining.RemainingDays}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Remaining.RemainingHours}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Remaining.RemainingMinutes}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Grid.Column="3" Text="{Binding Remaining.RemainingSeconds}" FontSize="14" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center"/>
                     <TextBlock Grid.Row="2" Grid.Column="0" Text="Days" FontSize="11" Foreground="{DynamicResource ChallengeDescriptionBrush}" Margin="5,0" />
                     <TextBlock Grid.Row="2" Grid.Column="1" Text="Hours" FontSize="11" Foreground="{DynamicResource ChallengeDescriptionBrush}" Margin="5,0" />
                     <TextBlock Grid.Row="2" Grid.Column="2" Text="Minutes" FontSize="11" Foreground="{DynamicResource ChallengeDescriptionBrush}" Margin="5,0" />
@@ -196,7 +193,7 @@
                 </Grid>
             </Grid>
         </Border>
-        <Border MaxWidth="500" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Visibility="{Binding IsOptionsVisible}" BorderBrush="{DynamicResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Margin="{DynamicResource TileMargin}" >
+        <Border MaxWidth="500" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Visibility="{Binding TileVisibilityProp.IsOptionsVisible}" BorderBrush="{DynamicResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Margin="{DynamicResource TileMargin}" >
             <Grid x:Name="optionsGrid" Background="{StaticResource InsideChallengeBackgrundBrush}" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -219,7 +216,7 @@
             </Grid>
 
         </Border>
-        <ListView ScrollViewer.CanContentScroll="True"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"    Margin="{DynamicResource TileMargin}" Visibility="{Binding IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
+        <ListView ScrollViewer.CanContentScroll="True"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"    Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

@@ -1,5 +1,5 @@
 ﻿
-using Poe_Challenge_Tracker.model;
+using WpfPoeChallengeTracker.model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,8 +12,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using Windows.Foundation;
+using WpfPoeChallengeTracker.viewmodel;
 
-namespace Poe_Challenge_Tracker.viewmodel
+namespace WpfPoeChallengeTracker.viewmodel
 {
     public enum CompletedBehaviour
     {
@@ -43,6 +44,16 @@ namespace Poe_Challenge_Tracker.viewmodel
             set { challengeViews = value; }
         }
 
+        private RemainingCountdown remainingCountdown;
+
+        public RemainingCountdown Remaining
+        {
+            get { return remainingCountdown; }
+            set { remainingCountdown = value; }
+        }
+
+
+
 
         private Model model;
 
@@ -52,74 +63,12 @@ namespace Poe_Challenge_Tracker.viewmodel
             private set { model = value; }
         }
 
-        private bool viewStatus;
 
-        public bool ViewStatus
-        {
-            get { return viewStatus; }
-            set
-            {
-                viewStatus = value;
-                NotifyPropertyChanged("IsStatusVisible");
-            }
-        }
-
-        private bool viewOptions;
-
-        public bool ViewOptions
-        {
-            get { return viewOptions; }
-            set
-            {
-                viewOptions = value;
-                NotifyPropertyChanged("IsOptionsVisible");
-            }
-        }
-
-        private bool viewChallenges;
-
-        public bool ViewChallenges
-        {
-            get { return viewChallenges; }
-            set
-            {
-                viewChallenges = value;
-                NotifyPropertyChanged("IsChallengesVisible");
-            }
-        }
-
-        public Visibility IsStatusVisible
-        {
-            get
-            {
-                if (isInitialized && viewStatus)
-                    return Visibility.Visible;
-                return Visibility.Collapsed;
-            }
-        }
-        public Visibility IsOptionsVisible
-        {
-            get
-            {
-                if (isInitialized && viewOptions)
-                    return Visibility.Visible;
-                return Visibility.Collapsed;
-            }
-        }
 
         internal void changeFilterText(string filter)
         {
             this.filterText = filter;
             applyNewChallengeFiltering(filter, completedBehaviour);
-        }
-
-        public Visibility IsChallengesVisible
-        {
-            get
-            {
-                if (isInitialized && viewChallenges) return Visibility.Visible;
-                return Visibility.Collapsed;
-            }
         }
 
 
@@ -232,7 +181,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         public void suspend()
         {
             model.suspend();
-            remainingTimer.Dispose();
+            Remaining.Dispose();
         }
 
         //public void resume()
@@ -429,22 +378,7 @@ namespace Poe_Challenge_Tracker.viewmodel
         }
 
 
-        private TimeSpan calculateRemainingTime(DateTime leagueEnd)
-        {
-            var now = DateTime.UtcNow;
-            var span = leagueEnd.Subtract(now);
-            return span;
-        }
 
-        private TimeSpan calculateApproxRemainingTime()
-        {
-            //90 days as standard length
-            var approxLeagueLength = new TimeSpan(90, 0, 0, 0);
-            var now = DateTime.UtcNow;
-            var start = model.LeagueInfo.LeagueStartedOn;
-            var end = start.Add(approxLeagueLength);
-            return end.Subtract(now);
-        }
 
         public string CountCompleted
         {
@@ -468,81 +402,7 @@ namespace Poe_Challenge_Tracker.viewmodel
             }
         }
 
-        public string RemainingDays
-        {
-            get
-            {
-                return remainingTime?.Days.ToString("00");
-            }
-        }
-
-        public string RemainingHours
-        {
-            get
-            {
-                return remainingTime?.Hours.ToString("00");
-            }
-        }
-
-        public string RemainingMinutes
-        {
-            get
-            {
-                return remainingTime?.Minutes.ToString("00");
-            }
-        }
-
-        public string RemainingSeconds
-        {
-            get
-            {
-                return remainingTime?.Seconds.ToString("00");
-            }
-        }
-
-        private TimeSpan? remainingTime;
-
-        public string Headerline
-        {
-            get
-            {
-                if (!IsInitialized)
-                {
-                    return "";
-                }
-                var endTime = model.LeagueInfo.LeagueEndsOn;
-                bool isApprox;
-                bool hasEnded = false; ;
-                TimeSpan remaining;
-                //UpdateTile(challengePart);
-                if (DateTime.MinValue == endTime)
-                {
-                    isApprox = true;
-                    remaining = calculateApproxRemainingTime();
-                }
-                else
-                {
-                    isApprox = false;
-                    remaining = calculateRemainingTime(endTime);
-                }
-                string remainingPart = "";
-                var days = remaining.Days;
-
-                if (!hasEnded)
-                {
-                    remainingPart += " remaining " + (isApprox ? "(approx.)" : "");
-                }
-                else
-                {
-                    remainingPart = "League has ended";
-                }
-                return remainingPart;
-            }
-        }
-
-
-
-
+        
         public async Task initViewmodel(Uri xmlUri)
         {
             challengeViewsInitialized = false;
@@ -570,63 +430,40 @@ namespace Poe_Challenge_Tracker.viewmodel
                 item.PropertyChanged += ChallengeViewItemChanged;
             }
             orderViews();
-            // Application.Current.Dispatcher.Invoke(
-            //  () =>
-            //{
             IsInitialized = true;
             NotifyPropertyChanged("Leaguename");
             NotifyPropertyChanged("ChallengeViews");
             NotifyPropertyChanged("LeagueName");
             NotifyPropertyChanged("CountCompleted");
             NotifyPropertyChanged("AutoSortEnabled");
+           
+
+            Remaining = new RemainingCountdown(model);
+            NotifyPropertyChanged("Remaining");
+
+            TileVisibilityProp.IsInitialized = true;
+            NotifyPropertyChanged("TileVisibilityProp");
             NotifyPropertyChanged("IsStatusVisible");
             NotifyPropertyChanged("IsOptionsVisible");
             NotifyPropertyChanged("IsChallengesVisible");
-
-            //remaining time things
-            remainingTime = calculateRemainingTime(model.LeagueInfo.LeagueEndsOn);
-            NotifyPropertyChanged("RemainingSeconds");
-            NotifyPropertyChanged("RemainingMinutes");
-            NotifyPropertyChanged("RemainingHours");
-            NotifyPropertyChanged("RemainingDays");
-            //});
-            remainingTimer = new Timer(remainingTimerCallBack, null, 1000, 1000);
         }
-
-        private Timer remainingTimer;
-
-        private void remainingTimerCallBack(object sender)
-        {
-            var oldMinutes = remainingTime?.Minutes;
-            var oldHours = remainingTime?.Hours;
-            var oldDays = remainingTime?.Days;
-            var remain = calculateRemainingTime(model.LeagueInfo.LeagueEndsOn);
-            remainingTime = remain;
-            NotifyPropertyChanged("RemainingSeconds");
-            if (remain.Minutes != oldMinutes)
-            {
-                NotifyPropertyChanged("RemainingMinutes");
-            }
-            if (remain.Hours != oldHours)
-            {
-                NotifyPropertyChanged("RemainingHours");
-            }
-            if (remain.Days != oldDays)
-            {
-                NotifyPropertyChanged("RemainingDays");
-            }
-        }
-
-
 
         public Viewmodel(Model model)
         {
             Model = model;
             IsInitialized = false;
-            viewStatus = true;
-            viewOptions = true;
-            viewChallenges = true;
             filterText = "";
+            TileVisibilityProp = new TileVisibility();
+            TileVisibilityProp.IsInitialized = false;
+        }
+
+
+        private TileVisibility tileVisibility;
+
+        public TileVisibility TileVisibilityProp
+        {
+            get { return tileVisibility; }
+            set { tileVisibility = value; }
         }
 
         private void ChallengeViewItemChanged(object sender, PropertyChangedEventArgs e)
@@ -728,8 +565,6 @@ namespace Poe_Challenge_Tracker.viewmodel
             }
             challengeViewsInitialized = true;
         }
-
-        
 
         public void subChallengeDescriptionTapped(SubChallengeView subView)
         {

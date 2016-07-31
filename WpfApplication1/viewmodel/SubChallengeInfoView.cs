@@ -1,11 +1,11 @@
-﻿using Poe_Challenge_Tracker.model;
+﻿using WpfPoeChallengeTracker.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Poe_Challenge_Tracker.viewmodel
+namespace WpfPoeChallengeTracker.viewmodel
 {
    public class SubChallengeInfoView
     {

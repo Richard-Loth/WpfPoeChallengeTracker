@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Windows;
 
-namespace Poe_Challenge_Tracker.model
+namespace WpfPoeChallengeTracker.model
 {
     class XmlChallengeReader
     {
