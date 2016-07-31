@@ -1,5 +1,5 @@
-﻿using Poe_Challenge_Tracker.model;
-using Poe_Challenge_Tracker.viewmodel;
+﻿using WpfPoeChallengeTracker.model;
+using WpfPoeChallengeTracker.viewmodel;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -28,7 +28,7 @@ namespace WpfPoeChallengeTracker
             base.OnStartup(e);
             model = new Model();
             viewmodel = new Viewmodel(model);
-            appInitTimer = new Timer(appInitTimerCallback, null, 300, Timeout.Infinite);
+            appInitTimer = new Timer(appInitTimerCallback, null, 100, Timeout.Infinite);
             var window = new MainWindow(viewmodel);
             window.Title = "Poe Challenge Tracker";
             var uri = new Uri("pack://application:,,,/resources/logo.png");
@@ -41,7 +41,7 @@ namespace WpfPoeChallengeTracker
         {
             var uri = new Uri("pack://application:,,,/challengedata/ChallengeData.prophecy.xml");
             await model.initModel(uri);
-            await viewmodel.initViewodel(uri);
+            await viewmodel.initViewmodel(uri);
             appInitTimer.Dispose();
         }
     }

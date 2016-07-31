@@ -1,4 +1,4 @@
-﻿using Poe_Challenge_Tracker.viewmodel;
+﻿using WpfPoeChallengeTracker.viewmodel;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -87,7 +87,7 @@ namespace WpfPoeChallengeTracker
 
         private void filterTimerCallback(object state)
         {
-            viewmodel.applyNewFilterText(((FilterStringHolder)state).Filter);
+            viewmodel.changeFilterText(((FilterStringHolder)state).Filter);
         }
 
         private async void resetButton_Click(object sender, RoutedEventArgs e)
@@ -96,22 +96,8 @@ namespace WpfPoeChallengeTracker
             {
                 await Task.Delay(100);
             }
-            //TODO important
-            //var msg = "Do you really want to reset the progress and the ordering of the challenges of the current league?";
-            //var dialog = new Windows.UI.Popups.MessageDialog(msg);
 
-            //dialog.Commands.Add(new Windows.UI.Popups.UICommand("Yes") { Id = 0 });
-            //dialog.Commands.Add(new Windows.UI.Popups.UICommand("No") { Id = 1 });
 
-            //dialog.DefaultCommandIndex = 1;
-            //dialog.CancelCommandIndex = 1;
-
-            //var result = await dialog.ShowAsync();
-            //if ((int)result.Id == 0)
-            //{
-            //    await viewmodel.resetProgressAndOrder();
-            //}
-            
             var msg = "Do you really want to reset the progress and the ordering of the challenges of the current league?";
 
             string caption = "Reset Progress";
@@ -179,22 +165,30 @@ namespace WpfPoeChallengeTracker
             listview.SelectedItem = null;
         }
 
-       
-
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
             viewmodel.suspend();
             Application.Current.Shutdown();
         }
 
-        //private void subChallengesListView_ItemClick(object sender, ItemClickEventArgs e)
-        //{
-        //    
-        //}
+        private void completedChallengesCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var sel = (string)((ComboBoxItem)e.AddedItems[0]).Content;
+            CompletedBehaviour behave = CompletedBehaviour.DO_NOTHING;
+            switch (sel)
+            {
+                case "Do nothing":
+                    behave = CompletedBehaviour.DO_NOTHING;
+                    break;
+                case "Hide":
+                    behave = CompletedBehaviour.HIDE;
+                    break;
+                case "Sort to end":
+                    behave = CompletedBehaviour.SORT_TO_END;
+                    break;
+            }
+            viewmodel.changeCompletedBehaviour(behave);
+        }
 
-        //private void subChallengesListItemBorder_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-        //    Debug.WriteLine("subChallengesListView_ItemClick: " + e);
-        //}
     }
 }

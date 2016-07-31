@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Poe_Challenge_Tracker.model
+namespace WpfPoeChallengeTracker.model
 {
     class SaveLoadPersistentData
     {

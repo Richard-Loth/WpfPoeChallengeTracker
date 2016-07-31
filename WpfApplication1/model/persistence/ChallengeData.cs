@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Poe_Challenge_Tracker.model
+namespace WpfPoeChallengeTracker.model
 {
     public class ChallengeData
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Media;
 
-namespace Poe_Challenge_Tracker
+namespace WpfPoeChallengeTracker
 {
     class ColorConstants
     {

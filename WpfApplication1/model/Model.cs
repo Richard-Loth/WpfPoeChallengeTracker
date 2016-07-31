@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Poe_Challenge_Tracker.model
+namespace WpfPoeChallengeTracker.model
 {
     public class Model
     {
