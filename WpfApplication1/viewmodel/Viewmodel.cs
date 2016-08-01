@@ -71,34 +71,6 @@ namespace WpfPoeChallengeTracker.viewmodel
             applyNewChallengeFiltering(filter, completedBehaviour);
         }
 
-
-
-        public bool? AutoSortEnabled
-        {
-            get
-            {
-                return model.AutoSortEnabled;
-            }
-            set
-            {
-                bool? b = value;
-                if (b == null)
-                {
-                    model.AutoSortEnabled = false;
-                }
-                else
-                {
-                    model.AutoSortEnabled = (bool)value;
-                    if (model.AutoSortEnabled)
-                    {
-                        doAutoSort();
-                    }
-
-
-                }
-            }
-        }
-
         private bool isInitialized;
 
         public bool IsInitialized
@@ -182,6 +154,7 @@ namespace WpfPoeChallengeTracker.viewmodel
         {
             model.suspend();
             Remaining.Dispose();
+            Properties.Settings.Default.Save();
         }
 
         //public void resume()
@@ -402,8 +375,8 @@ namespace WpfPoeChallengeTracker.viewmodel
             }
         }
 
-        
-        public async Task initViewmodel(Uri xmlUri)
+
+        public void initViewmodel(Uri xmlUri)
         {
             challengeViewsInitialized = false;
             challengeViews = new ObservableCollection<ChallengeView>();
@@ -419,8 +392,8 @@ namespace WpfPoeChallengeTracker.viewmodel
                 if (e.Message == ErrorMessages.PROGRESS_DIFFERENT_SIZE || e.Message == ErrorMessages.SUBPROGRESS_DIFFERENT_SIZE)
 
                 {
-                    await SaveLoadPersistentData.deleteSavedProgress(model.LeagueInfo.Leaguename);
-                    await model.initModel(xmlUri);
+                    SaveLoadPersistentData.deleteSavedProgress(model.LeagueInfo.Leaguename);
+                    model.initModel(xmlUri);
                     generateChallengeViews();
                 }
 
@@ -436,7 +409,7 @@ namespace WpfPoeChallengeTracker.viewmodel
             NotifyPropertyChanged("LeagueName");
             NotifyPropertyChanged("CountCompleted");
             NotifyPropertyChanged("AutoSortEnabled");
-           
+
 
             Remaining = new RemainingCountdown(model);
             NotifyPropertyChanged("Remaining");

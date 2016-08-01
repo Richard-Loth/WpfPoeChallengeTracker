@@ -30,28 +30,6 @@ namespace WpfPoeChallengeTracker.model
             }
         }
 
-        public bool AutoSortEnabled
-        {
-            get
-            {
-                if (settings == null)
-                {
-                    return false;
-                }
-                return settings.AutoSortCompleted;
-            }
-            set
-            {
-                if (settings.AutoSortCompleted != value)
-                {
-                    settings.AutoSortCompleted = value;
-                    hasChanged = true;
-                }
-
-            }
-        }
-
-
         private LeagueInfo leagueInfo;
 
         public LeagueInfo LeagueInfo
@@ -60,11 +38,10 @@ namespace WpfPoeChallengeTracker.model
             set { leagueInfo = value; }
         }
 
-        private Settings settings;
 
         private Timer saveProgressTimer;
 
-        public async Task initModel(Uri xmlUri)
+        public void initModel(Uri xmlUri)
         {
             var creator = new DataCreator();
             var info = creator.createChallengeDataListFromXml(xmlUri);
@@ -76,7 +53,6 @@ namespace WpfPoeChallengeTracker.model
             {
                 challengeProgresses = container.progress;
                 viewOrder = container.order;
-                settings = container.settings;
                 foreach (var item in challengeProgresses)
                 {
                     item.rewatchSubprogress();
@@ -87,12 +63,6 @@ namespace WpfPoeChallengeTracker.model
             if (challengeProgresses == null)
             {
                 challengeProgresses = creator.createChallengeProgressListFromChallengeList(info.ChallengeDatas);
-            }
-            //create new settings if failed
-            if (settings == null)
-            {
-                settings = new Settings();
-                settings.AutoSortCompleted = false;
             }
 
             //observe progress items for changes
@@ -131,7 +101,7 @@ namespace WpfPoeChallengeTracker.model
                 try
                 {
 
-                    SaveLoadPersistentData.saveProgressAndOrderAsync(challengeProgresses, viewOrder, settings, LeagueInfo.Leaguename);
+                    SaveLoadPersistentData.saveProgressAndOrderAsync(challengeProgresses, viewOrder,  LeagueInfo.Leaguename);
                     hasChanged = false;
                 }
                 catch (Exception e)

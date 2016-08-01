@@ -37,10 +37,7 @@ namespace WpfPoeChallengeTracker
             filter = "";
         }
     }
-
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
 
@@ -51,7 +48,26 @@ namespace WpfPoeChallengeTracker
             filterTimer = new Timer(filterTimerCallback, filterStringHolder, Timeout.Infinite, Timeout.Infinite);
             this.InitializeComponent();
             DataContext = viewmodel;
+            this.Height = Properties.Settings.Default.WindowHeight;
+            this.Width = Properties.Settings.Default.WindowWidth;
+
+            switch (Properties.Settings.Default.CompletedChallenges)
+            {
+                case CompletedBehaviour.DO_NOTHING:
+                    completedChallengesCombobox.SelectedIndex = 0;
+                    break;
+                case CompletedBehaviour.SORT_TO_END:
+                    completedChallengesCombobox.SelectedIndex = 1;
+                    break;
+                case CompletedBehaviour.HIDE:
+                    completedChallengesCombobox.SelectedIndex = 2;
+                    break;
+                default:
+                    break;
+            }
         }
+
+        
 
         private Timer filterTimer;
         private FilterStringHolder filterStringHolder;
@@ -187,8 +203,21 @@ namespace WpfPoeChallengeTracker
                     behave = CompletedBehaviour.SORT_TO_END;
                     break;
             }
+            Properties.Settings.Default.CompletedChallenges = behave;
             viewmodel.changeCompletedBehaviour(behave);
         }
 
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            var size = e.NewSize;
+            Properties.Settings.Default.WindowWidth = size.Width;
+            Properties.Settings.Default.WindowHeight = size.Height;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Properties.Settings.Default.Save();
+            viewmodel.suspend();
+        }
     }
 }

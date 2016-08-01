@@ -97,7 +97,6 @@
     <Compile Include="model\persistence\SubChallengeInfo.cs" />
     <Compile Include="model\persistence\SubChallengeProgress.cs" />
     <Compile Include="model\SaveLoadPersistentData.cs" />
-    <Compile Include="model\Settings.cs" />
     <Compile Include="model\XmlChallengeReader.cs" />
     <Compile Include="viewmodel\ChallengeView.cs" />
     <Compile Include="viewmodel\RemainingCountdown.cs" />

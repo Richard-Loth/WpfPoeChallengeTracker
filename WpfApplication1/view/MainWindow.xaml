@@ -7,7 +7,10 @@
         xmlns:v="clr-namespace:WpfPoeChallengeTracker.view"
         xmlns:vm="using:Poe_Challenge_Tracker.viewmodel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="525" MinWidth="500">
+        Title="MainWindow" Height="700" Width="525" MinWidth="500"
+        SizeChanged="Window_SizeChanged"
+        Closing="Window_Closing"
+        >
     <Window.Resources>
         <v:IsDoneToTextcolorConverter x:Key="IsDoneConverter"/>
         <v:BooleanVisibilityConverter x:Key="IsCollapsedConverter"/>
@@ -207,7 +210,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"  Text="Completed challenges:" Foreground="{StaticResource ChallengeDescriptionBrush}" Margin="5,0"/>
                 <ComboBox Name="completedChallengesCombobox" SelectionChanged="completedChallengesCombobox_SelectionChanged" Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Width="85" VerticalAlignment="Center" FontSize="11" Background="{DynamicResource InsideChallengeBackgrundBrush}" Foreground="{DynamicResource ChallengeDescriptionBrush}">
-                    <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Do nothing" IsSelected="True"/>
+                    <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Do nothing" />
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Sort to end"   />
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Hide" />
                 </ComboBox>

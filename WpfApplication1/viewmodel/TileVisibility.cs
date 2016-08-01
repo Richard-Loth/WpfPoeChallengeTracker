@@ -29,6 +29,8 @@ namespace WpfPoeChallengeTracker.viewmodel
             set
             {
                 viewStatus = value;
+                Properties.Settings.Default.ViewStatus = value;
+                Properties.Settings.Default.Save();
                 NotifyPropertyChanged("IsStatusVisible");
             }
         }
@@ -41,6 +43,8 @@ namespace WpfPoeChallengeTracker.viewmodel
             set
             {
                 viewOptions = value;
+                Properties.Settings.Default.ViewOptions = value;
+                Properties.Settings.Default.Save();
                 NotifyPropertyChanged("IsOptionsVisible");
             }
         }
@@ -54,6 +58,8 @@ namespace WpfPoeChallengeTracker.viewmodel
             set
             {
                 viewChallenges = value;
+                Properties.Settings.Default.ViewChallenges = value;
+                Properties.Settings.Default.Save();
                 NotifyPropertyChanged("IsChallengesVisible");
             }
         }
@@ -83,16 +89,18 @@ namespace WpfPoeChallengeTracker.viewmodel
         {
             get
             {
-                if (isInitialized && viewChallenges) return Visibility.Visible;
+                if (isInitialized && viewChallenges)
+                    return Visibility.Visible;
                 return Visibility.Collapsed;
             }
         }
 
         public TileVisibility()
         {
-            viewStatus = true;
-            viewOptions = true;
-            viewChallenges = true;
+
+            viewStatus = Properties.Settings.Default.ViewStatus;
+            viewOptions = Properties.Settings.Default.ViewOptions; ;
+            viewChallenges = Properties.Settings.Default.ViewChallenges; ;
             isInitialized = false;
         }
 

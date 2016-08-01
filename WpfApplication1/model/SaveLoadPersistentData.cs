@@ -20,23 +20,14 @@ namespace WpfPoeChallengeTracker.model
             return "challengeProgressData" + "." + leaguename.ToLower() + ".pct";
         }
 
-        public static async Task deleteSavedProgress(string leaguename)
+        public static void deleteSavedProgress(string leaguename)
         {
-            //StorageFolder storageFolder =
-            //        ApplicationData.Current.LocalFolder;
-            //if (await storageFolder.TryGetItemAsync(makeFilename(leaguename)) == null)
-            //{
-            //    //no saved data
-            //    return;
-            //}
-            //StorageFile saveFile =
-            //    await storageFolder.GetFileAsync(makeFilename(leaguename));
-            //await saveFile.DeleteAsync();
+           //TODO
         }
 
-        public static void saveProgressAndOrderAsync(List<ChallengeProgress> progress, List<int> order, Settings settings, string leaguename)
+        public static void saveProgressAndOrderAsync(List<ChallengeProgress> progress, List<int> order,  string leaguename)
         {
-            var data = new ProgressOrderContainer(progress, order, settings);
+            var data = new ProgressOrderContainer(progress, order);
             saveData(data, leaguename);
         }
 
@@ -115,18 +106,16 @@ namespace WpfPoeChallengeTracker.model
     {
         public List<ChallengeProgress> progress;
         public List<int> order;
-        public Settings settings;
 
         public ProgressOrderContainer()
         {
 
         }
 
-        public ProgressOrderContainer(List<ChallengeProgress> progress, List<int> order, Settings settings)
+        public ProgressOrderContainer(List<ChallengeProgress> progress, List<int> order)
         {
             this.progress = progress;
             this.order = order;
-            this.settings = settings;
         }
     }
 }
