@@ -26,7 +26,7 @@ namespace WpfPoeChallengeTracker
             base.OnStartup(e);
             model = new Model();
             viewmodel = new Viewmodel(model);
-            appInitTimer = new Timer(appInitTimerCallback, null, 100, Timeout.Infinite);
+            appInitTimer = new Timer(appInitTimerCallback, null, 2100, Timeout.Infinite);
             var window = new MainWindow(viewmodel);
             window.Title = "Poe Challenge Tracker";
             var uri = new Uri("pack://application:,,,/resources/logo.png");

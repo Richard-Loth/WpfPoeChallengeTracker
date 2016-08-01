@@ -292,6 +292,10 @@ namespace WpfPoeChallengeTracker.viewmodel
 
         private void doAutoSort()
         {
+            if (!isInitialized)
+            {
+                return;
+            }
             //find highest index of undone challenge
             var highestIndex = challengeViews.IndexOf(challengeViews.LastOrDefault(x => !x.IsDone));
             if (highestIndex <= 0)
