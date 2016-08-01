@@ -22,5 +22,77 @@ namespace WpfPoeChallengeTracker.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SORT_TO_END")]
+        public global::WpfPoeChallengeTracker.viewmodel.CompletedBehaviour CompletedChallenges {
+            get {
+                return ((global::WpfPoeChallengeTracker.viewmodel.CompletedBehaviour)(this["CompletedChallenges"]));
+            }
+            set {
+                this["CompletedChallenges"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ViewStatus {
+            get {
+                return ((bool)(this["ViewStatus"]));
+            }
+            set {
+                this["ViewStatus"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ViewOptions {
+            get {
+                return ((bool)(this["ViewOptions"]));
+            }
+            set {
+                this["ViewOptions"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ViewChallenges {
+            get {
+                return ((bool)(this["ViewChallenges"]));
+            }
+            set {
+                this["ViewChallenges"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
+        public double WindowWidth {
+            get {
+                return ((double)(this["WindowWidth"]));
+            }
+            set {
+                this["WindowWidth"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("750")]
+        public double WindowHeight {
+            get {
+                return ((double)(this["WindowHeight"]));
+            }
+            set {
+                this["WindowHeight"] = value;
+            }
+        }
     }
 }

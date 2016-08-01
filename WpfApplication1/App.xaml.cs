@@ -13,9 +13,7 @@ using System.Windows.Media.Imaging;
 
 namespace WpfPoeChallengeTracker
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
+    
     public partial class App : Application
 
     {
@@ -35,14 +33,21 @@ namespace WpfPoeChallengeTracker
             var bitmap = BitmapFrame.Create(uri);
             window.Icon = bitmap;
             window.Show();
-            
+
         }
         private async void appInitTimerCallback(object state)
         {
             var uri = new Uri("pack://application:,,,/challengedata/ChallengeData.prophecy.xml");
-            await model.initModel(uri);
-            await viewmodel.initViewmodel(uri);
+            model.initModel(uri);
+            viewmodel.initViewmodel(uri);
             appInitTimer.Dispose();
+        }
+
+
+
+        private void Application_Exit(object sender, ExitEventArgs e)
+        {
+
         }
     }
 
