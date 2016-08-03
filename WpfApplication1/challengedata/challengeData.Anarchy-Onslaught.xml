@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Anarchy-Onslaught</pct:leaguename>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Slay the Rogue Exiles</pct:name>
+        <pct:description>Hostile rogue exiles roam Wraeclast in the Anarchy league. Slay all 13 to complete this challenge. Everyone in the area will receive credit for the kill.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>13</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Antalie Napora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armios Bell</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ash Lessard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Damoi Tui</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eoin Greyfur</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Igna Phoenix</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ion Darkshroud</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jonah Unchained</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Minara Anemina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orra Greengate</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thena Moga</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tinevin Highdove</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Torr Olgosso</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Own these Unique Items</pct:name>
+        <pct:description>Own 90 specific Unique items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the item again. Uniques in both Anarchy and Onslaught leagues are counted for this challenge.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>90</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Aegis Aurora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alpha's Howl</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ambu's Charge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Andvarius</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Asenath's Gentle Touch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ashrend</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Aurseize</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Aurumvorax</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blackgleam</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bones of Ullr</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brightbeak</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Broadstroke</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bronn's Lithe</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chernobog's Pillar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crest of Perandus</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crown of Thorns</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Daresso's Salute</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Darkray Vectors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Darkscorn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Death Rush</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Death's Harp</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doedre's Tenure</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dream Fragments</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ezomyte Peak</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Facebreaker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Foxshade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Geofri's Baptism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gifts from Above</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Goldrim</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Goldwyrm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heartbreaker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heatshiver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hrimnor's Hymn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Infractem</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kaltenhalt</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Karui Ward</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Last Resort</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lightbane Raiment</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Limbsplit</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lioneye's Glare</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lioneye's Paws</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lochtonial Caress</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Malachai's Simula</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marohi Erqi</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Matua Tupuna</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Midnight Bargain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mightflay</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Moonsorrow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mortem Morsu</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ondar's Clasp</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Perandus Blazon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pillar of the Caged God</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Queen's Decree</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Quill Rain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rainbowstride</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rathpith Globe</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reaper's Pursuit</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Redbeak</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rigvald's Charge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rime Gaze</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rise of the Phoenix</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sadima's Touch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shavronne's Revelation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shavronne's Wrappings</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shiversting</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sidhebreath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Silverbranch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sin Trek</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slitherpinch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Soul Mantle</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Stone of Lazhwar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Taryn's Shiver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Blood Reaper</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Bringer of Rain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Covenant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ignomon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Peregrine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Searing Touch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Supreme Truth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thunderfist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tipua Kaikohuru/The Goddess Bound</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ungil's Gauche</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Victario's Acuity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Void Battery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Voll's Devotion</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wake of Destruction</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wanderlust</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wondertrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wurm's Molt</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Zahndethus' Cassock</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Use these Currency Items</pct:name>
+        <pct:description>Use the following 23 currency items in either Anarchy or Onslaught.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>23</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Portal Scroll</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Transmutation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alteration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Fusing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Scouring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Regret</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blessed Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Divine Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exalted Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eternal Orb</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Reach Level 60 in Onslaught</pct:name>
+        <pct:description>Attain character level 60 with each class in the Onslaught league. This challenge still counts even if a character dies after reaching level 60.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Duelist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marauder</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ranger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shadow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Templar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Witch</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Items from Vendor Recipes</pct:name>
+        <pct:description>Complete vendor recipes in either Anarchy or Onslaught to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>34</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Scroll Fragment</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Transmutation Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alteration Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alchemy Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Scouring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Divine Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Magic Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Rare Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Paua Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coral Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Topaz Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sapphire Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ruby Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Turquoise Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Agate Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Citrine Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Life Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Mana Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Hybrid Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Gem</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Use each Map</pct:name>
+        <pct:description>This challenge tracks which Maps are used by you in the Map Device in either Anarchy or Onslaught. It does not count Maps that you join, just ones you create.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>54</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Crypt</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dungeon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Grotto</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Overgrown Ruin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dunes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dried Lake</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tropical Island</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wharf</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arsenal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thicket</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mountain Ledge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cemetery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sewer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arcade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ghetto</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spider Lair</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Pyramid</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reef</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Springs</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mud Geyser</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Catacombs</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Overgrown Shrine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tunnel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shore</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spider Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Promenade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Underground Sea</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bog</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Graveyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coves</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Temple</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arachnid Nest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strand</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dry Woods</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Colonnade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Torture Chamber</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Waste Pool</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jungle Valley</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cells</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Canyon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dark Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dry Peninsula</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Underground River</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maze</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gorge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Necropolis</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Plateau</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bazaar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crematorium</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Precinct</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shipyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Full-clear in any Difficulty</pct:name>
+        <pct:description>Kill all the monsters in every area of the game in Anarchy or Onslaught. You can complete this in any difficulty level. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>60</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Twilight Strand</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Terraces</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tidal Island</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mud Flats</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fetid Pool</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Flooded Depths</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lower Submerged Passage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Upper Submerged Passage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ledge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Rocky Climb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lower Prison</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Upper Prison</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Prisoner's Gate</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ship Graveyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ship Graveyard Cave</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Coves</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cavern of Wrath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cavern of Anger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Old Fields</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Cave</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crossroads</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Church Dungeon Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Church Dungeon Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chamber of Sins Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chamber of Sins Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chamber of Sins Level 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Broken Bridge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>River Crossings</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dark Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Western Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Weaver's Chambers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Ruins Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Ruins Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pools and Streams</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dread Thicket</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Waterfall Cave Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Waterfall Cave Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ancient Pyramid</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fellshrine Ruins</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The City of Sarn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sarn Slums</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crematorium Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crematorium Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Warehouses</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marketplace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Catacombs</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Battlefront</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Solaris Temple Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Solaris Temple Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Solaris Temple Level 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Docks</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slums Sewers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Warehouse Sewers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Market Sewers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sewers Aqueduct</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Barracks</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lunaris Temple Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lunaris Temple Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lunaris Temple Level 3</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Allocate these Passives</pct:name>
+        <pct:description>Allocate this list of Passive Skills in either Anarchy or Onslaught. They will still count even if refunded by Orbs of Regret or quest rewards and can be spread across multiple characters. Skills that have been allocated are marked on the Passive Skill Tree with a small green tick.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>232</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Acceleration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Acrobatics</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Acuity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Adder's Touch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Aegis</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Agility</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alacrity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ambidexterity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Amplify</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ancestral Bond</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ancestral Knowledge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arcane Efficiency</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arcane Focus</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arcane Potency</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arcing Blows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arena Lord</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arm Wrestling</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armour Mastery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arsonist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Aspect of the Eagle</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Aspect of the Panther</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Assassination</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Athleticism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ballistic Mastery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Battle Staff Training</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Beef</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Berserking</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blade Barrier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blade Master</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blade of Renown</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blast Radius</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blaze</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blinding Speed</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blood Drinker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blood Magic</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodless</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodthirst</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Body and Soul</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bone Breaker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bone Smasher</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bravado</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brawn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Breath of Rime</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brutal Blade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bullying</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bulwark</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Butchery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Catalyse</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Celerity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Celestial Walker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Inoculation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Claws of the Pride</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Clear Mind</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cleaving</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cloth and Chain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Conditioning</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Conduit</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coordination</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cranium Crusher</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Critical Mass</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cruel Blade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cruelty</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crystal Skin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Deadeye</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Deadly Draw</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Deadly Precision</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Death Attunement</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Deep Thoughts</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Deep Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Deft Blade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Depth Perception</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dervish</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Diamond Flesh</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Diamond Skin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Discipline and Training</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Disemboweling</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Divine Toughness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doom Cast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Duality</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eagle Eye</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eagle Talons</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elder Power</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eldritch Battery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elemental Adaptation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elemental Dominion</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elemental Equilibrium</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elementalist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elusiveness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Endurance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Essence Raker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Executioner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Expertise</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Falcon Claws</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fencing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fending</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ferocity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fervor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Finesse</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fire Walker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fitness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Flaying</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fleetness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Freeze</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>From the Shadows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Frost Walker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fury Bolts</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fusillade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gallantry</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Galvanic Hammer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemini</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ghost Reaver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Golem's Blood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Grave Consequences</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Grave Expectations</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Grave Intentions</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gravepact</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gymnastics</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hammer Blows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hard Knocks</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Haste</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hatchet Master</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Headsman</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heart of Ice</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heart of the Gladiator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heartseeker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heavy Draw</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Herbalism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hex Master</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ice Bite</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Immolation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Infused Shield</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Inner Force</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Instability</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Iron Grip</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Iron Reflexes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>King of the Hill</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lava Lash</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Leadership</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Leather and Steel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Legendary Swordsman</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lethality</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lightning Walker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lightning Weaver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Limb Hewer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lord of the Dead</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mana Flows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mana Geyser</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Master Fletcher</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Master of the Arena</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mean Streak</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mental Acuity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Might</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mind and Matter</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mind Drinker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Minion Instability</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Necromantic Aegis</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nightstalker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nimbleness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nullification</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ondar's Guile</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Overcharge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pain Attunement</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Phalanx</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Phase Acrobatics</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Physique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Piercing Shots</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Point Blank</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Precise Interception</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Precision</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pressure Points</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prestidigitation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prowess</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pure Brutality</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Purity of Essence</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pyromaniac</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Quickness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Raptor Talons</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Raw Power</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Razor's Edge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reaver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reckless Abandon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reflexes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Repartee</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Resolute Technique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Riddle of Steel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Savagery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Savant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Secrets of the Order</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Serpent Stance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shield Mastery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shock</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Skill of the Ancestors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Skull Cracking</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slaughter</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slice and Dice</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Smashing Blows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Smashing Strikes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Soul Raker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Soul Siphon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spell Power</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit Raker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Splitting Strikes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Stamina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Static Blows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Steady Hands</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Steel Skin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strong Arm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Swagger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Swashbuckler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Testudo</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thick Skin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thieves Craft</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Throatseeker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Timberwolf</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Troll's Blood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Twin Terrors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unnatural Calm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unwavering Stance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Pact</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Versatility</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vigor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Void Barrier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wandslinger's Prowess</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Water Dancing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Weapon Artistry</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Weight Lifting</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Whirling Barrier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Whispers of Doom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wicked Blade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wisdom of the Glade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wrecking Ball</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Zealot's Oath</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>

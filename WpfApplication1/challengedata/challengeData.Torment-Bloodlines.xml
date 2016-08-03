@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Torment-Bloodlines</pct:leaguename>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Reach Level 85</pct:name>
+        <pct:description>Attain character level 85 with at least three different classes in the Torment or Bloodlines leagues. This challenge still counts even if a character dies after reaching level 85.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>3</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Duelist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marauder</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ranger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shadow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Templar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Witch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scion</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Identify these Unique Items</pct:name>
+        <pct:description>Identify these specific Unique Items to complete this challenge. Uniques in both the Torment and Bloodlines leagues are counted for this challenge. You can trade the item away afterwards.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>50</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Abyssus</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Agnerod East</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Agnerod North</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bated Breath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Belly of the Beast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Belt of the Deceiver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodboil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brutus' Lead Sprinkler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Carcass Jack</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cloak of Defiance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cybil's Paw</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Death and Taxes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doomsower</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doryani's Catalyst</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doryani's Invitation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Drillneck</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Great Old One's Ward</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Infernal Mantle </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kikazaru</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lightning Coil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Malachai's Artifice</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maligaro's Lens</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maligaro's Restraint</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maligaro's Virtuosity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maloney's Nightfall</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ngamahu's Sign</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nomic's Storm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pledge of Hands</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prismweave</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rat's Nest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rathpith Globe</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reverberation Rod</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rumi's Concoction</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Saffell's Frame</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scold's Bridle</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sentari's Answer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sibyl's Lament</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Solaris Lorica</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Stone of Lazhwar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tasalio's Sign</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Blood Thorn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Broken Crown</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Rat Cage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Supreme Truth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thief's Torment </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Timeclasp</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ungil's Harmony</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Valako's Sign</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Whakawairua Tuahu</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Windripper</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill Packs from these Bloodlines</pct:name>
+        <pct:description>Kill packs of Magic monsters with each of these Bloodline Mods.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>25</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Bearers of the Guardian</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bond of Chaos</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Corrupted Bloodline</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cult of the Elements</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Flame Bearers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Flaring Pulseblood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Frost Bearers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Heralds of the Obelisk</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Keepers of the Trove</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Legacy of Vigour</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Legacy of Zeal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Living Blood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mark of Cannibalism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Necrovigil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Order of the Frozen Sky</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Otherworldly</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Phylacteral Link</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rime Pulseblood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shared Boon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrouded</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit Walkers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Static Pulseblood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Storm Bearers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Union of Souls</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Voidspawn of Abaxoth</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Tormented Spirits</pct:name>
+        <pct:description>Kill each of these Tormented Spirits or Rare/Unique monsters possessed by them.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>21</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Tormented Arsonist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Aurora Cultist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Blasphemer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Cannibal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Charlatan</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Cutthroat</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Embezzler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Forger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Martyr</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Mutilator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Necromancer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Poisoner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Rogue</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Seditionist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Smuggler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Spy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Storm Cultist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Thief</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Thug</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Vaal Cultist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tormented Warlord</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Full-clear these Maps</pct:name>
+        <pct:description>Kill all the monsters in each of these End-Game Map areas in the Torment or Bloodlines leagues. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>45</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Overgrown Ruin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orchard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mountain Ledge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cemetery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Springs</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Museum</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Overgrown Shrine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shore</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Promenade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Underground Sea</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Graveyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Villa</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Temple</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dry Woods</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Colonnade</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Torture Chamber</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jungle Valley</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cells</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Canyon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dark Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dry Peninsula</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Underground River</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maze</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gorge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Residence</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Necropolis</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Plateau</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bazaar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crematorium</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Precinct</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Academy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shipyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Palace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Courtyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Temple</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Untainted Paradise</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maelström of Chaos</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Acton's Nightmare</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Poorjoy's Asylum</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Whakawairua Tuahu</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Oba's Cursed Trove</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Olmec's Sanctum</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Apex of Sacrifice</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Items from Vendor Recipes</pct:name>
+        <pct:description>Complete vendor recipes in either Torment or Bloodlines to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>36</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Scroll Fragment</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Transmutation Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alteration Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alchemy Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Magic Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Rare Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Paua Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coral Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Topaz Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sapphire Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ruby Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Turquoise Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Agate Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Citrine Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Life Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Mana Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Hybrid Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Granite Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jade Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Gem</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prismatic Ring</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters</pct:name>
+        <pct:description>Kill these Rogue Exiles, open Strongboxes with these properties, touch these Shrines and kill Rare Monsters with these Nemesis mods in the Torment or Bloodlines leagues. Strongboxes do not need to be identified to count, but their ambushers must be defeated.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>44</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Exile: Antalie Napora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Ash Lessard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Augustina Solaria</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Damoi Tui</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Eoin Greyfur</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Igna Phoenix</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Ion Darkshroud</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Jonah Unchained</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Minara Anemina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exile: Orra Greengate</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Arctic</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Contested</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Frigid</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Intimidating</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Menacing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Rallying</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: Reaper's</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Abundance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Corruption</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Bounty</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Complexity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Kalandra</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Quality</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Singularity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Unity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strongbox: of Waters</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Diamond</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Divine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Echoing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Massive</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Burning</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Freezing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Lightning</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrine: Skeletal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Ancestral Power</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Corrupting Blood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Fractured</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Hexfont</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Inner Treasure</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Proximity Shield</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Shroud Walker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Soul Conduit</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Soul Eater</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nemesis: Storm Herald</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Missions</pct:name>
+        <pct:description>Complete these missions for the Forsaken Masters in the Torment or Bloodlines leagues.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>44</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Defend a Relic from waves of Monsters for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defend a Relic for a fixed time for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Destroy Corrupted Relics for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Feed Souls to a Relic for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a Spirit from Tahi for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a Spirit from Boka for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a Spirit from Necribrae for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a Spirit from Blightraise for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a Spirit from Rua for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a Spirit from Wha for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Rotting Mummy for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Rotting Outcast for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Bone Bird for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Charred Skeleton for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Reanimated Skeleton for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Rotting Weaver for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Arachnid for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Infested Beast for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Chieftain for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Twisted Chimeral for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Rhoa for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Adder for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Watcher for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he wields a Bow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Reave</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he is Unarmed</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Elemental Strikes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Ethereal Knives</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Traps</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Spectral Throw</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Target and leave a Witness for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill only a Target for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill only a Target's Guards for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Target within the Time Limit for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Target and save a Hostage for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Keep a Target on Low Life for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Steal from a Target's Chest for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Corrupted Boss for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill Rogue Exiles for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Find a Map Item for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Find a Unique Item for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Complete another Master's Mission for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill Corrupted Monsters for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Find Lodestones for Zana</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>

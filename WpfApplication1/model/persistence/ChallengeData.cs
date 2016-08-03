@@ -61,7 +61,12 @@ namespace WpfPoeChallengeTracker.model
         private List<SubChallengeData> subChallenges;
         public List<SubChallengeData> SubChallenges
         {
-            get { return subChallenges; }
+            get {
+                if (subChallenges == null)
+                {
+                    subChallenges = new List<SubChallengeData>();
+                }
+                return subChallenges; }
         }
 
 

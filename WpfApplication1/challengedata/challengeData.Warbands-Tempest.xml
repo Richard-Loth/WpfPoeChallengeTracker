@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Warbands-Tempest</pct:leaguename>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Reach Level 82</pct:name>
+        <pct:description>Attain character level 82 with at least three different classes in the Warbands or Tempest leagues. This challenge still counts even if a character dies after reaching level 82.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>3</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Duelist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marauder</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ranger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shadow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Templar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Witch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scion</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Redeem Divination Card Sets</pct:name>
+        <pct:description>Turn in sets of at least 32 of the following 47 Divination card types to Tasuni:</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>32</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Abandoned Wealth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaotic Disposition</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coveted Possession</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Emperor's Luck</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Promise</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hope</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Humility</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jack in the Box</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lucky Connections</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rain of Chaos</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Avenger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Battle Born</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Brittle Emperor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Carrion Crow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Cataclysm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Celestial Justicar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Chains that Bind</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Dark Mage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Doctor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Drunken Aristocrat</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Explorer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Feast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Gambler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Gemcutter</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Gladiator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Hermit</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Hoarder</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Hunger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Incantation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Inventor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The King's Heart</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Lover</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Metalsmith's Gift</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Pact</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Poet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Road to Power</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Scarred Meadow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Scholar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Summoner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Sun</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Union</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Warden</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Watcher</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Wind</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Three Faces in the Dark</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Time-Lost Relic</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vinia's Token</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Warband Members</pct:name>
+        <pct:description>Kill each of the following Warband Members:</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>28</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Brinerot Raider</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brinerot Soothesayer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brinerot Stormhand</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Musky "Two-Eyes" Grenn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Susara, Siren of Pondium</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lussi "Rotmother" Roth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mutewind Wildrunner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mutewind Lynx</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mutewind Hexbinder</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mutewind Snow-singer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Yorishi, Aurora-sage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeinei Yuushu</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Otesha, the Giantslayer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Redblade Skullbreaker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Redblade Flamelord</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Redblade Warmonger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Uruk Baleh</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>El'Abin, Bloodeater</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Leli Goya, Daughter of Ash</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bin'aia, Crimson Rain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rama, The Kinslayer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kalria, The Risen</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Invari, The Bloodshaper</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lokan, The Deceiver</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marchak, The Betrayer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Berrots, The Breaker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vessider, The Unrivaled</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Morgrants, The Deafening</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Clear Areas with Tempests</pct:name>
+        <pct:description>Kill all the monsters in areas affected by at least 50 of these 54 Tempests. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>50</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Stinging Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scathing Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Restorative Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Echoing Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Divine Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shining Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Radiating Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Enlarging Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrinking Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Seething Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shivering Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Freezing Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Galvanizing Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brisk Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shimmering Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Quickening Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Impure Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Obscuring Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ethereal Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Devouring Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shielding Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sharding Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Veiling Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Abyssal Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Consuming Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Infernal Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Arctic Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Electrocuting Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Morbid Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Crushing Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blasphemous Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Corrupting Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Transmogrifying Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Refining Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Energising Tempest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Animation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of the Ancestors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Fire</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Ice</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Lightning</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Poison</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Aberrance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Inspiration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Revelation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Turmoil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Phantoms</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Cataclysm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Intensity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Influence</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Precision</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Desperation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Fortune</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Destiny</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tempest of Fate</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Unique Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses:</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>43</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Ambrius, Legion Slayer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Avatar of the Forge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Avatar of the Huntress</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Avatar of the Skies</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Barkhul</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Champion of the Hollows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Daresso, King of Swords</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dimachaeri Cassius</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doedre Darktongue</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eater of Souls</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eyepecker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Forest of Flames</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fragment of Winter</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gnar, Eater of Carrion</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hammerstorm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>King Kaom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lord of the Hollows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Malachai, The Nightmare</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Maligaro, The Inquisitor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Messenger of the Hollows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mevion</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mirage of Bones</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nightwane</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pikerivet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prodigy of Darkness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prodigy of Hexes</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prodigy of Pain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rudiarius Felix</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shavronne of Umbra</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Soulmourn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Steelchaw</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Stonebeak, Battle Fowl</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Brittle Emperor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Burning Man</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Hundred Foot Shadow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Infernal King</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Winged Death</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Torchoak Grove</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tore, Towering Ancient</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Triskeriaki</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Void Anomaly</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Voidscream</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Voll, Emperor of Purity</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Items from Vendor Recipes</pct:name>
+        <pct:description>Complete vendor recipes in either Warbands or Tempest to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>36</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Scroll Fragment</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Transmutation Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alteration Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alchemy Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Magic Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Rare Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Paua Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coral Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Topaz Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sapphire Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ruby Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Turquoise Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Agate Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Citrine Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Life Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Mana Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Hybrid Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Granite Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jade Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Gem</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prismatic Ring</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Corrupt these Unique Jewels</pct:name>
+        <pct:description>Corrupt 36 of these 41 specific Unique Jewels to complete this challenge. Jewels in both the Warbands and Tempest leagues are counted for this challenge. You can trade the item away afterwards.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>36</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Anatomical Knowledge </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Apparitions </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Army of Bones </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Assassin's Haste </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brawn </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brute Force Solution </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Careful Planning </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Clear Mind </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cold Steel </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Conqueror's Efficiency </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Conqueror's Longevity </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Conqueror's Potency </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Efficient Training </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eldritch Knowledge </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Energised Armour </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Energy From Within </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fertile Mind </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fireborn </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fluid Motion </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fortified Legion</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fragile Bloom </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Healthy Mind </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hidden Potential </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hotfooted </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Inertia </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Inspired Learning</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Intuitive Leap </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lioneye's Fall </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Malicious Intent </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mantra of Flames </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Martial Artistry </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Might in All Forms</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Poacher's Aim </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pugilist </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rain of Splinters </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spire of Stone </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Static Electricity </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Survival Instincts </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Survival Secrets </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Survival Skills </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Warlord's Reach </pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Knowledge and Power</pct:name>
+        <pct:description>Identify these Unique Items, kill a Rare Monster of each of these types, and kill all the monsters in the following areas in Warbands or Tempest. Character Uniques are any Unique Item named after that Character. 30 of these 33 deeds are required.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>30</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: Abyss Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: Colosseum Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: Core Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: Kaom's Stronghold</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: The Dried Lake</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: The Grand Arena</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Full-Clear: The Harvest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Daresso Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Doedre Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Kaom Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Malachai Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Maligaro Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Shavronne Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Any Voll Unique</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Brinerot Flag</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Brinerot Mark</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Brinerot Whalers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Crown of the Pale King</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Jorrhast's Blacksteel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Mutewind Pennant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Mutewind Seal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Mutewind Whispersteps</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Redblade Band</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Redblade Banner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Redblade Tramplers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Trolltimber Spire</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Identify: Ylfeban's Trickery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slay: Any Rare Chaos Sentinel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slay: Any Rare Fighting Bull</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slay: Any Rare Infested Vulture</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slay: Any Rare Knitted Horror</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slay: Any Rare Rakango</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Slay: Any Rare Revenant</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>

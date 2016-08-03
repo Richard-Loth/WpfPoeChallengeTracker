@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Ambush-Invasion</pct:leaguename>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Have these Vaal Items</pct:name>
+        <pct:description>Own 44 specific items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the items again. Items in both Ambush and Invasion leagues are counted for this challenge.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>44</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Atziri's Acuity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Disfavour</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Foible</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Mirror</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Promise</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Splendour</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Step</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodseeker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doon Cuebiyari</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doryani's Catalyst</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doryani's Invitation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Drillneck</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mortal Grief</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mortal Hope</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mortal Ignorance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mortal Rage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Quecholli</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rathpith Globe</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rearguard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rebuke of the Vaal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sacrifice at Dawn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sacrifice at Dusk</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sacrifice at Midnight</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sacrifice at Noon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Vertex</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Arc</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Burning Arrow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Caress</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Cold Snap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Cyclone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Detonate Dead</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Double Strike</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Fireball</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Ground Slam</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Ice Nova</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Immortal Call</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Lightning Strike</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Lightning Warp</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Molten Shell</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Power Siphon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Rain of Arrows</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Spark</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Spectral Throw</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaults of Atziri</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Open Strongboxes</pct:name>
+        <pct:description>Open Strongboxes with each of the following properties. Strongboxes do not need to be identified to complete the challenge. The ambushers must be defeated before it is counted as open.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>29</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Arctic</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Contaminated</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Contested</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Frigid</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Incandescent</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Intimidating</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Menacing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Abundance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Affluence</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Ascendance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Bounty</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Complexity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Curiosities</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Facets</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Kalandra</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Quality</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Singularity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Treasures</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Unity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Waters</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ossified</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Putrifying</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rallying</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Reaper's</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scorched</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unstable</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vibrating</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Whispering</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Unique Invaders</pct:name>
+        <pct:description>Kill each of the following Unique bosses.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>36</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Alpha Paradisae</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Balus Stoneskull</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bladeback Guardian</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bladetooth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blood Morpher</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blood Stasis</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Corpsestitch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Corrector Draconides</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Droolscar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Evocata Apocalyptica</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Genesis Paradisae</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassmaul</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Granitecrush</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Grath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Guardian of the Mound</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Harbinger of Elements</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jikeji</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Judgement Apparatus</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Junglemare</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kall Foxfly</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mammothcage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mother of the Swarm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nighteater</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pewterfang</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rancor</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shivershell</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spinesnap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strangledrift</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tailsinger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Bolt Juggler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Book Burner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Duchess</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Firestarter</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Raging Mask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Revenant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wonderwalker</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Reach Level 90</pct:name>
+        <pct:description>Attain character level 90 in each challenge league. This challenge still counts even if a character dies after reaching level 90.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>2</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Ambush</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Invasion</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Clear these Corrupted Areas</pct:name>
+        <pct:description>Kill all the monsters in every side area in Ambush or Invasion. You can complete this in any difficulty level. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>26</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Arcane Chambers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blind Alley</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Clouded Ridge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Concealed Cavity</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Covered-up Hollow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Disused Furnace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Entombed Alcove</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Entombed Chamber</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Forbidden Chamber</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Forgotten Oubliette</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hidden Patch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Inner Grounds</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mystical Clearing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Narrow Ravine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Neglected Cellar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Quarantined Quarters</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Remote Gulch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Restricted Gallery</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sacred Chambers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sealed Corridors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Secluded Copse</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Secret Laboratory</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Stagnant Canal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Strange Sinkhole</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sunken Shingle</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Walled-off Ducts</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill Atziri and her Guardians</pct:name>
+        <pct:description>Kill each of the following Unique bosses.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Vessel of the Vaal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Q'ura</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Y'ara'az</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>A'alai</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri, Queen of the Vaal</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Use these Currency Items</pct:name>
+        <pct:description>Use the following 24 currency items in either Ambush or Invasion.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>24</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blessed Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Divine Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eternal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exalted Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alteration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Fusing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Regret</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Scouring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Transmutation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Portal Scroll</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Items from Vendor Recipes</pct:name>
+        <pct:description>Complete vendor recipes in either Ambush or Invasion to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>33</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Agate Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alchemy Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Alteration Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Gem</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Hybrid Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Life Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Mana Flask</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Any Map</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Citrine Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coral Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Paua Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prismatic Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ruby Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sapphire Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll Fragment</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Topaz Ring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Transmutation Shard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Turquoise Amulet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Magic Item</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unidentified Rare Item</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>

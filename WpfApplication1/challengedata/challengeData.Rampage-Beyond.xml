@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Rampage-Beyond</pct:leaguename>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Full-clear in any Difficulty</pct:name>
+        <pct:description>Kill all the monsters in every Act 1, 2 and 3 area of the game in Rampage or Beyond. You can complete this in any difficulty level. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>64</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>The Twilight Strand</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Coast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Tidal Island</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Mud Flats</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Fetid Pool</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Flooded Depths</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lower Submerged Passage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Upper Submerged Passage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ledge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Climb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Lower Prison</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Upper Prison</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Prisoner's Gate</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ship Graveyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ship Graveyard Cave</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Coves</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Cavern of Wrath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Cavern of Anger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Southern Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Old Fields</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Den</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Crossroads</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Crypt Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Crypt Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chamber of Sins Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chamber of Sins Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chamber of Sins Level 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Broken Bridge</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Riverways</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Blackwood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Western Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Weaver's Chambers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Vaal Ruins Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Vaal Ruins Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Wetlands</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Dread Thicket</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Caverns Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Caverns Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ancient Pyramid</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Fellshrine Ruins</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The City of Sarn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Slums</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Crematorium</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Warehouse District</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Marketplace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Catacombs</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Battlefront</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Solaris Temple Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Solaris Temple Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Docks</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Slums Sewers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Warehouse Sewers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Market Sewers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Sewer Waterway</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Ebony Barracks</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lunaris Temple Level 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lunaris Temple Level 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lunaris Temple Level 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Imperial Gardens</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Hedge Maze</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Library</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Archives</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Sceptre of God</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Upper Sceptre of God</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Reach level 65</pct:name>
+        <pct:description>Attain character level 65 with each class in the Rampage or Beyond leagues. This challenge still counts even if a character dies after reaching level 65.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>7</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Duelist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Marauder</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ranger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shadow</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Templar</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Witch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scion</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Reach these Rampage Tiers</pct:name>
+        <pct:description>Achieve each of these Rampage tiers in the Rampage League.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>13</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>First Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Second Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Third Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fourth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fifth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sixth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Seventh Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eighth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ninth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tenth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eleventh Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Twelfth Tier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thirteenth Tier</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Use these Currency Items</pct:name>
+        <pct:description>Use the following 23 currency items in either Rampage or Beyond.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>23</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blessed Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Divine Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Exalted Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gemcutter's Prism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alteration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Fusing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Regret</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Scouring</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Transmutation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Portal Scroll</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Regal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Scroll of Wisdom</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these foes from Beyond</pct:name>
+        <pct:description>Defend Wraeclast by defeating these 13 interdimensional monstrosities:</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>13</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Flesh of Bameth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blood of Haast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eye of Tzteosh</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hand of Na'em</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Worshipper of Bameth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Servant of Haast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Abaxoth, The End of All That Is</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mouth of Ephij</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tzteosh, Hungering Flame</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ephij, Crackling Sky</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Haast, Unrelenting Frost</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bameth, Shifting Darkness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Na'em, Bending Stone</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Reach level 8 with the Masters</pct:name>
+        <pct:description>Reach reputation level 8 with each of the following masters:</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>7</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vagan</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Zana</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Own these Unique Items</pct:name>
+        <pct:description>Own 44 specific Unique items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the item again. Uniques in both Rampage and Beyond leagues are counted for this challenge.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>44</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Al Dhih</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Apep's Rage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Asphyxia's Wrath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Astramentis</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bino's Kitchen Knife</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chalice of Horrors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cherrubim's Maleficence</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chitus' Apex</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Craghead</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Doomfletch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dreamfeather</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Dying Breath</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Edge of Madness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Flesh and Spirit</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Forbidden Taste</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gang's Momentum</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hegemony's Era</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hyaon's Fury</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Incandescent Heart</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Infernal Mantle</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jaws of Agony</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kaom's Roots</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kaom's Sign</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lifesprig</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mokou's Embrace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Null and Void</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Oro's Sacrifice</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Perandus Signet</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Piscator's Vigil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pledge of Hands</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pyre</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Queen of the Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rumi's Concoction</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shackles of the Wretched</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shadows and Dust</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Soul Strike</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Anvil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Dark Seer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Goddess Bound</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Harvest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Screaming Eagle</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Three Dragons</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thousand Teeth Temu</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vis Mortis</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Unique Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses:</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>34</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Alira Darktongue</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Asphyxia</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri, Queen of the Vaal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Avatar of Apocalypse</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Boka</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chatters</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Damoi Tui</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fairgraves, Never Dying</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Gneiss</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Guardian of the Mound</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Haviri, Vaal Metalsmith</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Igna Phoenix</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jikeji</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kall Foxfly</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kraityn, Scarbearer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Magnus Stonethorn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mutated Arachnid</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Oak, Skullbreaker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Olmec, the All Stone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Penitentiary Incarcerator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Perpetus</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rose</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shock and Horror</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Simi, the Nature Touched</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spinesnap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spinner of False Hope</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tailsinger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The First Rhoa</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Revenant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thorn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Twisted Chimeral</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Warmonger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Wilorin Demontamer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Zacharie Desmarais</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>

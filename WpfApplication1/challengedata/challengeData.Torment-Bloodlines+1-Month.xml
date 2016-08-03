@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Torment-Bloodlines+1-Month</pct:leaguename>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Reach Level 80</pct:name>
+        <pct:description>Attain character level 80 in the One Month Torment/Bloodlines Event. This challenge still counts even if a character dies after reaching level 80.</pct:description>
+        <pct:type>binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill One of these Unique Bosses</pct:name>
+        <pct:description>Kill at least one of the following six Unique Bosses in the One Month Torment/Bloodlines Event.</pct:description>
+        <pct:type>binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete Forty Encounters</pct:name>
+        <pct:description>Kill at least 40 of these 46 Tormented Spirits and packs of Magic monsters with Bloodline Mods in the One Month Torment/Bloodlines Event. Killing Rare or Unique monsters possessed by Tormented Spirits still counts.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>40</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Bearers of the Guardian</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Bond of Chaos</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Corrupted Bloodline</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Cult of the Elements</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Flame Bearers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Flaring Pulseblood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Frost Bearers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Heralds of the Obelisk</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Keepers of the Trove</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Legacy of Vigour</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Legacy of Zeal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Living Blood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Mark of Cannibalism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Necrovigil</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Order of the Frozen Sky</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Otherworldly</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Phylacteral Link</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Rime Pulseblood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Shared Boon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Shrouded</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Spirit Walkers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Static Pulseblood</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Storm Bearers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Union of Souls</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Bloodline: Voidspawn of Abaxoth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Arsonist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Aurora Cultist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Blasphemer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Cannibal</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Charlatan</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Cutthroat</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Embezzler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Forger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Martyr</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Mutilator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Necromancer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Poisoner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Rogue</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Seditionist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Smuggler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Spy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Storm Cultist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Thief</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Thug</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Vaal Cultist</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spirit: Tormented Warlord</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete Eighteen Missions</pct:name>
+        <pct:description>Complete at least 18 of these 21 missions for the Forsaken Masters in the One Month Torment/Bloodlines Event.</pct:description>
+        <pct:type>progressable</pct:type>
+        <pct:neededToComplete>18</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Defend a Relic from waves of Monsters for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Destroy Corrupted Relics for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Feed Souls to a Relic for Elreon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a spirit from Tahi for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a spirit from Necribrae for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Free a spirit from Rua for Haku</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Rotting Mummy for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Bone Bird for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Revive a Rotting Weaver for Catarina</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Ursa for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Maw for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Mutated Winterclaw for Tora</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he wields a Staff</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Flicker Strike</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Defeat Vagan while he uses Cyclone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill only a Target's Guards for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Target and save a Hostage for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Steal from a Target's Chest for Vorici</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill Rogue Exiles for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Find a Map Item for Zana</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Complete another Master's Mission for Zana</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>
