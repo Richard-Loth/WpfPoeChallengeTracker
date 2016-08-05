@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using WpfPoeChallengeTracker.model.persistence;
 
 namespace WpfPoeChallengeTracker.model
 {
@@ -38,17 +40,83 @@ namespace WpfPoeChallengeTracker.model
             set { leagueInfo = value; }
         }
 
+        private List<League> availableLeagues;
+
+        public List<League> AvailableLeagues
+        {
+            get { return availableLeagues; }
+            set { availableLeagues = value; }
+        }
+
+
 
         private Timer saveProgressTimer;
 
-        public void initModel(Uri xmlUri)
+        private void loadAvailableLeagues()
         {
-            var creator = new DataCreator();
-            var info = creator.createChallengeDataListFromXml(xmlUri);
-            this.leagueInfo = info;
+            availableLeagues = new List<League>();
+            var challengeDir = System.AppDomain.CurrentDomain.BaseDirectory + "\\challengeData";
+            var dirInfo = new DirectoryInfo(challengeDir);
+            FileInfo[] info = dirInfo.GetFiles("challengeData.*.xml", SearchOption.TopDirectoryOnly);
+            foreach (var item in info)
+            {
+                string xmlPath = item.FullName;
+                var league = new League();
+                league.XmlFilePath = xmlPath;
+                var filename = item.Name;
+                int firstDot = filename.IndexOf('.');
+                int lastDot = filename.Length - 5;
+                var leaguename = filename.Substring(firstDot + 1, lastDot - firstDot);
+               
+                if (filename.Contains("1-Month"))
+                {
+                    //special rule for torment/bloodlines 1 month events
+                    if (filename.Contains("HC"))
+                    {
+                        league.InAppName = "Torment/Bloodlines 1 Month HC";
+                        league.ProgressFileName ="Torment-Bloodlines+1-Month+HC";
+                        league.UrlName = "Torment%2BBloodlines+1-Month+HC";
+                    }
+                    else
+                    {
+                        league.InAppName = "Torment/Bloodlines 1 Month";
+                        league.ProgressFileName = "Torment-Bloodlines+1-Month";
+                        league.UrlName = "Torment%2BBloodlines+1-Month";
+                    }
+                }
+                else
+                {
+                    //other leagues
+                    league.UrlName = filename.Replace("-", "%2B");
+                    league.InAppName = leaguename.Replace("-", "/");
+                    league.ProgressFileName = leaguename;
+                }
+                availableLeagues.Add(league);
+            }
+        }
 
+        private League currentLeague;
+        public void initModel()
+        {
+            IsInitialized = false;
+            if (availableLeagues == null)
+            {
+                loadAvailableLeagues(); 
+            }
+             currentLeague = availableLeagues.Where(n => n.InAppName == Properties.Settings.Default.SelectedLeague)?.ElementAt(0);
+            if (currentLeague == null)
+            {
+                currentLeague = availableLeagues.Last();
+            }
+
+
+            var creator = new DataCreator();
+            var info = creator.createChallengeDataListFromXml(currentLeague.XmlFilePath);
+            this.leagueInfo = info;
+            info.Leaguename = currentLeague.InAppName;
             //try to load saved progress
-            var container =  SaveLoadPersistentData.loadData(info.Leaguename);
+            challengeProgresses = null;
+            var container = SaveLoadPersistentData.loadData(currentLeague.ProgressFileName);
             if (container != null)
             {
                 challengeProgresses = container.progress;
@@ -69,6 +137,10 @@ namespace WpfPoeChallengeTracker.model
             foreach (var item in challengeProgresses)
             {
                 item.PropertyChanged += ProgressItemPropertyChanged;
+            }
+            if (saveProgressTimer!= null)
+            {
+                saveProgressTimer.Dispose();
             }
             saveProgressTimer = new Timer(saveProgressTimerCallback, null, saveProgressInterval, saveProgressInterval);
             IsInitialized = true;
@@ -96,12 +168,15 @@ namespace WpfPoeChallengeTracker.model
 
         private void saveProgressTimerCallback(object state)
         {
+            if (!isInitialized)
+            {
+                return;
+            }
             if (hasChanged)
             {
                 try
                 {
-
-                    SaveLoadPersistentData.saveProgressAndOrderAsync(challengeProgresses, viewOrder,  LeagueInfo.Leaguename);
+                    SaveLoadPersistentData.saveProgressAndOrderAsync(challengeProgresses, viewOrder, currentLeague.ProgressFileName);
                     hasChanged = false;
                 }
                 catch (Exception e)

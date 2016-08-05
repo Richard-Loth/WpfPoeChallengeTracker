@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Windows.Foundation;
 using WpfPoeChallengeTracker.viewmodel;
+using WpfPoeChallengeTracker.model.persistence;
 
 namespace WpfPoeChallengeTracker.viewmodel
 {
@@ -26,6 +27,19 @@ namespace WpfPoeChallengeTracker.viewmodel
     {
         private CompletedBehaviour completedBehaviour;
 
+        public ObservableCollection<LeagueView> AvailableLeagues{ get
+            {
+                if (!isInitialized)
+                {
+                    return null;
+                }
+                return leagueviews;
+            }
+        }
+
+        private ObservableCollection<LeagueView> leagueviews;
+
+
         public void changeCompletedBehaviour(CompletedBehaviour newBehaviour)
         {
             completedBehaviour = newBehaviour;
@@ -34,6 +48,24 @@ namespace WpfPoeChallengeTracker.viewmodel
             {
                 doAutoSort();
             }
+        }
+
+        public void leagueViewClicked(LeagueView view)
+        {
+           
+            foreach (var item in leagueviews)
+            {
+                item.setIsCheckedPlain(item == view);
+            }
+            if (view.Name == model.LeagueInfo.Leaguename)
+            {
+                return;
+            }
+            Properties.Settings.Default.SelectedLeague = view.Name;
+            isInitialized = false;
+            tileVisibility.IsInitialized = false;
+            NotifyPropertyChanged("IsInitialized");
+            NotifyPropertyChanged("CurrentLeague");
         }
 
         private ObservableCollection<ChallengeView> challengeViews;
@@ -380,28 +412,18 @@ namespace WpfPoeChallengeTracker.viewmodel
         }
 
 
-        public void initViewmodel(Uri xmlUri)
+        public void initViewmodel()
         {
             challengeViewsInitialized = false;
             challengeViews = new ObservableCollection<ChallengeView>();
             challengeViews.CollectionChanged += ChallengeViews_CollectionChanged;
-
-            try
+            generateChallengeViews();
+            if (leagueviews == null)
             {
-                generateChallengeViews();
+                generateLeagueViews();
             }
-            catch (InvalidOperationException e)
-            {
-                Debug.WriteLine("InvalidOperation: " + e.GetBaseException());
-                if (e.Message == ErrorMessages.PROGRESS_DIFFERENT_SIZE || e.Message == ErrorMessages.SUBPROGRESS_DIFFERENT_SIZE)
 
-                {
-                    SaveLoadPersistentData.deleteSavedProgress(model.LeagueInfo.Leaguename);
-                    model.initModel(xmlUri);
-                    generateChallengeViews();
-                }
-
-            }
+            NotifyPropertyChanged("AvailableLeagues");
             foreach (var item in challengeViews)
             {
                 item.PropertyChanged += ChallengeViewItemChanged;
@@ -414,15 +436,28 @@ namespace WpfPoeChallengeTracker.viewmodel
             NotifyPropertyChanged("CountCompleted");
             NotifyPropertyChanged("AutoSortEnabled");
 
-
+            if (Remaining != null)
+            {
+                Remaining.Dispose();
+            }
             Remaining = new RemainingCountdown(model);
             NotifyPropertyChanged("Remaining");
-
             TileVisibilityProp.IsInitialized = true;
-            NotifyPropertyChanged("TileVisibilityProp");
-            NotifyPropertyChanged("IsStatusVisible");
-            NotifyPropertyChanged("IsOptionsVisible");
-            NotifyPropertyChanged("IsChallengesVisible");
+        }
+
+        private void generateLeagueViews()
+        {
+            leagueviews = new ObservableCollection<LeagueView>();
+            foreach (var item in model.AvailableLeagues)
+            {
+                var view = new LeagueView(this);
+                view.LeagueData = item;
+                leagueviews.Add(view);
+                if (model.LeagueInfo.Leaguename == item.InAppName)
+                {
+                    view.setIsCheckedPlain(true);
+                }
+            }
         }
 
         public Viewmodel(Model model)

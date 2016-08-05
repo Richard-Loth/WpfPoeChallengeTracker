@@ -20,5 +20,8 @@
     <Setting Name="WindowHeight" Type="System.Double" Scope="User">
       <Value Profile="(Default)">750</Value>
     </Setting>
+    <Setting Name="SelectedLeague" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Prophecy</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -9,11 +9,11 @@ namespace WpfPoeChallengeTracker.model
 {
     class DataCreator
     {
-        public  LeagueInfo createChallengeDataListFromXml(Uri xmlUri)
+        public  LeagueInfo createChallengeDataListFromXml(string xmlPath)
         {
             try
             {
-                return  new XmlChallengeReader().readXml(xmlUri);
+                return  new XmlChallengeReader().readXml(xmlPath);
             }
             catch (Exception e)
             {

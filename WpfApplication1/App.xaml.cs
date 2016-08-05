@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.IO;
+using System.Diagnostics;
 
 namespace WpfPoeChallengeTracker
 {
@@ -26,7 +28,8 @@ namespace WpfPoeChallengeTracker
             base.OnStartup(e);
             model = new Model();
             viewmodel = new Viewmodel(model);
-            appInitTimer = new Timer(appInitTimerCallback, null, 100, Timeout.Infinite);
+            viewmodel.PropertyChanged += Viewmodel_PropertyChanged;
+            appInitTimer = new Timer(appInitTimerCallback, null, 0, Timeout.Infinite);
             var window = new MainWindow(viewmodel);
             window.Title = "Poe Challenge Tracker";
             var uri = new Uri("pack://application:,,,/resources/logo.png");
@@ -34,20 +37,28 @@ namespace WpfPoeChallengeTracker
             window.Icon = bitmap;
             window.Show();
 
+            
+           
+
         }
         private async void appInitTimerCallback(object state)
         {
-            var uri = new Uri("pack://application:,,,/challengedata/ChallengeData.prophecy.xml");
-            model.initModel(uri);
-            viewmodel.initViewmodel(uri);
+            model.initModel();
+            viewmodel.initViewmodel(); 
             appInitTimer.Dispose();
         }
 
-
+        private void Viewmodel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "CurrentLeague")
+            {
+                appInitTimer = new Timer(appInitTimerCallback, null, 0, Timeout.Infinite);
+            }
+        }
 
         private void Application_Exit(object sender, ExitEventArgs e)
         {
-
+            
         }
     }
 

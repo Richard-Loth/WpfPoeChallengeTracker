@@ -77,6 +77,8 @@
             <Setter Property="BorderThickness" Value="0" />
         </Style>
 
+
+
         <!--<Style x:Key="{x:Static MenuItem.SeparatorStyleKey}" TargetType="{x:Type Separator}">
             <Setter Property="OverridesDefaultStyle" Value="True"/>
             <Setter Property="Background" Value="{StaticResource OverallBackgroundBrush}"/>
@@ -148,7 +150,23 @@
                 <MenuItem Header="Challenges" IsCheckable="True" IsChecked="{Binding TileVisibilityProp.ViewChallenges, Mode=TwoWay}" Style="{StaticResource MenuSubItemStyle}" />
 
             </MenuItem>
+            
+             <MenuItem Name="LeaguesMenuItem" Header="Leagues" ItemsSource="{Binding AvailableLeagues}" Style="{StaticResource MenuItemStyle}" IsEnabled="{Binding IsInitialized}">
+                    <MenuItem.Resources>
+                    <Style TargetType="MenuItem" BasedOn="{StaticResource MenuSubItemStyle}">
+                        <Setter Property="Header" Value="{Binding Name}" />
+                        <Setter Property="IsChecked" Value="{Binding IsChecked, Mode=TwoWay}" />
+                        <Style.Triggers>
+                            <Trigger Property="HasItems" Value="False">
+                                <Setter Property="IsCheckable" Value="True"/>
+                            </Trigger>
+                        </Style.Triggers>
+                     
+                    </Style>
+                </MenuItem.Resources>
+            </MenuItem>
         </Menu>
+        
         <!--<Border Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Black" Margin="0,4" />
             <TextBlock Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding ViewModel.Leaguename, Mode=OneWay}"  HorizontalAlignment="Left" Foreground="{StaticResource ChallengeDescriptionBrush}" VerticalAlignment="Center" Margin="8,0,0,0" />
 
@@ -219,7 +237,8 @@
             </Grid>
 
         </Border>
-        <ListView ScrollViewer.CanContentScroll="True"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"    Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
+        <ListView ScrollViewer.CanContentScroll="False"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  PreviewMouseWheel="challengesListview_PreviewMouseWheel"   Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
+
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

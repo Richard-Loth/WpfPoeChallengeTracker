@@ -36,14 +36,13 @@ namespace WpfPoeChallengeTracker.model
 
 
 
-        public LeagueInfo readXml(Uri xmlUri)
+        public LeagueInfo readXml(string xmlPath)
         {
-            var resourceStream = Application.GetResourceStream(xmlUri);
-            
+            var uri = new Uri(xmlPath);
+            var stream = new StreamReader(xmlPath).BaseStream;
             var leagueInfo = new LeagueInfo();
             var data = new List<ChallengeData>();
             leagueInfo.ChallengeDatas = data;
-            var stream = resourceStream.Stream;
             XmlReader xml = XmlReader.Create(stream);
             bool insideLeaguename = false;
             bool insideStartedOn = false;
@@ -63,7 +62,6 @@ namespace WpfPoeChallengeTracker.model
             while (xml.Read())
 
             {
-                //Debug.WriteLine("Name: " + xml.Name + " Value: " + xml.Value.Trim());
                 switch (xml.NodeType)
                 {
                     case XmlNodeType.Element:
@@ -179,7 +177,7 @@ namespace WpfPoeChallengeTracker.model
                                     challengeData.Type = ChallengeType.Progressable;
                                     continue;
                                 }
-                                throw new InvalidOperationException("Encountered unknown challenge type during processing " + xmlUri);
+                                throw new InvalidOperationException("Encountered unknown challenge type during processing " + xmlPath);
                             }
                             if (insideNeedForCompletion)
                             {

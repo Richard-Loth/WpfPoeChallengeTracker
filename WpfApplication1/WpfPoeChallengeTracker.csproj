@@ -149,12 +149,14 @@
     <Compile Include="model\persistence\ChallengeData.cs" />
     <Compile Include="model\persistence\ChallengeEnums.cs" />
     <Compile Include="model\persistence\ChallengeProgress.cs" />
+    <Compile Include="model\persistence\League.cs" />
     <Compile Include="model\persistence\SubChallengeData.cs" />
     <Compile Include="model\persistence\SubChallengeInfo.cs" />
     <Compile Include="model\persistence\SubChallengeProgress.cs" />
     <Compile Include="model\SaveLoadPersistentData.cs" />
     <Compile Include="model\XmlChallengeReader.cs" />
     <Compile Include="viewmodel\ChallengeView.cs" />
+    <Compile Include="viewmodel\LeagueView.cs" />
     <Compile Include="viewmodel\RemainingCountdown.cs" />
     <Compile Include="viewmodel\SubChallengeInfoView.cs" />
     <Compile Include="viewmodel\SubChallengeView.cs" />
@@ -215,9 +217,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="challengedata\ChallengeData.prophecy.xml">
+    <Content Include="challengedata\ChallengeData.Prophecy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="resources\logo.png">
@@ -228,6 +230,43 @@
     <Resource Include="PoeCt-Logo-24x24.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="challengedata\challengeData.Ambush-Invasion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Domination-Nemesis.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Flashback.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Perandus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Rampage-Beyond.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Talisman.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Torment-Bloodlines 1-Month+HC.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Torment-Bloodlines 1-Month.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Torment-Bloodlines.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="challengedata\challengeData.Warbands-Tempest.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="challengedata\challengeData.Anarchy-Onslaught.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -94,5 +94,17 @@ namespace WpfPoeChallengeTracker.Properties {
                 this["WindowHeight"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Prophecy")]
+        public string SelectedLeague {
+            get {
+                return ((string)(this["SelectedLeague"]));
+            }
+            set {
+                this["SelectedLeague"] = value;
+            }
+        }
     }
 }

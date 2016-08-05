@@ -19,8 +19,6 @@ using System.Windows.Shapes;
 namespace WpfPoeChallengeTracker
 {
 
-
-
     internal class FilterStringHolder
     {
         private string filter;
@@ -37,7 +35,7 @@ namespace WpfPoeChallengeTracker
             filter = "";
         }
     }
-    
+
     public partial class MainWindow : Window
     {
 
@@ -67,8 +65,6 @@ namespace WpfPoeChallengeTracker
             }
         }
 
-        
-
         private Timer filterTimer;
         private FilterStringHolder filterStringHolder;
         private Viewmodel viewmodel;
@@ -83,9 +79,8 @@ namespace WpfPoeChallengeTracker
             Button btn = (Button)sender;
             ChallengeView c = (ChallengeView)btn.DataContext;
             c.IsCollapsed = !c.IsCollapsed;
+            challengesListview.UpdateLayout();
         }
-
-
 
         private void ChallengeIsDoneClick(object sender, RoutedEventArgs e)
         {
@@ -130,11 +125,6 @@ namespace WpfPoeChallengeTracker
             }
         }
 
-        private void changeLeagueButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void unCollapseAllButton_Click(object sender, RoutedEventArgs e)
         {
             viewmodel.unCollapseAll();
@@ -144,11 +134,6 @@ namespace WpfPoeChallengeTracker
         private void collapseAllButton_Click(object sender, RoutedEventArgs e)
         {
             viewmodel.collapseAll();
-        }
-
-        private void subChallengeItemClick(object sender, MouseButtonEventArgs e)
-        {
-
         }
 
         private void subChallengesListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -218,6 +203,31 @@ namespace WpfPoeChallengeTracker
         {
             Properties.Settings.Default.Save();
             viewmodel.suspend();
+        }
+
+        private void challengesListview_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            //this is needed to scroll while the mouse is inside an inner grid
+            var listview = (ListView)sender;
+            var border = (Border)VisualTreeHelper.GetChild(listview, 0);
+            var scrollviewer = (ScrollViewer)border.Child;
+            scrollviewer.ScrollToVerticalOffset(scrollviewer.VerticalOffset - e.Delta);
+        }
+
+        private void LeaguesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            //if (sender == LeaguesMenuItem)
+            //{
+            //    return;
+            //}
+            //var children = LeaguesMenuItem.Items;
+            //foreach (var item in children)
+            //{
+            //    var menuitem = (MenuItem)item;
+            //    menuitem.IsChecked = false;
+            //}
+            //var header = ((MenuItem)sender).Header;
+            //Debug.WriteLine(header);
         }
     }
 }

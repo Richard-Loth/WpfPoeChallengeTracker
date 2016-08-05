@@ -112,7 +112,13 @@ namespace WpfPoeChallengeTracker.viewmodel
             }
             set
             {
-                isInitialized = value;
+                if (isInitialized != value)
+                {
+                    isInitialized = value;
+                    NotifyPropertyChanged("IsStatusVisible");
+                    NotifyPropertyChanged("IsOptionsVisible");
+                    NotifyPropertyChanged("IsChallengesVisible");
+                }
             }
         }
     }
