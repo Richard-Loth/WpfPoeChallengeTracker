@@ -156,6 +156,7 @@
     <Compile Include="model\SaveLoadPersistentData.cs" />
     <Compile Include="model\XmlChallengeReader.cs" />
     <Compile Include="viewmodel\ChallengeView.cs" />
+    <Compile Include="viewmodel\ChallengeViewFilter.cs" />
     <Compile Include="viewmodel\LeagueView.cs" />
     <Compile Include="viewmodel\RemainingCountdown.cs" />
     <Compile Include="viewmodel\SubChallengeInfoView.cs" />

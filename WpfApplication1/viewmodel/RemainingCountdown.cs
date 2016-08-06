@@ -19,6 +19,12 @@ namespace WpfPoeChallengeTracker.viewmodel
             return span;
         }
 
+        public bool IsLeagueOver { get
+            {
+                return remainingTime?.TotalSeconds <= 0.0;
+            }
+        }
+
         public RemainingCountdown(Model model)
         {
             this.model = model;

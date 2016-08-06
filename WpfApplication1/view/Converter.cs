@@ -7,9 +7,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
+using System.Windows.Controls;
 
 namespace WpfPoeChallengeTracker.view
 {
+    public class WidthCalculationConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            var d2 = System.Convert.ToDouble(parameter);
+            return (double)value + d2;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+
     public class IsDoneToTextcolorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -35,7 +52,7 @@ namespace WpfPoeChallengeTracker.view
             throw new NotImplementedException();
         }
 
-       
+
     }
 
     public class ChallengeIsDoneToCheckColorConverter : IValueConverter

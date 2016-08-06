@@ -46,6 +46,7 @@ namespace WpfPoeChallengeTracker
             filterTimer = new Timer(filterTimerCallback, filterStringHolder, Timeout.Infinite, Timeout.Infinite);
             this.InitializeComponent();
             DataContext = viewmodel;
+            viewmodel.PropertyChanged += Viewmodel_PropertyChanged;
             this.Height = Properties.Settings.Default.WindowHeight;
             this.Width = Properties.Settings.Default.WindowWidth;
 
@@ -62,6 +63,14 @@ namespace WpfPoeChallengeTracker
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void Viewmodel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "CurrentLeague") 
+            {
+                filterTextBox.Text = "";
             }
         }
 
@@ -214,20 +223,10 @@ namespace WpfPoeChallengeTracker
             scrollviewer.ScrollToVerticalOffset(scrollviewer.VerticalOffset - e.Delta);
         }
 
-        private void LeaguesMenuItem_Click(object sender, RoutedEventArgs e)
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
-            //if (sender == LeaguesMenuItem)
-            //{
-            //    return;
-            //}
-            //var children = LeaguesMenuItem.Items;
-            //foreach (var item in children)
-            //{
-            //    var menuitem = (MenuItem)item;
-            //    menuitem.IsChecked = false;
-            //}
-            //var header = ((MenuItem)sender).Header;
-            //Debug.WriteLine(header);
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
         }
     }
 }

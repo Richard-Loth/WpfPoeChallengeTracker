@@ -14,6 +14,7 @@ using System.Windows;
 using Windows.Foundation;
 using WpfPoeChallengeTracker.viewmodel;
 using WpfPoeChallengeTracker.model.persistence;
+using System.Text.RegularExpressions;
 
 namespace WpfPoeChallengeTracker.viewmodel
 {
@@ -43,7 +44,9 @@ namespace WpfPoeChallengeTracker.viewmodel
         public void changeCompletedBehaviour(CompletedBehaviour newBehaviour)
         {
             completedBehaviour = newBehaviour;
-            applyNewChallengeFiltering(filterText, newBehaviour);
+            //TODO
+            var challengeFilter = new RegexFilter(filterText);
+            applyNewChallengeFiltering(challengeFilter, newBehaviour);
             if (newBehaviour == CompletedBehaviour.SORT_TO_END)
             {
                 doAutoSort();
@@ -64,6 +67,7 @@ namespace WpfPoeChallengeTracker.viewmodel
             Properties.Settings.Default.SelectedLeague = view.Name;
             isInitialized = false;
             tileVisibility.IsInitialized = false;
+           
             NotifyPropertyChanged("IsInitialized");
             NotifyPropertyChanged("CurrentLeague");
         }
@@ -99,8 +103,9 @@ namespace WpfPoeChallengeTracker.viewmodel
 
         internal void changeFilterText(string filter)
         {
+            var challengeFilter = new RegexFilter(filter);
             this.filterText = filter;
-            applyNewChallengeFiltering(filter, completedBehaviour);
+            applyNewChallengeFiltering(challengeFilter, completedBehaviour);
         }
 
         private bool isInitialized;
@@ -129,7 +134,7 @@ namespace WpfPoeChallengeTracker.viewmodel
         private string filterText;
 
 
-        private void applyNewChallengeFiltering(string filter, CompletedBehaviour completedBehaviour)
+        private void applyNewChallengeFiltering(ChallengeViewFilter viewfilter, CompletedBehaviour completedBehaviour)
 
         {
             if (!isInitialized)
@@ -159,7 +164,7 @@ namespace WpfPoeChallengeTracker.viewmodel
                      {
                          backupList.Add(item);
                      }
-                     var visibleViews = calculateVisibleViews(filter);
+                     var visibleViews = viewfilter.calculateVisibleViews(backupList);
 
                      //remove non matching items
                      challengeViews.Clear();
@@ -169,7 +174,7 @@ namespace WpfPoeChallengeTracker.viewmodel
                          {
                              continue;
                          }
-                         if (filter.Length == 0 || visibleViews.Contains(item.Id))
+                         if (visibleViews.Contains(item.Id))
                          {
                              challengeViews.Add(item);
                          }
@@ -178,7 +183,6 @@ namespace WpfPoeChallengeTracker.viewmodel
                      {
                          doAutoSort();
                      }
-
                  });
         }
 
@@ -202,13 +206,17 @@ namespace WpfPoeChallengeTracker.viewmodel
             filter.Trim();
             if (filter.Length > 0)
             {
+                var regex = new Regex("*" +filter + "*");
                 foreach (var view in backupList)
                 {
                     var applies = false;
                     var data = view.Data;
                     //search in name and description
 
-                    applies = data.Name.ToLower().Contains(filter) || data.Description.ToLower().Contains(filter);
+                    //applies = data.Name.ToLower().Contains(filter) || data.Description.ToLower().Contains(filter);
+                    var match = regex.Match(data.Name.ToLower() + " " + data.Description.ToLower());
+
+                    applies = match.Success;
                     if (!applies)
                     {
                         //search in subchallenges
@@ -297,7 +305,7 @@ namespace WpfPoeChallengeTracker.viewmodel
 
         private void resetOrder()
         {
-            applyNewChallengeFiltering("", CompletedBehaviour.DO_NOTHING);
+            applyNewChallengeFiltering(new ContainsFilter(""), CompletedBehaviour.DO_NOTHING);
             challengeViews.OrderBy(x => x.Id);
 
             var tempList = new System.Collections.Generic.List<ChallengeView>();
@@ -386,9 +394,6 @@ namespace WpfPoeChallengeTracker.viewmodel
             }
         }
 
-
-
-
         public string CountCompleted
         {
             get
@@ -410,11 +415,11 @@ namespace WpfPoeChallengeTracker.viewmodel
 
             }
         }
-
-
+        
         public void initViewmodel()
         {
             challengeViewsInitialized = false;
+            backupList = null;
             challengeViews = new ObservableCollection<ChallengeView>();
             challengeViews.CollectionChanged += ChallengeViews_CollectionChanged;
             generateChallengeViews();
@@ -423,26 +428,23 @@ namespace WpfPoeChallengeTracker.viewmodel
                 generateLeagueViews();
             }
 
-            NotifyPropertyChanged("AvailableLeagues");
             foreach (var item in challengeViews)
             {
                 item.PropertyChanged += ChallengeViewItemChanged;
             }
             orderViews();
             IsInitialized = true;
-            NotifyPropertyChanged("Leaguename");
-            NotifyPropertyChanged("ChallengeViews");
-            NotifyPropertyChanged("LeagueName");
-            NotifyPropertyChanged("CountCompleted");
-            NotifyPropertyChanged("AutoSortEnabled");
-
+            TileVisibilityProp.IsInitialized = true;
             if (Remaining != null)
             {
                 Remaining.Dispose();
             }
             Remaining = new RemainingCountdown(model);
-            NotifyPropertyChanged("Remaining");
-            TileVisibilityProp.IsInitialized = true;
+            //everything has changed
+            foreach (var item in this.GetType().GetProperties())
+            {
+                NotifyPropertyChanged(item.Name);
+            }
         }
 
         private void generateLeagueViews()
@@ -485,7 +487,8 @@ namespace WpfPoeChallengeTracker.viewmodel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CountCompleted"));
                 if (completedBehaviour == CompletedBehaviour.HIDE)
                 {
-                    applyNewChallengeFiltering(filterText, completedBehaviour);
+                    var challengeFilter = new RegexFilter(filterText);
+                    applyNewChallengeFiltering(challengeFilter, completedBehaviour);
                 }
                 if (completedBehaviour == CompletedBehaviour.SORT_TO_END)
                 {

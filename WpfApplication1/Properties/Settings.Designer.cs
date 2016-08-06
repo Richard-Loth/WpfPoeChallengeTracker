@@ -106,5 +106,17 @@ namespace WpfPoeChallengeTracker.Properties {
                 this["SelectedLeague"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowMinutesSeconds {
+            get {
+                return ((bool)(this["ShowMinutesSeconds"]));
+            }
+            set {
+                this["ShowMinutesSeconds"] = value;
+            }
+        }
     }
 }
