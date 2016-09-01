@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfPoeChallengeTracker.view;
 
 namespace WpfPoeChallengeTracker
 {
@@ -227,6 +228,22 @@ namespace WpfPoeChallengeTracker
         {
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
+        }
+
+        private void SyncProgressButton_Click(object sender, RoutedEventArgs e)
+        {
+           //TODO
+        }
+
+        private void EnterAccountNameMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new EnterAccountName();
+            var result = window.ShowDialog();
+            if (result.Value)
+            {
+                ViewModel.AccountName = window.AccountName;
+                ViewModel.CurrentLoginStatus = model.LoginStatus.ValidName;
+            }
         }
     }
 }

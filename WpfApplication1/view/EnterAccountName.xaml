@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfPoeChallengeTracker.view.EnterAccountName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPoeChallengeTracker.view"
+        mc:Ignorable="d"
+        Title="Input" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen"
+        Background="{StaticResource OverallBackgroundBrush}"
+       ContentRendered="WindowContentRendered"
+       >
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+        <Label Name="lblQuestion" Grid.Column="0" Foreground="{DynamicResource ChallengeDescriptionBrush}">Please enter your account name</Label>
+        <TextBox Grid.Row="1" Grid.Column="0" Name="AccountNameTextBox" TextChanged="AccountNameTextBox_TextChanged" />
+        <TextBlock Name="statusTextBlock" Grid.Column="0" Grid.Row="2" Visibility="Hidden"/>
+        <WrapPanel Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button IsDefault="True" Name="OkButton" Click="OkButton_Click" MinWidth="60" Margin="0,0,10,0" IsEnabled="False">_Ok</Button>
+            <Button Name="CheckButton" Content="Check" Click="CheckButton_Click" MinWidth="60" Margin="0,0,10,0" IsEnabled="True"></Button>
+            <Button IsCancel="True" MinWidth="60">_Cancel</Button>
+        </WrapPanel>
+    </Grid>
+
+</Window>

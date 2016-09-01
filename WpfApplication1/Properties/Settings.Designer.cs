@@ -118,5 +118,17 @@ namespace WpfPoeChallengeTracker.Properties {
                 this["ShowMinutesSeconds"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string AccountName {
+            get {
+                return ((string)(this["AccountName"]));
+            }
+            set {
+                this["AccountName"] = value;
+            }
+        }
     }
 }

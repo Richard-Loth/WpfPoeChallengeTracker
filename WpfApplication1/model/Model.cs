@@ -20,6 +20,21 @@ namespace WpfPoeChallengeTracker.model
             set { challengeProgresses = value; }
         }
 
+        private LoginStatus loginStatus;
+
+        public LoginStatus CurrentLoginStatus
+
+        {
+            get { return loginStatus; }
+            set { loginStatus = value; }
+        }
+
+        public string AccountName
+        {
+            get { return Properties.Settings.Default.AccountName; }
+            set { Properties.Settings.Default.AccountName = value; }
+        }
+
         private List<int> viewOrder;
 
         public List<int> ViewOrder
@@ -47,8 +62,6 @@ namespace WpfPoeChallengeTracker.model
             get { return availableLeagues; }
             set { availableLeagues = value; }
         }
-
-
 
         private Timer saveProgressTimer;
 

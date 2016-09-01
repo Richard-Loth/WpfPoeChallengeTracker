@@ -12,6 +12,8 @@ namespace WpfPoeChallengeTracker
         public static readonly SolidColorBrush SubChallengeIsNotDone = new SolidColorBrush(Color.FromArgb(255, 212, 165, 109));
         public static readonly SolidColorBrush ChallengeIsDoneCheckColor = new SolidColorBrush(Color.FromArgb(255, 12, 195, 16));
         public static readonly SolidColorBrush ChallengeIsNotDoneCheckColor = new SolidColorBrush(Color.FromArgb(255, 200, 7, 7));
+        public static readonly SolidColorBrush ErrorTextColor = new SolidColorBrush(Colors.OrangeRed);
+        public static readonly SolidColorBrush SucessTextColor= new SolidColorBrush(Colors.LawnGreen);
 
         private ColorConstants()
         {

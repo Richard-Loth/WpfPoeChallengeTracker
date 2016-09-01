@@ -28,7 +28,9 @@ namespace WpfPoeChallengeTracker.viewmodel
     {
         private CompletedBehaviour completedBehaviour;
 
-        public ObservableCollection<LeagueView> AvailableLeagues{ get
+        public ObservableCollection<LeagueView> AvailableLeagues
+        {
+            get
             {
                 if (!isInitialized)
                 {
@@ -40,6 +42,24 @@ namespace WpfPoeChallengeTracker.viewmodel
 
         private ObservableCollection<LeagueView> leagueviews;
 
+
+        public string AccountName
+        {
+            get { return model.AccountName; }
+            set { model.AccountName = value; }
+        }
+
+        public LoginStatus CurrentLoginStatus
+        {
+            get
+            {
+                return model.CurrentLoginStatus;
+            }
+            set
+            {
+                model.CurrentLoginStatus = value;
+            }
+        }
 
         public void changeCompletedBehaviour(CompletedBehaviour newBehaviour)
         {
@@ -55,7 +75,7 @@ namespace WpfPoeChallengeTracker.viewmodel
 
         public void leagueViewClicked(LeagueView view)
         {
-           
+
             foreach (var item in leagueviews)
             {
                 item.setIsCheckedPlain(item == view);
@@ -67,7 +87,7 @@ namespace WpfPoeChallengeTracker.viewmodel
             Properties.Settings.Default.SelectedLeague = view.Name;
             isInitialized = false;
             tileVisibility.IsInitialized = false;
-           
+
             NotifyPropertyChanged("IsInitialized");
             NotifyPropertyChanged("CurrentLeague");
         }
@@ -206,7 +226,7 @@ namespace WpfPoeChallengeTracker.viewmodel
             filter.Trim();
             if (filter.Length > 0)
             {
-                var regex = new Regex("*" +filter + "*");
+                var regex = new Regex("*" + filter + "*");
                 foreach (var view in backupList)
                 {
                     var applies = false;
@@ -415,7 +435,7 @@ namespace WpfPoeChallengeTracker.viewmodel
 
             }
         }
-        
+
         public void initViewmodel()
         {
             challengeViewsInitialized = false;

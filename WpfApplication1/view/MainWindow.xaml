@@ -20,16 +20,7 @@
         <v:IsCollapsedToButtonTextConverter x:Key="IsCollapsedToTextConverter" />
         <v:IsDoneToTextConverter x:Key="IsDoneToTextConverter" />
         <v:ChallengeIsDoneToCheckColorConverter x:Key="ChallengeIsDoneToCheckColorConverter"/>
-        <SolidColorBrush x:Key="ChallengeHeaderForeground" Color="#FFC39964" />
-        <SolidColorBrush x:Key="OverallBackgroundBrush" Color="#FF0F1817" />
-        <LinearGradientBrush x:Key="InsideChallengeBackgrundBrush">
-            <GradientStop Color="#FF222529" />
-            <GradientStop Color="#FF212429" Offset="0.5" />
-            <GradientStop Color="#FF222529" Offset="1" />
-        </LinearGradientBrush>
-
-        <SolidColorBrush x:Key="ChallengeDescriptionBrush" Color="#FFEEA327" />
-        <SolidColorBrush x:Key="ChallengeStackBorder" Color="#FF3B285F" />
+        
         <Thickness x:Key="PanelBorderThickness">2</Thickness>
         <Thickness x:Key="TileMargin" Left="5" Right="5" Bottom="5" Top="0"></Thickness>
         <Style  x:Key="ButtonmenuStyle"
@@ -117,6 +108,7 @@
         </Grid.ColumnDefinitions>
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" IsMainMenu="True" Style="{StaticResource MenuStyle}">
             <MenuItem Header="File" Style="{StaticResource MenuItemStyle}">
+                <MenuItem Name="EnterAccountNameMenuItem" Header="Enter Account Name" Style="{StaticResource MenuSubItemStyle}" Click="EnterAccountNameMenuItem_Click" />
                 <MenuItem Header="Reset Progress" Style="{StaticResource MenuSubItemStyle}" Click="resetButton_Click"/>
                 <Separator />
                 <MenuItem Header="Exit" Style="{StaticResource MenuSubItemStyle}" Click="MenuItemExit_Click"/>
@@ -157,7 +149,8 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
                     <TextBlock Text="{Binding LeagueName}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
-                    <TextBlock Text="{Binding CountCompleted}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
+                    <TextBlock Name="CountCompletedTextBlock" Text="{Binding CountCompleted}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
+                    <Button Name="SyncProgressButton" Click="SyncProgressButton_Click" Content="Sync Progress"  Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" Width="{Binding ActualWidth, ConverterParameter=0, Converter={StaticResource WidthCalculator}, ElementName=CountCompletedTextBlock, Mode=OneWay}" />
                 </StackPanel>
                 <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding Remaining.IsLeagueOver, Converter={StaticResource BoolVisibilityConverter}}" Text="League is over" Foreground="{DynamicResource ChallengeDescriptionBrush}" />
                 <Grid Grid.Column="1" Width="Auto" Margin="20,0,0,0" HorizontalAlignment="Stretch" Visibility="{Binding Remaining.IsLeagueOver, Converter={StaticResource ReverseBoolVisibilityConverter}}">

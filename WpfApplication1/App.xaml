@@ -5,6 +5,15 @@
             Exit="Application_Exit"
              >
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="ChallengeHeaderForeground" Color="#FFC39964" />
+        <SolidColorBrush x:Key="OverallBackgroundBrush" Color="#FF0F1817" />
+        <LinearGradientBrush x:Key="InsideChallengeBackgrundBrush">
+            <GradientStop Color="#FF222529" />
+            <GradientStop Color="#FF212429" Offset="0.5" />
+            <GradientStop Color="#FF222529" Offset="1" />
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="ChallengeDescriptionBrush" Color="#FFEEA327" />
+        <SolidColorBrush x:Key="ChallengeStackBorder" Color="#FF3B285F" />
     </Application.Resources>
 </Application>

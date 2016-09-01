@@ -15,7 +15,7 @@ using System.Diagnostics;
 
 namespace WpfPoeChallengeTracker
 {
-    
+
     public partial class App : Application
 
     {
@@ -37,14 +37,15 @@ namespace WpfPoeChallengeTracker
             window.Icon = bitmap;
             window.Show();
 
-            
-           
+
+
+
 
         }
         private async void appInitTimerCallback(object state)
         {
             model.initModel();
-            viewmodel.initViewmodel(); 
+            viewmodel.initViewmodel();
             appInitTimer.Dispose();
         }
 
@@ -58,7 +59,7 @@ namespace WpfPoeChallengeTracker
 
         private void Application_Exit(object sender, ExitEventArgs e)
         {
-            
+
         }
     }
 
