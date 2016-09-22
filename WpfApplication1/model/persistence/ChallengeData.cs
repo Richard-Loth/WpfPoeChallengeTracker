@@ -18,6 +18,15 @@ namespace WpfPoeChallengeTracker.model
             set { description = value; }
         }
 
+        private bool wikiLinksExist;
+
+        public bool WikiLinksExist
+        {
+            get { return wikiLinksExist; }
+            set { wikiLinksExist = value; }
+        }
+
+
         private ChallengeType type;
         public ChallengeType Type
         {
@@ -44,7 +53,7 @@ namespace WpfPoeChallengeTracker.model
 
         public ChallengeData() : this("", "", ChallengeType.Binary)
         {
-
+            wikiLinksExist = false;
         }
 
         public ChallengeData(string name, string description, ChallengeType type)

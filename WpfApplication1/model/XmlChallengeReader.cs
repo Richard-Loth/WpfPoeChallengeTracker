@@ -32,6 +32,8 @@ namespace WpfPoeChallengeTracker.model
         const string TEXT = "text";
         const string URL = "url";
 
+        const string WIKI_BASE_URL = "http://pathofexile.gamepedia.com/";
+
 
 
 
@@ -92,6 +94,11 @@ namespace WpfPoeChallengeTracker.model
                         if (element == CHALLENGE)
                         {
                             challengeData = new ChallengeData();
+                            var attribute = xml.GetAttribute("createWikiLinks");
+                            if (attribute != null)
+                            {
+                                challengeData.WikiLinksExist = attribute.ToLower() == "true";
+                            }
                             insideSingleChallenge = true;
                             continue;
                         }
@@ -189,7 +196,16 @@ namespace WpfPoeChallengeTracker.model
                         {
                             if (insideName)
                             {
-                                subChallengeData.Description = xml.Value.Trim();
+                                var subName = xml.Value.Trim();
+                                subChallengeData.Description = subName;
+                                //prophecy league has wiki links already in xml
+                                if (challengeData.WikiLinksExist && leagueInfo.Leaguename.ToLower() != "prophecy")
+                                {
+                                    var generatedInfo = new SubChallengeInfo();
+                                    generatedInfo.Text = "Wiki";
+                                    generatedInfo.UrlAsString = WIKI_BASE_URL +  subName.Replace(" ", "_");
+                                    subChallengeData.Infos.Add(generatedInfo);
+                                }
                             }
                             if (insideInfo)
                             {
