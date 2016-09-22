@@ -45,7 +45,9 @@ namespace WpfPoeChallengeTracker.view
 
         private void WindowContentRendered(object sender, EventArgs e)
         {
+            AccountNameTextBox.Text = Properties.Settings.Default.AccountName;
             AccountNameTextBox.Focus();
+            AccountNameTextBox.SelectAll();
         }
 
         private void CheckButton_Click(object sender, RoutedEventArgs e)

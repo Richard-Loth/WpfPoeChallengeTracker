@@ -1690,7 +1690,7 @@
           progressable
         </pct:type>
         <pct:neededToComplete>
-          10
+          8
         </pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>
@@ -1722,17 +1722,7 @@
           </pct:info>
 
         </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Enter and clear a Prophecized Map from another Map
-          </pct:name>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Fulfil a Prophecy chain that rewards a Unique item
-          </pct:name>
-        </pct:subchallenge>
+        
         <pct:subchallenge>
           <pct:name>
             Fulfil a Prophecy that modifies item sockets
@@ -1759,7 +1749,7 @@
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>
-            Fulfil the first link in a Prophecy chain
+            Fulfill the first link in a Prophecy chain
           </pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
@@ -2077,6 +2067,11 @@
         <pct:subchallenge>
           <pct:name>
             Day of Sacrifice
+          </pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>
+            Deadly Rivalry
           </pct:name>
         </pct:subchallenge>
         <pct:subchallenge>

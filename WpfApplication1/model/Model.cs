@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,7 +13,7 @@ using WpfPoeChallengeTracker.model.persistence;
 
 namespace WpfPoeChallengeTracker.model
 {
-    public class Model
+    public class Model : INotifyPropertyChanged
     {
 
         private List<ChallengeProgress> challengeProgresses;
@@ -26,7 +29,13 @@ namespace WpfPoeChallengeTracker.model
 
         {
             get { return loginStatus; }
-            set { loginStatus = value; }
+            set
+            {
+                if (loginStatus != value)
+                {
+                    loginStatus = value;
+                }
+            }
         }
 
         public string AccountName
@@ -80,14 +89,14 @@ namespace WpfPoeChallengeTracker.model
                 int firstDot = filename.IndexOf('.');
                 int lastDot = filename.Length - 5;
                 var leaguename = filename.Substring(firstDot + 1, lastDot - firstDot);
-               
+
                 if (filename.Contains("1-Month"))
                 {
                     //special rule for torment/bloodlines 1 month events
                     if (filename.Contains("HC"))
                     {
                         league.InAppName = "Torment/Bloodlines 1 Month HC";
-                        league.ProgressFileName ="Torment-Bloodlines+1-Month+HC";
+                        league.ProgressFileName = "Torment-Bloodlines+1-Month+HC";
                         league.UrlName = "Torment%2BBloodlines+1-Month+HC";
                     }
                     else
@@ -100,11 +109,42 @@ namespace WpfPoeChallengeTracker.model
                 else
                 {
                     //other leagues
-                    league.UrlName = filename.Replace("-", "%2B");
+                    league.UrlName = leaguename.Replace("-", "%2F");
                     league.InAppName = leaguename.Replace("-", "/");
                     league.ProgressFileName = leaguename;
                 }
                 availableLeagues.Add(league);
+            }
+        }
+
+        private string syncStatus;
+
+        public string SyncStatus
+        {
+            get { return syncStatus; }
+            set
+            {
+                if (syncStatus != value)
+                {
+                    syncStatus = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+
+
+        internal void syncProgress()
+        {
+            try
+            {
+                SyncStatus = "Now synchronizing...";
+                ProgressSyncer.syncProgress(challengeProgresses, AccountName, currentLeague.UrlName);
+                SyncStatus = "Last synchronized: " + DateTime.Now.ToShortTimeString();
+            }
+            catch (WebException e)
+            {
+                SyncStatus = "There was an error during synchronisation: " + e.Message;
             }
         }
 
@@ -114,14 +154,26 @@ namespace WpfPoeChallengeTracker.model
             IsInitialized = false;
             if (availableLeagues == null)
             {
-                loadAvailableLeagues(); 
+                loadAvailableLeagues();
             }
-             currentLeague = availableLeagues.Where(n => n.InAppName == Properties.Settings.Default.SelectedLeague)?.ElementAt(0);
+            currentLeague = availableLeagues.Where(n => n.InAppName == Properties.Settings.Default.SelectedLeague)?.ElementAt(0);
             if (currentLeague == null)
             {
                 currentLeague = availableLeagues.Last();
             }
 
+            var accName = Properties.Settings.Default.AccountName;
+            if (loginStatus == LoginStatus.UnChecked && accName != null && accName.Length > 0)
+            {
+                try
+                {
+                    CurrentLoginStatus = AccountCheck.checkAccountName(accName);
+                }
+                catch (WebException e)
+                {
+                    CurrentLoginStatus = LoginStatus.NetworkError;
+                }
+            }
 
             var creator = new DataCreator();
             var info = creator.createChallengeDataListFromXml(currentLeague.XmlFilePath);
@@ -151,11 +203,18 @@ namespace WpfPoeChallengeTracker.model
             {
                 item.PropertyChanged += ProgressItemPropertyChanged;
             }
-            if (saveProgressTimer!= null)
+            if (saveProgressTimer != null)
             {
                 saveProgressTimer.Dispose();
             }
             saveProgressTimer = new Timer(saveProgressTimerCallback, null, saveProgressInterval, saveProgressInterval);
+
+            //sync if logged in
+            if (CurrentLoginStatus == LoginStatus.ValidName)
+            {
+                syncProgress();
+            }
+
             IsInitialized = true;
         }
 
@@ -177,6 +236,7 @@ namespace WpfPoeChallengeTracker.model
         public Model()
         {
             IsInitialized = false;
+            loginStatus = LoginStatus.UnChecked;
         }
 
         private void saveProgressTimerCallback(object state)
@@ -200,6 +260,8 @@ namespace WpfPoeChallengeTracker.model
         }
 
         private bool hasChanged = false;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void ProgressItemPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
@@ -311,6 +373,14 @@ namespace WpfPoeChallengeTracker.model
                         subItem.CompletionType = SubChallengeCompletionType.Not;
                     }
                 }
+            }
+        }
+
+        public void NotifyPropertyChanged([CallerMemberName]string propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
     }

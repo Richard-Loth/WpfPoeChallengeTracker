@@ -101,6 +101,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -325,6 +326,16 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Grid Name="StatusBarGrid" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Background="Black" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="loginStatusTextBlock" Grid.Row="0" Grid.Column="0" Foreground="White" Text="{Binding LoginStatusText, Mode=OneWay}" Margin="10,0,0,0" />
+            <TextBlock Name="syncStatusTextBlock" Grid.Row="0" Grid.Column="1" Foreground="White" Text="{Binding SyncStatusText, Mode=OneWay}" Margin="10,0,0,0" />
+        </Grid>
     </Grid>
-
 </Window>

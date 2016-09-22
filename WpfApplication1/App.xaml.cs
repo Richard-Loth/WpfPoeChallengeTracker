@@ -37,11 +37,15 @@ namespace WpfPoeChallengeTracker
             window.Icon = bitmap;
             window.Show();
 
-
+            //var v = AccountCheck.checkAccountName("xGeronimo87x");
+            //Debug.WriteLine(v);
 
 
 
         }
+
+
+
         private async void appInitTimerCallback(object state)
         {
             model.initModel();

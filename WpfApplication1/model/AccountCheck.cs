@@ -51,7 +51,7 @@ namespace WpfPoeChallengeTracker.model
 
         private static bool checkForInvalidName(HtmlDocument document)
         {
-            var node = document.DocumentNode.SelectSingleNode("/html/body/div[1]/div/div[2]/div[2]/h1");
+            var node = document.DocumentNode.SelectSingleNode("/html/body/div[1]/div[2]/div[2]/div[1]/h1");
             if (node != null)
             {
                 var inner = node.InnerHtml.ToLower();
@@ -66,7 +66,7 @@ namespace WpfPoeChallengeTracker.model
         private static bool checkForPrivateProfile(HtmlDocument document)
         {
 
-            var node = document.DocumentNode.SelectSingleNode("/html/body/div[1]/div/div[2]/div[2]/div/div/div[2]/div[3]/div/p/em");
+            var node = document.DocumentNode.SelectSingleNode("/html/body/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/p/em");
             if (node != null)
             {
                 var inner = node.InnerHtml.ToLower();
@@ -80,7 +80,7 @@ namespace WpfPoeChallengeTracker.model
 
         private static bool checkForValidProfile(HtmlDocument document)
         {
-            var node = document.DocumentNode.SelectSingleNode("/html/body/div[1]/div/div[2]/div[2]/div/div/div[2]/div[3]/div/div[2]/h2");
+            var node = document.DocumentNode.SelectSingleNode("/html/body/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[2]/h2");
             if (node != null)
             {
                 var inner = node.InnerHtml.ToLower();

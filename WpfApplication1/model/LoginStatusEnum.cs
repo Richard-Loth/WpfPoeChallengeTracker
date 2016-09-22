@@ -12,7 +12,9 @@ namespace WpfPoeChallengeTracker.model
         InvalidName,
         ValidNamePrivateProfile,
         ValidNamePrivateChallenges,
-        ValidName
+        ValidName,
+        UnChecked,
+        NetworkError
     }
 
    

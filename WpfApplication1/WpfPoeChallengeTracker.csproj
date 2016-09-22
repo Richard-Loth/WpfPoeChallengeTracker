@@ -159,6 +159,7 @@
     <Compile Include="model\persistence\SubChallengeData.cs" />
     <Compile Include="model\persistence\SubChallengeInfo.cs" />
     <Compile Include="model\persistence\SubChallengeProgress.cs" />
+    <Compile Include="model\ProgressSyncer.cs" />
     <Compile Include="model\SaveLoadPersistentData.cs" />
     <Compile Include="model\XmlChallengeReader.cs" />
     <Compile Include="viewmodel\ChallengeView.cs" />
@@ -227,6 +228,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="challengedata\challengeData.Essence.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="challengedata\ChallengeData.Prophecy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

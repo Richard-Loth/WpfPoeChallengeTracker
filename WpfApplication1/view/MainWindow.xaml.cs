@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfPoeChallengeTracker.view;
+using WpfPoeChallengeTracker.model;
 
 namespace WpfPoeChallengeTracker
 {
@@ -232,7 +233,29 @@ namespace WpfPoeChallengeTracker
 
         private void SyncProgressButton_Click(object sender, RoutedEventArgs e)
         {
-           //TODO
+            var syncNow = false;
+            switch (viewmodel.CurrentLoginStatus)
+            {
+                case LoginStatus.NoAccountName:
+                
+                case LoginStatus.InvalidName:
+                
+                case LoginStatus.ValidNamePrivateProfile:
+                  
+                case LoginStatus.ValidNamePrivateChallenges:
+                    EnterAccountNameMenuItem_Click(sender, e);
+                    syncNow = (ViewModel.CurrentLoginStatus == LoginStatus.ValidName);
+                    break;
+                case LoginStatus.ValidName:
+                    syncNow = true;
+                    break;
+                default:
+                    break;
+            }
+            if (syncNow)
+            {
+                viewmodel.syncProgress();
+            }
         }
 
         private void EnterAccountNameMenuItem_Click(object sender, RoutedEventArgs e)
@@ -242,7 +265,7 @@ namespace WpfPoeChallengeTracker
             if (result.Value)
             {
                 ViewModel.AccountName = window.AccountName;
-                ViewModel.CurrentLoginStatus = model.LoginStatus.ValidName;
+                ViewModel.CurrentLoginStatus = LoginStatus.ValidName;
             }
         }
     }

@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
 
 
-        <Label Name="lblQuestion" Grid.Column="0" Foreground="{DynamicResource ChallengeDescriptionBrush}">Please enter your account name</Label>
+        <Label Name="lblQuestion" Grid.Column="0" Foreground="{DynamicResource ChallengeDescriptionBrush}">Please enter your account name to sync your progress </Label>
         <TextBox Grid.Row="1" Grid.Column="0" Name="AccountNameTextBox" TextChanged="AccountNameTextBox_TextChanged" />
         <TextBlock Name="statusTextBlock" Grid.Column="0" Grid.Row="2" Visibility="Hidden"/>
         <WrapPanel Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,15,0,0">

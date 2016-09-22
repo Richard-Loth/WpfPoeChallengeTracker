@@ -137,9 +137,16 @@ namespace ChallengeDataCreator
                     string completiontext = completionNode.InnerHtml.Substring(completionNode.InnerHtml.LastIndexOf('/') + 1);
                     data.NeedForCompletion = Convert.ToInt32(completiontext);
                     var subNodes = node.SelectNodes("div[@class='detail']/span[@class='items']/ul/li");
-                    foreach (var subNode in subNodes)
+                    if (subNodes != null)
                     {
-                        data.SubChallenges.Add(new SubChallengeData(subNode.InnerHtml));
+                        foreach (var subNode in subNodes)
+                        {
+                            data.SubChallenges.Add(new SubChallengeData(subNode.InnerHtml));
+                        }
+                    }
+                    else
+                    {
+                        Debug.WriteLine(data.Name);
                     }
                 }
                 else
@@ -154,18 +161,19 @@ namespace ChallengeDataCreator
         private static List<string> makeLeaguesList()
         {
             var leagues = new List<string>();
-            leagues.Add("Anarchy/Onslaught".Replace("/", "%2F"));
-            leagues.Add("Domination/Nemesis".Replace("/", "%2F"));
-            leagues.Add("Ambush/Invasion".Replace("/", "%2F"));
-            leagues.Add("Rampage/Beyond".Replace("/", "%2F"));
-            leagues.Add("Torment/Bloodlines".Replace("/", "%2F"));
-            leagues.Add("Torment/Bloodlines+1-Month".Replace("/", "%2B"));
-            leagues.Add("Torment/Bloodlines+1-Month+HC".Replace("/", "%2B"));
-            leagues.Add("Warbands/Tempest".Replace("/", "%2F"));
-            leagues.Add("Flashback".Replace("/", "%2F"));
-            leagues.Add("Talisman".Replace("/", "%2F"));
-            leagues.Add("Perandus".Replace("/", "%2F"));
+            //leagues.Add("Anarchy/Onslaught".Replace("/", "%2F"));
+            //leagues.Add("Domination/Nemesis".Replace("/", "%2F"));
+            //leagues.Add("Ambush/Invasion".Replace("/", "%2F"));
+            //leagues.Add("Rampage/Beyond".Replace("/", "%2F"));
+            //leagues.Add("Torment/Bloodlines".Replace("/", "%2F"));
+            //leagues.Add("Torment/Bloodlines+1-Month".Replace("/", "%2B"));
+            //leagues.Add("Torment/Bloodlines+1-Month+HC".Replace("/", "%2B"));
+            //leagues.Add("Warbands/Tempest".Replace("/", "%2F"));
+            //leagues.Add("Flashback".Replace("/", "%2F"));
+            //leagues.Add("Talisman".Replace("/", "%2F"));
+            //leagues.Add("Perandus".Replace("/", "%2F"));
             //leagues.Add("Prophecy".Replace("/", "%2F"));
+            leagues.Add("Essence".Replace("/", "%2F"));
             return leagues;
         }
     }

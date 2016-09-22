@@ -40,13 +40,51 @@ namespace WpfPoeChallengeTracker.viewmodel
             }
         }
 
+
+
+        public string SyncStatusText { get
+            {
+                return model.SyncStatus;
+            }
+        }
+
+
+
+        public string LoginStatusText { get
+            {
+                switch (model.CurrentLoginStatus)
+                {
+                    case LoginStatus.NoAccountName:
+                        return "Not logged in";
+                    case LoginStatus.InvalidName:
+                        return "The specified account name is invalid";
+                    case LoginStatus.ValidNamePrivateProfile:
+                        return "Your profile tab is set to private";
+                    case LoginStatus.ValidNamePrivateChallenges:
+                        return "Your challenges tab is set to private";
+                    case LoginStatus.ValidName:
+                        return "Logged in as " + model.AccountName;
+                    case LoginStatus.NetworkError:
+                        return "A network error occured while logging in";
+                }
+                return "";
+            }
+        }
+
         private ObservableCollection<LeagueView> leagueviews;
 
 
         public string AccountName
         {
             get { return model.AccountName; }
-            set { model.AccountName = value; }
+            set
+            {
+                if (model.AccountName != value)
+                {
+                    model.AccountName = value;
+                    NotifyPropertyChanged();
+                    NotifyPropertyChanged("LoginStatusText");
+                } }
         }
 
         public LoginStatus CurrentLoginStatus
@@ -57,7 +95,12 @@ namespace WpfPoeChallengeTracker.viewmodel
             }
             set
             {
-                model.CurrentLoginStatus = value;
+                if (model.CurrentLoginStatus != value)
+                {
+                    model.CurrentLoginStatus = value;
+                    NotifyPropertyChanged();
+                    NotifyPropertyChanged("LoginStatusText");
+                }
             }
         }
 
@@ -71,6 +114,26 @@ namespace WpfPoeChallengeTracker.viewmodel
             {
                 doAutoSort();
             }
+        }
+
+        private Timer syncProgressTimer;
+
+        public void syncProgress()
+        {
+            if (syncProgressTimer == null)
+            {
+                syncProgressTimer = new Timer(syncProgressTimerCallback, null, 0, Timeout.Infinite);
+            }
+            else
+            {
+                syncProgressTimer.Change(0, Timeout.Infinite);
+            }
+            
+        }
+
+        private void syncProgressTimerCallback(object state)
+        {
+            model.syncProgress();
         }
 
         public void leagueViewClicked(LeagueView view)
@@ -460,6 +523,7 @@ namespace WpfPoeChallengeTracker.viewmodel
                 Remaining.Dispose();
             }
             Remaining = new RemainingCountdown(model);
+
             //everything has changed
             foreach (var item in this.GetType().GetProperties())
             {
@@ -489,8 +553,16 @@ namespace WpfPoeChallengeTracker.viewmodel
             filterText = "";
             TileVisibilityProp = new TileVisibility();
             TileVisibilityProp.IsInitialized = false;
+            model.PropertyChanged += Model_PropertyChanged;
         }
 
+        private void Model_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "SyncStatus")
+            {
+                NotifyPropertyChanged("SyncStatusText");
+            }
+        }
 
         private TileVisibility tileVisibility;
 
@@ -578,9 +650,16 @@ namespace WpfPoeChallengeTracker.viewmodel
                 if (currentData.Type == ChallengeType.Progressable)
                 {
                     int subCount = currentData.SubChallenges.Count;
-                    if (subCount != currentProgress.SubChallengesProgress.Count)
+                    var subProgList = currentProgress.SubChallengesProgress;
+                    while (subCount < subProgList.Count)
                     {
-                        throw new InvalidOperationException(ErrorMessages.SUBPROGRESS_DIFFERENT_SIZE);
+                        subProgList.RemoveAt(subProgList.Count - 1);
+                        //throw new InvalidOperationException(ErrorMessages.SUBPROGRESS_DIFFERENT_SIZE);
+                    }
+                    while (subCount > subProgList.Count)
+                    {
+                        subProgList.Add(new SubChallengeProgress());
+                        //throw new InvalidOperationException(ErrorMessages.SUBPROGRESS_DIFFERENT_SIZE);
                     }
                     for (int j = 0; j < subCount; j++)
                     {
