@@ -37,6 +37,7 @@ namespace WpfPoeChallengeTracker.viewmodel
                         {
                             foreach (var subData in challengeData.SubChallenges)
                             {
+                                
                                 if (appliesToFilter(subData.Description.ToLower()))
                                 {
                                     applies = true;
@@ -73,7 +74,7 @@ namespace WpfPoeChallengeTracker.viewmodel
 
         protected override bool appliesToFilter(string data)
         {
-            return data.Contains(filterString);
+            return data.ToLower().Contains(filterString.ToLower());
         }
     }
 
@@ -87,9 +88,11 @@ namespace WpfPoeChallengeTracker.viewmodel
             if (!noFilter)
             {
                 try
+
                 {
+                    filterString = filterString.Trim().ToLower();
                     var pattern = Regex.Escape(filterstring).Replace(@"\*", ".*").Replace(@"\?", ".");
-                    regex = new Regex(pattern);
+                    regex = new Regex(".*" + pattern.ToLower() + ".*");
                 }
                 catch (Exception)
                 {
@@ -104,7 +107,7 @@ namespace WpfPoeChallengeTracker.viewmodel
             {
                 return true;
             }
-            var match = regex.Match(data);
+            var match = regex.Match(data.ToLower().Trim());
             return match.Success;
         }
     }
