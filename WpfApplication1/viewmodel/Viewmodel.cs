@@ -107,7 +107,7 @@ namespace WpfPoeChallengeTracker.viewmodel
         public void changeCompletedBehaviour(CompletedBehaviour newBehaviour)
         {
             completedBehaviour = newBehaviour;
-            //TODO
+       
             var challengeFilter = new RegexFilter(filterText);
             applyNewChallengeFiltering(challengeFilter, newBehaviour);
             if (newBehaviour == CompletedBehaviour.SORT_TO_END)
@@ -523,6 +523,8 @@ namespace WpfPoeChallengeTracker.viewmodel
                 Remaining.Dispose();
             }
             Remaining = new RemainingCountdown(model);
+
+            applyNewChallengeFiltering(new RegexFilter(""),completedBehaviour);
 
             //everything has changed
             foreach (var item in this.GetType().GetProperties())

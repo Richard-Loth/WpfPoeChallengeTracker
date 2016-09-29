@@ -35,6 +35,7 @@ namespace WpfPoeChallengeTracker
             var uri = new Uri("pack://application:,,,/resources/logo.png");
             var bitmap = BitmapFrame.Create(uri);
             window.Icon = bitmap;
+            
             window.Show();
 
             //var v = AccountCheck.checkAccountName("xGeronimo87x");

@@ -10,6 +10,7 @@
         Title="MainWindow" Height="700" Width="525" MinWidth="500"
         SizeChanged="Window_SizeChanged"
         Closing="Window_Closing"
+        LocationChanged="Window_LocationChanged"
         >
     <Window.Resources>
         <v:WidthCalculationConverter x:Key="WidthCalculator" />

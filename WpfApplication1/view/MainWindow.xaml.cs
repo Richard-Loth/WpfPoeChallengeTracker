@@ -51,7 +51,8 @@ namespace WpfPoeChallengeTracker
             viewmodel.PropertyChanged += Viewmodel_PropertyChanged;
             this.Height = Properties.Settings.Default.WindowHeight;
             this.Width = Properties.Settings.Default.WindowWidth;
-
+            this.Left = Properties.Settings.Default.WindowPositionLeft;
+            this.Top = Properties.Settings.Default.WindowPositionTop;
             switch (Properties.Settings.Default.CompletedChallenges)
             {
                 case CompletedBehaviour.DO_NOTHING:
@@ -66,6 +67,7 @@ namespace WpfPoeChallengeTracker
                 default:
                     break;
             }
+            viewmodel.changeCompletedBehaviour(Properties.Settings.Default.CompletedChallenges);
         }
 
         private void Viewmodel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -266,6 +268,17 @@ namespace WpfPoeChallengeTracker
             {
                 ViewModel.AccountName = window.AccountName;
                 ViewModel.CurrentLoginStatus = LoginStatus.ValidName;
+            }
+        }
+
+        private void Window_LocationChanged(object sender, EventArgs e)
+        {
+
+            if (sender.GetType() == this.GetType())
+            {
+                Window thisWindow = (Window)sender;
+                Properties.Settings.Default.WindowPositionLeft = thisWindow.Left;
+                Properties.Settings.Default.WindowPositionTop = thisWindow.Top;
             }
         }
     }
