@@ -3171,9 +3171,11 @@
           Complete 300 Map boss encounters that result in at least one Map being dropped by the boss. Maps do not have to be allocated to you to count for this challenge.
         </pct:description>
         <pct:type>
-          binary
+          progressableNoSubs
         </pct:type>
-
+        <pct:neededToComplete>
+          300
+        </pct:neededToComplete>
       </pct:challenge>
 
       <pct:challenge>

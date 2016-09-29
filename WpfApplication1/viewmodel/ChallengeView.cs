@@ -38,7 +38,7 @@ namespace WpfPoeChallengeTracker.viewmodel
                 if (isCollapsed != value)
                 {
                     isCollapsed = value;
-                    NotifyPropertyChanged(); 
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -79,25 +79,17 @@ namespace WpfPoeChallengeTracker.viewmodel
         {
             get
             {
-                if (Data.Type == ChallengeType.Binary)
+                switch (Data.Type)
                 {
-                    return "";
+                    case ChallengeType.Binary:
+                        return "";
+                    case ChallengeType.Progressable:
+                    case ChallengeType.ProgressableNoSubs:
+                        return Progress.Progress + "/" + Data.NeedForCompletion;
+                    default:
+                        return "";
                 }
-                if (Data.Type == ChallengeType.Progressable)
-                {
-                    return Progress.Progress + "/" + Data.NeedForCompletion;
-                }
-
-                return "";
             }
-            //private set
-            //{
-            //    if (value != progress)
-            //    {
-            //        progress = value;
-            //        NotifyPropertyChanged("Progress");
-            //    }
-            //}
         }
 
 
@@ -105,13 +97,13 @@ namespace WpfPoeChallengeTracker.viewmodel
         {
             get
             {
-                if (Data.Type == ChallengeType.Binary)
+                switch (Data.Type)
                 {
-                    return Progress.Progress == 1;
-                }
-                if (Data.Type == ChallengeType.Progressable)
-                {
-                    return Progress.Progress >= Data.NeedForCompletion;
+                    case ChallengeType.Binary:
+                        return Progress.Progress == 1;
+                    case ChallengeType.Progressable:
+                    case ChallengeType.ProgressableNoSubs:
+                        return Progress.Progress >= Data.NeedForCompletion;
                 }
                 return false;
             }
@@ -139,7 +131,7 @@ namespace WpfPoeChallengeTracker.viewmodel
         public event PropertyChangedEventHandler PropertyChanged;
         public void NotifyPropertyChanged([CallerMemberName]string propertyName = "")
         {
-             if (PropertyChanged != null)
+            if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }

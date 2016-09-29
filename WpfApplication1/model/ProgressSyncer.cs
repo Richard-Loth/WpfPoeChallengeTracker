@@ -29,10 +29,10 @@ namespace WpfPoeChallengeTracker.model
             foreach (var node in challengeNodes)
             {
                 progressIndex++;
-                var subChallengeProgress = progressList.ElementAt(progressIndex);
+                var challengeProgress = progressList.ElementAt(progressIndex);
                 var cssClass = node.Attributes["class"];
                 var subNodes = node.SelectNodes("div/span[2]/ul/li");
-                switch (subChallengeProgress.Type)
+                switch (challengeProgress.Type)
                 {
 
                     case ChallengeType.Binary:
@@ -40,7 +40,7 @@ namespace WpfPoeChallengeTracker.model
                         {
                             Debug.WriteLine("Fehler: Gibt Unterknoten in binary challenge:" + node.SelectSingleNode("h2").InnerHtml);
                         }
-                        subChallengeProgress.IsDone = !cssClass.Value.Contains("incomplete");
+                        challengeProgress.IsDone = !cssClass.Value.Contains("incomplete");
                         break;
                     case ChallengeType.Progressable:
                         if (subNodes == null)
@@ -55,13 +55,24 @@ namespace WpfPoeChallengeTracker.model
                                 subIndex++;
                                 var subCssClass = subNode.Attributes["class"];
                                 var completion = subCssClass.Value.Contains("finished") ? SubChallengeCompletionType.Auto : SubChallengeCompletionType.Not;
-                                subChallengeProgress.SubChallengesProgress.ElementAt(subIndex).CompletionType = completion;
+                                challengeProgress.SubChallengesProgress.ElementAt(subIndex).CompletionType = completion;
                             }
+                        }
+                        break;
+                    case ChallengeType.ProgressableNoSubs:
+                        if (subNodes != null)
+                        {
+                            Debug.WriteLine("Fehler: Gibt  Unterknoten in progressableNoSubs challenge:" + node.SelectSingleNode("h2").InnerHtml);
+                        }
+                        var incompleteNode = node.SelectSingleNode("h2[2]/span");
+                        if (incompleteNode != null)
+                        {
+                            var incompleteString = incompleteNode.InnerHtml;
+                            challengeProgress.Progress = Convert.ToInt32(incompleteString); 
                         }
                         break;
                 }
             }
-
         }
     }
 }

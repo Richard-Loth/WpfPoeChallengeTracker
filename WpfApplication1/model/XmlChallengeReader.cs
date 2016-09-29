@@ -26,6 +26,7 @@ namespace WpfPoeChallengeTracker.model
         const string TYPE = "type";
         const string BINARY = "binary";
         const string PROGRESSABLE = "progressable";
+        const string PROGRESSABLE_NO_SUBS = "progressableNoSubs";
         const string NEEDED_TO_COMPLETE = "neededToComplete";
         const string SUBCHALLENGE = "subchallenge";
         const string INFO = "info";
@@ -184,6 +185,11 @@ namespace WpfPoeChallengeTracker.model
                                     challengeData.Type = ChallengeType.Progressable;
                                     continue;
                                 }
+                                if (type == PROGRESSABLE_NO_SUBS)
+                                {
+                                    challengeData.Type = ChallengeType.ProgressableNoSubs;
+                                    continue;
+                                }
                                 throw new InvalidOperationException("Encountered unknown challenge type during processing " + xmlPath);
                             }
                             if (insideNeedForCompletion)
@@ -203,7 +209,7 @@ namespace WpfPoeChallengeTracker.model
                                 {
                                     var generatedInfo = new SubChallengeInfo();
                                     generatedInfo.Text = "Wiki";
-                                    generatedInfo.UrlAsString = WIKI_BASE_URL +  subName.Replace(" ", "_");
+                                    generatedInfo.UrlAsString = WIKI_BASE_URL + subName.Replace(" ", "_");
                                     subChallengeData.Infos.Add(generatedInfo);
                                 }
                             }

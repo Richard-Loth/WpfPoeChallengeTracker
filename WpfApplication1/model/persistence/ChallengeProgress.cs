@@ -11,25 +11,43 @@ namespace WpfPoeChallengeTracker.model
 {
     public class ChallengeProgress : INotifyPropertyChanged
     {
+        //only for ProgressableNoSubs challenges
+        private int progress;
+
         public int Progress
         {
             get
             {
-                if (type == ChallengeType.Binary)
+                switch (type)
                 {
-                    return isDone ? 1 : 0;
+                    case ChallengeType.Binary:
+                        return isDone ? 1 : 0;
+                    case ChallengeType.Progressable:
+                        var completedSubs = 0;
+                        foreach (var subProgress in subChallengesProgress)
+                        {
+                            if (subProgress.CompletionType != SubChallengeCompletionType.Not)
+                            {
+                                completedSubs++;
+                            }
+                        }
+                        return completedSubs;
+                    case ChallengeType.ProgressableNoSubs:
+                        return progress;
                 }
-                var progress = 0;
-                foreach (var subProgress in subChallengesProgress)
+                return 0;
+            }
+
+            set
+            {
+                if (progress!= value)
                 {
-                    if (subProgress.CompletionType != SubChallengeCompletionType.Not)
-                    {
-                        progress++;
-                    }
+                    progress = value;
+                    NotifyPropertyChanged();
                 }
-                return progress;
             }
         }
+        
 
 
         private List<SubChallengeProgress> subChallengesProgress;
@@ -77,7 +95,7 @@ namespace WpfPoeChallengeTracker.model
             get { return type; }
             set { type = value; }
         }
-            
+
         private bool isDone;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -94,8 +112,11 @@ namespace WpfPoeChallengeTracker.model
             get { return isDone; }
             set
             {
-                isDone = value;
-                NotifyPropertyChanged("IsDone");
+                if (isDone != value)
+                {
+                    isDone = value;
+                    NotifyPropertyChanged(); 
+                }
             }
         }
 
@@ -115,7 +136,9 @@ namespace WpfPoeChallengeTracker.model
                 case ChallengeType.Progressable:
                     subChallengesProgress = new List<SubChallengeProgress>();
                     break;
-                default:
+                case ChallengeType.ProgressableNoSubs:
+                    isDone = false;
+                    progress = 0;
                     break;
             }
         }

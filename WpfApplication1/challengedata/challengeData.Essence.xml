@@ -301,7 +301,8 @@
       <pct:challenge>
         <pct:name>Kill 40 Monsters Bearing Silver</pct:name>
         <pct:description>Kill 40 monsters that are carrying Silver Coins.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>progressableNoSubs</pct:type>
+        <pct:neededToComplete>40</pct:neededToComplete>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Claim these Essences</pct:name>
