@@ -188,14 +188,13 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"  Text="Completed challenges:" Margin="5,0" RenderTransformOrigin="0.5,0.5" Foreground="{DynamicResource ChallengeDescriptionBrush}" />
-                <ComboBox Name="completedChallengesCombobox" SelectionChanged="completedChallengesCombobox_SelectionChanged" Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Width="95" VerticalAlignment="Center"  >
+                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"  Text="Completed challenges:" Margin="5,0"  Foreground="{DynamicResource ChallengeDescriptionBrush}" />
+                <ComboBox Name="completedChallengesCombobox" SelectionChanged="completedChallengesCombobox_SelectionChanged" Grid.Row="0" Grid.Column="1" Margin="0,5,10,0" Width="95" VerticalAlignment="Center"  >
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Do nothing" />
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Sort to end"   />
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Hide" />

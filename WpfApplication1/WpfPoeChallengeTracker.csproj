@@ -242,6 +242,9 @@
     <Content Include="challengedata\ChallengeData.Prophecy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="resources\challenge tracker how to.png">
+      <Generator>http://imgur.com/a/k1fcd</Generator>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="resources\logo.png">

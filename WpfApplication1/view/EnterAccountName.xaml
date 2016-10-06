@@ -18,13 +18,21 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
 
-        <Label Name="lblQuestion" Grid.Column="0" Foreground="{DynamicResource ChallengeDescriptionBrush}">Please enter your account name to sync your progress. </Label>
-        <TextBox Grid.Row="1" Grid.Column="0" Name="AccountNameTextBox" TextChanged="AccountNameTextBox_TextChanged" />
-        <TextBlock Name="statusTextBlock" Grid.Column="0" Grid.Row="2" Visibility="Hidden"/>
-        <WrapPanel Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,15,0,0">
+        <Label Name="lblQuestion" Grid.Column="0" Grid.Row="0" Foreground="{DynamicResource ChallengeDescriptionBrush}">Please enter your account name to sync your progress. </Label>
+        <TextBlock Name="TutorialLinkTextBlock" Grid.Column="0" Grid.Row="1"  Foreground="{StaticResource ChallengeDescriptionBrush}" VerticalAlignment="Center" Width="Auto" Margin="0,0,0,5">
+        																	<Span>
+        																		<Hyperlink NavigateUri="http://imgur.com/a/k1fcd" RequestNavigate="Hyperlink_RequestNavigate">
+        																			<Run Text="Click here to learn how to prepare your account"/>
+        																		</Hyperlink>  
+        																	</Span>
+        </TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="0" Name="AccountNameTextBox" TextChanged="AccountNameTextBox_TextChanged" />
+        <TextBlock Name="statusTextBlock" Grid.Column="0" Grid.Row="3" Visibility="Hidden"/>
+        <WrapPanel Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,15,0,0">
             <Button IsDefault="True" Name="OkButton" Click="OkButton_Click" MinWidth="60" Margin="0,0,10,0" IsEnabled="False">_Ok</Button>
             <Button Name="CheckButton" Content="Check" Click="CheckButton_Click" MinWidth="60" Margin="0,0,10,0" IsEnabled="True"></Button>
             <Button IsCancel="True" MinWidth="60">_Cancel</Button>
