@@ -170,7 +170,14 @@
     <Compile Include="viewmodel\SubChallengeView.cs" />
     <Compile Include="viewmodel\TileVisibility.cs" />
     <Compile Include="viewmodel\Viewmodel.cs" />
+    <Compile Include="view\BuyMessageWindow.xaml.cs">
+      <DependentUpon>BuyMessageWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\Converter.cs" />
+    <Page Include="view\BuyMessageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\EnterAccountName.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

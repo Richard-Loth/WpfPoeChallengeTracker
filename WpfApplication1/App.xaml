@@ -15,5 +15,6 @@
 
         <SolidColorBrush x:Key="ChallengeDescriptionBrush" Color="#FFEEA327" />
         <SolidColorBrush x:Key="ChallengeStackBorder" Color="#FF3B285F" />
+        <Thickness x:Key="PoeCtBorderThickness">2</Thickness>
     </Application.Resources>
 </Application>

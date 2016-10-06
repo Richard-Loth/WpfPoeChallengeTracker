@@ -16,7 +16,8 @@ namespace WpfPoeChallengeTracker.view
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var d2 = System.Convert.ToDouble(parameter);
-            return (double)value + d2;
+            var resultingWidth = (double)value + d2;
+            return resultingWidth > 10 ? resultingWidth : 10;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

@@ -235,17 +235,29 @@ namespace WpfPoeChallengeTracker
 
         private void SyncProgressButton_Click(object sender, RoutedEventArgs e)
         {
+            startSyncProgress();
+        }
+
+        private void SyncProgressMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            startSyncProgress();
+        }
+
+        private void startSyncProgress()
+        {
             var syncNow = false;
             switch (viewmodel.CurrentLoginStatus)
             {
                 case LoginStatus.NoAccountName:
-                
+
                 case LoginStatus.InvalidName:
-                
+
                 case LoginStatus.ValidNamePrivateProfile:
-                  
+
                 case LoginStatus.ValidNamePrivateChallenges:
-                    EnterAccountNameMenuItem_Click(sender, e);
+
+                case LoginStatus.NetworkError:
+                    EnterAccountNameMenuItem_Click(null, null);
                     syncNow = (ViewModel.CurrentLoginStatus == LoginStatus.ValidName);
                     break;
                 case LoginStatus.ValidName:
@@ -280,6 +292,23 @@ namespace WpfPoeChallengeTracker
                 Properties.Settings.Default.WindowPositionLeft = thisWindow.Left;
                 Properties.Settings.Default.WindowPositionTop = thisWindow.Top;
             }
+        }
+
+        private void OpenWTBMessageWindowMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            openChatMessageCreateWindow();
+        }
+
+        private void CreateChatMessageButton_Click(object sender, RoutedEventArgs e)
+        {
+            openChatMessageCreateWindow();
+        }
+
+        private void openChatMessageCreateWindow()
+        {
+            var window = new BuyMessageWindow();
+            window.MissingChallenges = viewmodel.ChallengeViews.Where(challengeView => !challengeView.IsDone).ToList();
+            window.ShowDialog();
         }
     }
 }

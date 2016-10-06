@@ -22,7 +22,7 @@
         <v:IsDoneToTextConverter x:Key="IsDoneToTextConverter" />
         <v:ChallengeIsDoneToCheckColorConverter x:Key="ChallengeIsDoneToCheckColorConverter"/>
         
-        <Thickness x:Key="PanelBorderThickness">2</Thickness>
+       
         <Thickness x:Key="TileMargin" Left="5" Right="5" Bottom="5" Top="0"></Thickness>
         <Style  x:Key="ButtonmenuStyle"
     TargetType="Button">
@@ -111,7 +111,9 @@
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" IsMainMenu="True" Style="{StaticResource MenuStyle}">
             <MenuItem Header="File" Style="{StaticResource MenuItemStyle}">
                 <MenuItem Name="EnterAccountNameMenuItem" Header="Enter Account Name" Style="{StaticResource MenuSubItemStyle}" Click="EnterAccountNameMenuItem_Click" />
-                <MenuItem Header="Reset Progress" Style="{StaticResource MenuSubItemStyle}" Click="resetButton_Click"/>
+                <MenuItem Name="SyncProgressMenuItem" Header="Synchronise Progress" Style="{StaticResource MenuSubItemStyle}" Click="SyncProgressMenuItem_Click"/>
+                <MenuItem Name="ResetButton" Header="Reset Progress" Style="{StaticResource MenuSubItemStyle}" Click="resetButton_Click" IsEnabled="{Binding IsInitialized}" />
+                <MenuItem Name="OpenWTBMessageWindowMenuItem" Header="Create Chat Message" Style="{StaticResource MenuSubItemStyle}" Click="OpenWTBMessageWindowMenuItem_Click" IsEnabled="{Binding IsInitialized}"/>
                 <Separator />
                 <MenuItem Header="Exit" Style="{StaticResource MenuSubItemStyle}" Click="MenuItemExit_Click"/>
             </MenuItem>
@@ -140,7 +142,7 @@
         </Menu>
 
         <TextBlock Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource ReverseBoolVisibilityConverter}}" HorizontalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"  Text="Loading challenge data and progress"   Foreground="{StaticResource ChallengeDescriptionBrush}" />
-        <Border MaxWidth="500" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="2" BorderBrush="{DynamicResource ChallengeStackBorder}" Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsStatusVisible}" >
+        <Border MaxWidth="500" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="{DynamicResource PoeCtBorderThickness}" BorderBrush="{DynamicResource ChallengeStackBorder}" Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsStatusVisible}" >
             <Grid x:Name="statusGrid"  Background="{DynamicResource InsideChallengeBackgrundBrush}"  >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -152,8 +154,7 @@
                 <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
                     <TextBlock Text="{Binding LeagueName}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
                     <TextBlock Name="CountCompletedTextBlock" Text="{Binding CountCompleted}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
-                    <Button Name="SyncProgressButton" Click="SyncProgressButton_Click" Content="Sync Progress"  Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" Width="{Binding ActualWidth, ConverterParameter=0, Converter={StaticResource WidthCalculator}, ElementName=CountCompletedTextBlock, Mode=OneWay}" />
-                </StackPanel>
+                 </StackPanel>
                 <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding Remaining.IsLeagueOver, Converter={StaticResource BoolVisibilityConverter}}" Text="League is over" Foreground="{DynamicResource ChallengeDescriptionBrush}" />
                 <Grid Grid.Column="1" Width="Auto" Margin="20,0,0,0" HorizontalAlignment="Stretch" Visibility="{Binding Remaining.IsLeagueOver, Converter={StaticResource ReverseBoolVisibilityConverter}}">
                     <Grid.RowDefinitions>
@@ -180,10 +181,11 @@
                 </Grid>
             </Grid>
         </Border>
-        <Border MaxWidth="500" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Visibility="{Binding TileVisibilityProp.IsOptionsVisible}" BorderBrush="{DynamicResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Margin="{DynamicResource TileMargin}" >
+        <Border MaxWidth="500" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Visibility="{Binding TileVisibilityProp.IsOptionsVisible}" BorderBrush="{DynamicResource ChallengeStackBorder}" BorderThickness="{DynamicResource PoeCtBorderThickness}" Margin="{DynamicResource TileMargin}" >
             <Grid x:Name="optionsGrid" Background="{StaticResource InsideChallengeBackgrundBrush}" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
 
@@ -193,17 +195,23 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"  Text="Completed challenges:" Margin="5,0" RenderTransformOrigin="0.5,0.5" Foreground="{DynamicResource ChallengeDescriptionBrush}" />
-                <ComboBox Name="completedChallengesCombobox" SelectionChanged="completedChallengesCombobox_SelectionChanged" Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Width="85" VerticalAlignment="Center" FontSize="11" Background="{DynamicResource InsideChallengeBackgrundBrush}" Foreground="{DynamicResource ChallengeDescriptionBrush}">
+                <ComboBox Name="completedChallengesCombobox" SelectionChanged="completedChallengesCombobox_SelectionChanged" Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Width="95" VerticalAlignment="Center"  >
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Do nothing" />
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Sort to end"   />
                     <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}" Content="Hide" />
                 </ComboBox>
                 <TextBlock Grid.Row="0" Grid.Column="2" Text="Filter:" VerticalAlignment="Center" Foreground="{StaticResource ChallengeDescriptionBrush}" Margin="0,0,5,0"/>
-                <TextBox Grid.Row="0" Grid.Column="3" x:Name="filterTextBox"  HorizontalAlignment="Stretch" Margin="0" TextChanged="filterTextBox_TextChanged" VerticalAlignment="Center"  />
+                <TextBox Grid.Row="0" Grid.Column="3" x:Name="filterTextBox"  HorizontalAlignment="Stretch" Margin="5,0" TextChanged="filterTextBox_TextChanged" VerticalAlignment="Center"  />
+                <WrapPanel Name="ButtonsWrapPanel" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1" Margin="0,5" HorizontalAlignment="Center">
+                    <Button Name="SyncProgressButton" Click="SyncProgressButton_Click" Content="Synchronize Progress" HorizontalAlignment="Center" Margin="5,0"  />
+                    <Button Name="CreateChatMessageButton" Content="Create Chat Message" Click="CreateChatMessageButton_Click" Margin="5,0" />
+                    <Button Name="CollapseAllButton" Margin="5,0" Content="Collapse All" Click="collapseAllButton_Click"/>
+                    <Button x:Name="UncollapseAllButton" Content="Uncollapse All" Margin="5,0" Click="unCollapseAllButton_Click"/>
+                </WrapPanel>
             </Grid>
 
         </Border>
-        <ListView ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  PreviewMouseWheel="challengesListview_PreviewMouseWheel"   Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PanelBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
+        <ListView ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  PreviewMouseWheel="challengesListview_PreviewMouseWheel"   Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PoeCtBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
 
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
