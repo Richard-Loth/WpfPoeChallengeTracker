@@ -58,7 +58,7 @@ namespace WpfPoeChallengeTracker.model
 
         private static string getSavePath()
         {
-            return System.AppDomain.CurrentDomain.BaseDirectory + "\\save";
+            return System.AppDomain.CurrentDomain.BaseDirectory + "\\save V1.0";
         }
 
         public static ProgressOrderContainer loadData(string leaguename)

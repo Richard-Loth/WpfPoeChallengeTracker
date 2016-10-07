@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPoeChallengeTracker", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeDataCreator", "ChallengeDataCreator\ChallengeDataCreator.csproj", "{91DC3497-9ADA-4DAD-BDFC-2018CF6BE453}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ACCE7999-27BC-4769-9223-A62D11C1E1CD}"
+	ProjectSection(SolutionItems) = preProject
+		Tasklist.txt = Tasklist.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
