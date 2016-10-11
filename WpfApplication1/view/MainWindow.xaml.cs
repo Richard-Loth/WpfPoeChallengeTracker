@@ -310,5 +310,11 @@ namespace WpfPoeChallengeTracker
             window.MissingChallenges = viewmodel.ChallengeViews.Where(challengeView => !challengeView.IsDone).ToList();
             window.ShowDialog();
         }
+
+        private void AboutMenuSubItem_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new AboutDialog();
+            window.ShowDialog();
+        }
     }
 }

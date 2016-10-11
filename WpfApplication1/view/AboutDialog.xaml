@@ -1,0 +1,105 @@
+﻿<Window x:Class="WpfPoeChallengeTracker.view.AboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPoeChallengeTracker.view"
+        xmlns:v="clr-namespace:WpfPoeChallengeTracker.view"
+             xmlns:vm="using:Poe_Challenge_Tracker.viewmodel"
+        mc:Ignorable="d"
+        Title="About"  
+        Background="{StaticResource OverallBackgroundBrush}" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <v:WidthCalculationConverter x:Key="WidthCalculator" />
+        <Style x:Key="NoChromeButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="Chrome" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                                <Setter Property="Opacity" TargetName="Chrome" Value="0.5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Name="OverallGrid" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column=" 0" Grid.ColumnSpan="2" Text="About Poe Challenge Tracker" Foreground="{StaticResource ChallengeHeaderForeground}" FontSize="20" Margin="0,0,0,20" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Author:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Richard Loth" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Contact:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="r.loth@web.de" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Version:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="1.0" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Links:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock  Grid.Column="1" Grid.Row="4"  Foreground="{StaticResource ChallengeHeaderForeground}" Margin="0,0,0,15">
+             <Span>
+        																	<Hyperlink NavigateUri="https://www.pathofexile.com/forum/view-thread/1702728" RequestNavigate="Hyperlink_RequestNavigate">
+        																			<Run Text="Official Forum Thread"/>
+        																		</Hyperlink>  
+        																	</Span>
+        																	<Span>
+        																		<Hyperlink NavigateUri="https://github.com/Richard-Loth/WpfPoeChallengeTracker" RequestNavigate="Hyperlink_RequestNavigate">
+        																			<Run Text="Source on Github"/>
+        																		</Hyperlink>  
+        																	</Span>
+           
+        </TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Buy me a Beer:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="5" Grid.Column="1" TextWrapping="Wrap"
+                   Width="{Binding ActualWidth, ConverterParameter=-100, Converter={StaticResource WidthCalculator}, ElementName=OverallGrid, Mode=OneWay}"
+                   Text="If you want to support the development of this application or simply say thanks for it, I would appreciate it
+if you make a small donation by using the button below. However, this application will stay free and you get no benefits by doing so." Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <Button Grid.Row="6" Grid.Column="1" Style="{StaticResource NoChromeButton}" Click="DonateButton_Click" Cursor="Hand" Margin="0,5,0,15" HorizontalAlignment="Center" >
+            <Image Source="/WpfPoeChallengeTracker;component/resources/paypalDonateButton.png" Stretch="None"/>
+        </Button>
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Legal:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="7" Grid.Column="1"  TextWrapping="Wrap"
+                    Width="{Binding ActualWidth, ConverterParameter=-100, Converter={StaticResource WidthCalculator}, ElementName=OverallGrid, Mode=OneWay}"
+                   Foreground="{DynamicResource ChallengeHeaderForeground}" >
+            <Span>Parts of this application use software licensed under the </Span>
+<Span>
+        																		<Hyperlink NavigateUri="https://msdn.microsoft.com/en-us/library/ff647676.aspx" RequestNavigate="Hyperlink_RequestNavigate">
+        																			<Run Text="Microsoft Public License"/>
+        																		</Hyperlink>  
+        																	</Span>
+            <Span>.</Span>
+        </TextBlock>
+        <TextBlock Margin="0,10,0,0" Grid.Row="8" Grid.Column="1" Text="No animals were harmed during the development of this application."  TextWrapping="Wrap"
+                   Foreground="{DynamicResource ChallengeHeaderForeground}"
+                   Width="{Binding ActualWidth, ConverterParameter=-100, Converter={StaticResource WidthCalculator}, ElementName=OverallGrid, Mode=OneWay}" />
+
+        <Button Name="CloseButton" Content="OK" IsCancel="True" Grid.Row="9" Grid.Column="1"  HorizontalAlignment="Right" Margin="15,5,15,0" Width="60" />
+
+    </Grid>
+</Window>

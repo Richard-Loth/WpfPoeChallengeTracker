@@ -139,6 +139,9 @@
                     </Style>
                 </MenuItem.Resources>
             </MenuItem>
+            <MenuItem Name="HelpMenuItem" Header="Help" Style="{StaticResource MenuItemStyle}" >
+                <MenuItem Name="AboutMenuSubItem" Header="About"  Style="{StaticResource MenuSubItemStyle}" Click="AboutMenuSubItem_Click" />
+            </MenuItem>
         </Menu>
 
         <TextBlock Visibility="{Binding IsInitialized, Mode=OneWay, Converter={StaticResource ReverseBoolVisibilityConverter}}" HorizontalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"  Text="Loading challenge data and progress"   Foreground="{StaticResource ChallengeDescriptionBrush}" />
