@@ -79,7 +79,7 @@ namespace WpfPoeChallengeTracker.model
             availableLeagues = new List<League>();
             var challengeDir = System.AppDomain.CurrentDomain.BaseDirectory + "\\challengeData";
             var dirInfo = new DirectoryInfo(challengeDir);
-            FileInfo[] info = dirInfo.GetFiles("challengeData.*.xml", SearchOption.TopDirectoryOnly);
+            FileInfo[] info = dirInfo.GetFiles("challengeData??.*.xml", SearchOption.TopDirectoryOnly);
             foreach (var item in info)
             {
                 string xmlPath = item.FullName;

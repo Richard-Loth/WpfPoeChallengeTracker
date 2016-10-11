@@ -242,11 +242,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="challengedata\challengeData.Essence.xml">
+    <Content Include="challengedata\challengeData13.Essence.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="challengedata\ChallengeData.Prophecy.xml">
+    <Content Include="challengedata\ChallengeData12.Prophecy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Resource Include="resources\paypalDonateButton.png">
@@ -267,39 +267,39 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="challengedata\challengeData.Ambush-Invasion.xml">
+    <Content Include="challengedata\challengeData03.Ambush-Invasion.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Domination-Nemesis.xml">
+    <Content Include="challengedata\challengeData02.Domination-Nemesis.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Flashback.xml">
+    <Content Include="challengedata\challengeData09.Flashback.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Perandus.xml">
+    <Content Include="challengedata\challengeData11.Perandus.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Rampage-Beyond.xml">
+    <Content Include="challengedata\challengeData04.Rampage-Beyond.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Talisman.xml">
+    <Content Include="challengedata\challengeData10.Talisman.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Torment-Bloodlines 1-Month+HC.xml">
+    <Content Include="challengedata\challengeData07.Torment-Bloodlines 1-Month+HC.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Torment-Bloodlines 1-Month.xml">
+    <Content Include="challengedata\challengeData06.Torment-Bloodlines 1-Month.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Torment-Bloodlines.xml">
+    <Content Include="challengedata\challengeData05.Torment-Bloodlines.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="challengedata\challengeData.Warbands-Tempest.xml">
+    <Content Include="challengedata\challengeData08.Warbands-Tempest.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="challengedata\challengeData.Anarchy-Onslaught.xml">
+    <Content Include="challengedata\challengeData01.Anarchy-Onslaught.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
