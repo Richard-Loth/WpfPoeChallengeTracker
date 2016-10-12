@@ -30,14 +30,30 @@ namespace WpfPoeChallengeTracker.viewmodel
         {
             get
             {
-                return (Progress.CompletionType == SubChallengeCompletionType.Auto)
-                  || (Progress.CompletionType == SubChallengeCompletionType.Manual);
+                if (Progress.CurrentCompletion == SubChallengeCompletionType.Auto
+                    || Progress.CurrentCompletion == SubChallengeCompletionType.Manual)
+                {
+                    return true;
+                }
+                if (Data.IsProgressable)
+                {
+                    return Progress.CurrentProgress >= Data.NeededToComplete;
+                }
+                return false;
             }
         }
 
         public string Description
         {
-            get { return Data.Description; }
+            get
+            {
+                var result = Data.Description;
+                if (data.IsProgressable)
+                {
+                    result += " (" + progress.CurrentProgress + "/" + data.NeededToComplete + ")";
+                }
+                return result;
+            }
         }
 
         private List<SubChallengeInfoView> infoViews;
@@ -67,6 +83,10 @@ namespace WpfPoeChallengeTracker.viewmodel
         private void Progress_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             NotifyPropertyChanged("IsDone");
+            if (data.IsProgressable)
+            {
+                NotifyPropertyChanged("Description");
+            }
         }
     }
 }

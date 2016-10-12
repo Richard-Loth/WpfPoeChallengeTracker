@@ -563,7 +563,8 @@
           <pct:name>Kill Igna Phoenix</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Kill Monsters touched by Tormented Spirits (19/500)</pct:name>
+          <pct:name>Kill Monsters touched by Tormented Spirits</pct:name>
+          <pct:neededToCompleteSub>500</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Open a Cartographer's Strongbox</pct:name>
@@ -1007,19 +1008,24 @@
         <pct:type>progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>Atziri, Queen of the Vaal (0/100)</pct:name>
+          <pct:name>Atziri, Queen of the Vaal</pct:name>
+          <pct:neededToCompleteSub>100</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Izaro in the Endgame Labyrinth (0/60)</pct:name>
+          <pct:name>Izaro in the Endgame Labyrinth</pct:name>
+          <pct:neededToCompleteSub>60</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Eater of Souls (0/30)</pct:name>
+          <pct:name>Eater of Souls</pct:name>
+          <pct:neededToCompleteSub>30</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>The Cursed King (0/30)</pct:name>
+          <pct:name>The Cursed King</pct:name>
+          <pct:neededToCompleteSub>30</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Any Vaal Temple Boss (0/12)</pct:name>
+          <pct:name>Any Vaal Temple Boss</pct:name>
+          <pct:neededToCompleteSub>12</pct:neededToCompleteSub>
         </pct:subchallenge>
       </pct:challenge>
     </pct:challenges>

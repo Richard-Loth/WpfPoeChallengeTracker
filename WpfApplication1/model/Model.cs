@@ -306,14 +306,14 @@ namespace WpfPoeChallengeTracker.model
             {
                 return;
             }
-            switch (progress.CompletionType)
+            switch (progress.CurrentCompletion)
             {
                 case SubChallengeCompletionType.Not:
-                    progress.CompletionType = SubChallengeCompletionType.Manual;
+                    progress.CurrentCompletion = SubChallengeCompletionType.Manual;
                     break;
                 case SubChallengeCompletionType.Auto:
                 case SubChallengeCompletionType.Manual:
-                    progress.CompletionType = SubChallengeCompletionType.Not;
+                    progress.CurrentCompletion = SubChallengeCompletionType.Not;
                     break;
             }
             hasChanged = true;
@@ -331,7 +331,7 @@ namespace WpfPoeChallengeTracker.model
                     var currentProgress = 0;
                     foreach (var item in progress.SubChallengesProgress)
                     {
-                        if (item.CompletionType != SubChallengeCompletionType.Not)
+                        if (item.CurrentCompletion != SubChallengeCompletionType.Not)
                         {
                             currentProgress++;
                         }
@@ -340,9 +340,9 @@ namespace WpfPoeChallengeTracker.model
                     if (currentProgress >= data.NeedForCompletion)
                     {
                         //Need to uncomplete subs
-                        foreach (var item in progress.SubChallengesProgress.Where(x => x.CompletionType == SubChallengeCompletionType.Auto))
+                        foreach (var item in progress.SubChallengesProgress.Where(x => x.CurrentCompletion == SubChallengeCompletionType.Auto))
                         {
-                            item.CompletionType = SubChallengeCompletionType.Not;
+                            item.CurrentCompletion = SubChallengeCompletionType.Not;
                         }
                     }
                     else
@@ -350,9 +350,9 @@ namespace WpfPoeChallengeTracker.model
                         //Need to complete subs
                         foreach (var item in progress.SubChallengesProgress)
                         {
-                            if (currentProgress < data.NeedForCompletion && item.CompletionType == SubChallengeCompletionType.Not)
+                            if (currentProgress < data.NeedForCompletion && item.CurrentCompletion == SubChallengeCompletionType.Not)
                             {
-                                item.CompletionType = SubChallengeCompletionType.Auto;
+                                item.CurrentCompletion = SubChallengeCompletionType.Auto;
                                 currentProgress++;
                             }
                         }
@@ -371,7 +371,7 @@ namespace WpfPoeChallengeTracker.model
                 {
                     foreach (var subItem in item.SubChallengesProgress)
                     {
-                        subItem.CompletionType = SubChallengeCompletionType.Not;
+                        subItem.CurrentCompletion = SubChallengeCompletionType.Not;
                     }
                 }
             }

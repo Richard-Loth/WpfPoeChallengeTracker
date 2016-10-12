@@ -26,7 +26,7 @@ namespace WpfPoeChallengeTracker.model
                         var completedSubs = 0;
                         foreach (var subProgress in subChallengesProgress)
                         {
-                            if (subProgress.CompletionType != SubChallengeCompletionType.Not)
+                            if (subProgress.CurrentCompletion != SubChallengeCompletionType.Not)
                             {
                                 completedSubs++;
                             }

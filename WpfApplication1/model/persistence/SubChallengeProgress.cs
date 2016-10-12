@@ -7,7 +7,7 @@ namespace WpfPoeChallengeTracker.model
     {
         private SubChallengeCompletionType completionType;
 
-        public SubChallengeCompletionType CompletionType
+        public SubChallengeCompletionType CurrentCompletion
         {
             get { return completionType; }
             set
@@ -23,9 +23,25 @@ namespace WpfPoeChallengeTracker.model
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private int progress;
+
+        public int CurrentProgress
+        {
+            get { return progress; }
+            set
+            {
+                if (progress != value)
+                {
+                    progress = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Progress"));
+                }
+            }
+        }
+
+
         public SubChallengeProgress()
         {
-            
+            progress = 0;
         }
     }
 }

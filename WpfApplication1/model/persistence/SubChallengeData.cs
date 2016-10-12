@@ -32,5 +32,21 @@ namespace WpfPoeChallengeTracker.model
         {
 
         }
+
+        private bool isProgressable;
+
+        public bool IsProgressable
+        {
+            get { return isProgressable; }
+            set { isProgressable = value; }
+        }
+
+        private int neededToComplete;
+
+        public int NeededToComplete
+        {
+            get { return neededToComplete; }
+            set { neededToComplete = value; }
+        }
     }
 }

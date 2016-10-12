@@ -28,6 +28,7 @@ namespace WpfPoeChallengeTracker.model
         const string PROGRESSABLE = "progressable";
         const string PROGRESSABLE_NO_SUBS = "progressableNoSubs";
         const string NEEDED_TO_COMPLETE = "neededToComplete";
+        const string NEEDED_TO_COMPLETE_SUB = "neededToCompleteSub";
         const string SUBCHALLENGE = "subchallenge";
         const string INFO = "info";
         const string TEXT = "text";
@@ -57,6 +58,7 @@ namespace WpfPoeChallengeTracker.model
             bool insideDescription = false;
             bool insideType = false;
             bool insideNeedForCompletion = false;
+            bool insideNeedForCompletionSub = false;
             bool insideInfoText = false;
             bool insideInfoUrl = false;
             ChallengeData challengeData = null;
@@ -120,6 +122,7 @@ namespace WpfPoeChallengeTracker.model
                         if (insideSingleChallenge && insideSubChallenge && !insideInfo)
                         {
                             insideName = element == NAME;
+                            insideNeedForCompletionSub = element == NEEDED_TO_COMPLETE_SUB;
                             if (element == INFO)
                             {
                                 insideInfo = true;
@@ -204,14 +207,18 @@ namespace WpfPoeChallengeTracker.model
                             {
                                 var subName = xml.Value.Trim();
                                 subChallengeData.Description = subName;
-                                //prophecy league has wiki links already in xml
-                                if (challengeData.WikiLinksExist && leagueInfo.Leaguename.ToLower() != "prophecy")
+                                if (challengeData.WikiLinksExist)
                                 {
                                     var generatedInfo = new SubChallengeInfo();
                                     generatedInfo.Text = "Wiki";
                                     generatedInfo.UrlAsString = WIKI_BASE_URL + subName.Replace(" ", "_");
                                     subChallengeData.Infos.Add(generatedInfo);
                                 }
+                            }
+                            if (insideNeedForCompletionSub)
+                            {
+                                subChallengeData.IsProgressable = true;
+                                subChallengeData.NeededToComplete = Convert.ToInt32(xml.Value.Trim());
                             }
                             if (insideInfo)
                             {
@@ -268,6 +275,10 @@ namespace WpfPoeChallengeTracker.model
                             if (endElement == NAME)
                             {
                                 insideName = false;
+                            }
+                            if (endElement == NEEDED_TO_COMPLETE_SUB)
+                            {
+                                insideNeedForCompletionSub = false;
                             }
                         }
                         if (insideSingleChallenge && insideSubChallenge && insideInfo)

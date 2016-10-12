@@ -246,7 +246,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="challengedata\ChallengeData12.Prophecy.xml">
+    <Content Include="challengedata\challengeData12.Prophecy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Resource Include="resources\paypalDonateButton.png">
