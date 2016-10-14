@@ -140,6 +140,10 @@ namespace WpfPoeChallengeTracker.model
             {
                 SyncStatus = "Now synchronizing the progress of the " + currentLeague.InAppName + " league";
                 ProgressSyncer.syncProgress(challengeProgresses, AccountName, currentLeague.UrlName);
+                foreach (var item in challengeProgresses)
+                {
+                    item.NotifyPropertyChanged("IsDone");
+                }
                 SyncStatus = "Last synchronized: " + DateTime.Now.ToShortTimeString();
             }
             catch (WebException e)

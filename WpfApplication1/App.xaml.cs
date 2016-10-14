@@ -35,19 +35,13 @@ namespace WpfPoeChallengeTracker
             var uri = new Uri("pack://application:,,,/resources/logo.png");
             var bitmap = BitmapFrame.Create(uri);
             window.Icon = bitmap;
-            
             window.Show();
-
-            //var v = AccountCheck.checkAccountName("xGeronimo87x");
-            //Debug.WriteLine(v);
-
-
-
+            window.persistFirstStart();
         }
 
 
 
-        private async void appInitTimerCallback(object state)
+        private void appInitTimerCallback(object state)
         {
             model.initModel();
             viewmodel.initViewmodel();

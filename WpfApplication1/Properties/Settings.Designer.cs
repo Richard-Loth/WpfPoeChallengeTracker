@@ -97,7 +97,7 @@ namespace WpfPoeChallengeTracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Prophecy")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Essence")]
         public string SelectedLeague {
             get {
                 return ((string)(this["SelectedLeague"]));
@@ -152,6 +152,18 @@ namespace WpfPoeChallengeTracker.Properties {
             }
             set {
                 this["WindowPositionTop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool FirstStart {
+            get {
+                return ((bool)(this["FirstStart"]));
+            }
+            set {
+                this["FirstStart"] = value;
             }
         }
     }

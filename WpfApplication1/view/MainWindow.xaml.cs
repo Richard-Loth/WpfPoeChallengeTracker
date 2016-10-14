@@ -49,10 +49,13 @@ namespace WpfPoeChallengeTracker
             this.InitializeComponent();
             DataContext = viewmodel;
             viewmodel.PropertyChanged += Viewmodel_PropertyChanged;
-            this.Height = Properties.Settings.Default.WindowHeight;
-            this.Width = Properties.Settings.Default.WindowWidth;
-            this.Left = Properties.Settings.Default.WindowPositionLeft;
-            this.Top = Properties.Settings.Default.WindowPositionTop;
+            if (!Properties.Settings.Default.FirstStart)
+            {
+                this.Height = Properties.Settings.Default.WindowHeight;
+                this.Width = Properties.Settings.Default.WindowWidth;
+                this.Left = Properties.Settings.Default.WindowPositionLeft;
+                this.Top = Properties.Settings.Default.WindowPositionTop; 
+            }
             switch (Properties.Settings.Default.CompletedChallenges)
             {
                 case CompletedBehaviour.DO_NOTHING:
@@ -68,6 +71,17 @@ namespace WpfPoeChallengeTracker
                     break;
             }
             viewmodel.changeCompletedBehaviour(Properties.Settings.Default.CompletedChallenges);
+        }
+
+        internal void persistFirstStart()
+        {
+            if (Properties.Settings.Default.FirstStart)
+            {
+                Properties.Settings.Default.FirstStart = false;
+                Properties.Settings.Default.WindowPositionTop = this.Top;
+                Properties.Settings.Default.WindowPositionLeft = this.Left;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void Viewmodel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -248,6 +262,8 @@ namespace WpfPoeChallengeTracker
             var syncNow = false;
             switch (viewmodel.CurrentLoginStatus)
             {
+                case LoginStatus.UnChecked:
+
                 case LoginStatus.NoAccountName:
 
                 case LoginStatus.InvalidName:

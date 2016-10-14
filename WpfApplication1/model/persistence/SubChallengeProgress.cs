@@ -15,7 +15,7 @@ namespace WpfPoeChallengeTracker.model
                 if (completionType != value)
                 {
                     completionType = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CompletionType"));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentCompletion"));
                 }
             }
         }

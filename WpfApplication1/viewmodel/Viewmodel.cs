@@ -128,12 +128,12 @@ namespace WpfPoeChallengeTracker.viewmodel
             {
                 syncProgressTimer.Change(0, Timeout.Infinite);
             }
-            
         }
 
         private void syncProgressTimerCallback(object state)
         {
             model.syncProgress();
+            changeCompletedBehaviour(Properties.Settings.Default.CompletedChallenges);
         }
 
         public void leagueViewClicked(LeagueView view)
