@@ -6,7 +6,7 @@
       <pct:challenge>
         <pct:name>Kill these Normal Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Normal Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -21,10 +21,10 @@
           <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Master-craft these Item Types</pct:name>
         <pct:description>Use a Master's Crafting Bench to add a mod to each of the following types of item.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Amulet</pct:name>
@@ -57,10 +57,10 @@
           <pct:name>Weapon</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Rare Talismans</pct:name>
         <pct:description>Summon monsters at the Altars within Stone Circles using Rare Talismans of each of the following types.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Ashscale Talisman</pct:name>
@@ -90,7 +90,7 @@
       <pct:challenge>
         <pct:name>Kill these Cruel Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Cruel Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -105,10 +105,10 @@
           <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Level these Masters</pct:name>
         <pct:description>Reach Reputation Level 3 with at least 6 of these 7 Forsaken Masters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Haku, Armourmaster</pct:name>
@@ -132,10 +132,10 @@
           <pct:name>Leo, Master of the Arena</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Unique Monsters in Cruel</pct:name>
         <pct:description>Kill each of the following Unique monsters in Cruel Difficulty or higher.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>19</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Aidan the Frenzied</pct:name>
@@ -195,10 +195,10 @@
           <pct:name>Triskeriaki</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use each of the following Currency Items.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Blessed Orb</pct:name>
@@ -234,7 +234,7 @@
       <pct:challenge>
         <pct:name>Use Talismans at Stone Circles</pct:name>
         <pct:description>Summon monsters at the Altars within Stone Circles using each of the following Talisman combinations.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Five Normal Talismans at once</pct:name>
@@ -252,7 +252,7 @@
       <pct:challenge>
         <pct:name>Kill these Merciless Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -267,10 +267,10 @@
           <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Complete Merciless Quests</pct:name>
         <pct:description>Complete each of the following quests in Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Mercy Mission</pct:name>
@@ -312,7 +312,7 @@
       <pct:challenge>
         <pct:name>Full Clear: Vaal Side Areas</pct:name>
         <pct:description>Fully clear each of the following Corrupted Side Areas. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Any found in Normal Difficulty</pct:name>
@@ -327,10 +327,10 @@
           <pct:name>Any created using a Map Device</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Claim these Talismans</pct:name>
         <pct:description>Encounter, then kill monsters bearing twelve of these fourteen Talismans.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Avian Twins Talisman</pct:name>
@@ -375,10 +375,10 @@
           <pct:name>Wereclaw Talisman</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Bosses with Talismans</pct:name>
         <pct:description>Kill each of the following Unique bosses while they bear Talismans.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Death Blossom</pct:name>
@@ -405,17 +405,17 @@
       <pct:challenge>
         <pct:name>A Coveted Prize</pct:name>
         <pct:description>Encounter, then kill a Unique monster bearing a Tier 1 Talisman.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Unnatural Influences</pct:name>
         <pct:description>Kill a Monster possessed by two or more Tormented Spirits.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Map Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>15</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Penitentiary Incarcerator</pct:name>
@@ -463,10 +463,10 @@
           <pct:name>Ambrius, Legion Slayer</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Enter these Unique Maps</pct:name>
         <pct:description>Enter each of the following Unique Maps.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>11</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Acton's Nightmare</pct:name>
@@ -502,10 +502,10 @@
           <pct:name>Whakawairua Tuahu</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Exiles with Talismans</pct:name>
         <pct:description>Kill each of the following Rogue Exiles while they bear Talismans.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>14</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Antalie Napora</pct:name>
@@ -553,7 +553,7 @@
       <pct:challenge>
         <pct:name>Create Hideouts of these sizes</pct:name>
         <pct:description>Create or upgrade to Hideouts of at least the following sizes.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Small</pct:name>
@@ -568,17 +568,17 @@
       <pct:challenge>
         <pct:name>The Explorer's Folly</pct:name>
         <pct:description>Use a Vaal Orb on a Cartographer's Strongbox.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Kill Rigwald</pct:name>
         <pct:description>Kill Rigwald, the Wolven King.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Full Clear: Twinned Maps</pct:name>
         <pct:description>Fully clear maps in each of the following tiers while they have the Twinned mod. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>15</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tier 1</pct:name>
@@ -626,10 +626,10 @@
           <pct:name>Tier 15</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Identify Rigwald's Uniques</pct:name>
         <pct:description>Identify each of the following Unique Items. You can trade them away afterwards. </pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Rigwald's Command</pct:name>
@@ -647,7 +647,7 @@
       <pct:challenge>
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>15</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Any Life Flask</pct:name>
@@ -698,12 +698,12 @@
       <pct:challenge>
         <pct:name>Kill the Avatar of Thunder</pct:name>
         <pct:description>Kill the Avatar of Thunder.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Redeem Sets of Divination Cards</pct:name>
         <pct:description>Turn in Divination card sets of the following sizes to Tasuni.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>One</pct:name>
@@ -745,7 +745,7 @@
       <pct:challenge>
         <pct:name>Complete these Encounters</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>5</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Kill a Rare monster with Inner Treasure</pct:name>
@@ -763,10 +763,10 @@
           <pct:name>Open any Unique Strongbox</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Identify new Unique Items</pct:name>
         <pct:description>Identify each of the following Unique Items. You can trade them away afterwards. </pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>26</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Allure</pct:name>
@@ -850,17 +850,17 @@
       <pct:challenge>
         <pct:name>Kill Level 80+ Rigwald</pct:name>
         <pct:description>Kill Rigwald, the Wolven King in an area of at least Level 80.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Reach Level 90</pct:name>
         <pct:description>Attain character level 90. This challenge still counts even if your character dies afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Identify these Treasures</pct:name>
         <pct:description>Identify four of these twelve Unique Items. You can trade them away afterwards. </pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Andvarius</pct:name>
@@ -902,7 +902,7 @@
       <pct:challenge>
         <pct:name>Fully Level Zana</pct:name>
         <pct:description>Reach Reputation Level 8 with Zana, Master Cartographer.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
     </pct:challenges>
   </pct:league>

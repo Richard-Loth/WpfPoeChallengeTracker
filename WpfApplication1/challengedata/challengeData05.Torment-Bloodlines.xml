@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Torment-Bloodlines</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach Level 85</pct:name>
         <pct:description>Attain character level 85 with at least three different classes in the Torment or Bloodlines leagues. This challenge still counts even if a character dies after reaching level 85.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Duelist</pct:name>
@@ -30,10 +30,10 @@
           <pct:name>Scion</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Identify these Unique Items</pct:name>
         <pct:description>Identify these specific Unique Items to complete this challenge. Uniques in both the Torment and Bloodlines leagues are counted for this challenge. You can trade the item away afterwards.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>50</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Abyssus</pct:name>
@@ -87,7 +87,7 @@
           <pct:name>Great Old One's Ward</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Infernal Mantle </pct:name>
+          <pct:name>Infernal Mantle</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Kikazaru</pct:name>
@@ -168,7 +168,7 @@
           <pct:name>The Supreme Truth</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Thief's Torment </pct:name>
+          <pct:name>Thief's Torment</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Timeclasp</pct:name>
@@ -189,7 +189,7 @@
       <pct:challenge>
         <pct:name>Kill Packs from these Bloodlines</pct:name>
         <pct:description>Kill packs of Magic monsters with each of these Bloodline Mods.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>25</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Bearers of the Guardian</pct:name>
@@ -267,10 +267,10 @@
           <pct:name>Voidspawn of Abaxoth</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Tormented Spirits</pct:name>
         <pct:description>Kill each of these Tormented Spirits or Rare/Unique monsters possessed by them.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>21</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tormented Arsonist</pct:name>
@@ -336,10 +336,10 @@
           <pct:name>Tormented Warlord</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Full-clear these Maps</pct:name>
         <pct:description>Kill all the monsters in each of these End-Game Map areas in the Torment or Bloodlines leagues. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>45</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Overgrown Ruin</pct:name>
@@ -477,10 +477,10 @@
           <pct:name>The Apex of Sacrifice</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes in either Torment or Bloodlines to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>36</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Scroll Fragment</pct:name>
@@ -594,7 +594,7 @@
       <pct:challenge>
         <pct:name>Complete these Encounters</pct:name>
         <pct:description>Kill these Rogue Exiles, open Strongboxes with these properties, touch these Shrines and kill Rare Monsters with these Nemesis mods in the Torment or Bloodlines leagues. Strongboxes do not need to be identified to count, but their ambushers must be defeated.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>44</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Exile: Antalie Napora</pct:name>
@@ -732,7 +732,7 @@
       <pct:challenge>
         <pct:name>Complete these Missions</pct:name>
         <pct:description>Complete these missions for the Forsaken Masters in the Torment or Bloodlines leagues.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>44</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Defend a Relic from waves of Monsters for Elreon</pct:name>

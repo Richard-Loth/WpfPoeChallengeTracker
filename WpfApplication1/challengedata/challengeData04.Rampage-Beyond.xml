@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Rampage-Beyond</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Full-clear in any Difficulty</pct:name>
         <pct:description>Kill all the monsters in every Act 1, 2 and 3 area of the game in Rampage or Beyond. You can complete this in any difficulty level. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>64</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>The Twilight Strand</pct:name>
@@ -201,10 +201,10 @@
           <pct:name>Upper Sceptre of God</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach level 65</pct:name>
         <pct:description>Attain character level 65 with each class in the Rampage or Beyond leagues. This challenge still counts even if a character dies after reaching level 65.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Duelist</pct:name>
@@ -231,7 +231,7 @@
       <pct:challenge>
         <pct:name>Reach these Rampage Tiers</pct:name>
         <pct:description>Achieve each of these Rampage tiers in the Rampage League.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>13</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>First Tier</pct:name>
@@ -273,10 +273,10 @@
           <pct:name>Thirteenth Tier</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use the following 23 currency items in either Rampage or Beyond.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>23</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Armourer's Scrap</pct:name>
@@ -348,10 +348,10 @@
           <pct:name>Vaal Orb</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these foes from Beyond</pct:name>
         <pct:description>Defend Wraeclast by defeating these 13 interdimensional monstrosities:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>13</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Flesh of Bameth</pct:name>
@@ -393,10 +393,10 @@
           <pct:name>Na'em, Bending Stone</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach level 8 with the Masters</pct:name>
         <pct:description>Reach reputation level 8 with each of the following masters:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Catarina</pct:name>
@@ -420,10 +420,10 @@
           <pct:name>Zana</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Own these Unique Items</pct:name>
         <pct:description>Own 44 specific Unique items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the item again. Uniques in both Rampage and Beyond leagues are counted for this challenge.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>44</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Al Dhih</pct:name>
@@ -558,10 +558,10 @@
           <pct:name>Vis Mortis</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>34</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Alira Darktongue</pct:name>

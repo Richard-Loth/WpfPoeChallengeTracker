@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Warbands-Tempest</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach Level 82</pct:name>
         <pct:description>Attain character level 82 with at least three different classes in the Warbands or Tempest leagues. This challenge still counts even if a character dies after reaching level 82.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Duelist</pct:name>
@@ -30,10 +30,10 @@
           <pct:name>Scion</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Redeem Divination Card Sets</pct:name>
         <pct:description>Turn in sets of at least 32 of the following 47 Divination card types to Tasuni:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>32</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Abandoned Wealth</pct:name>
@@ -180,7 +180,7 @@
       <pct:challenge>
         <pct:name>Kill these Warband Members</pct:name>
         <pct:description>Kill each of the following Warband Members:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>28</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Brinerot Raider</pct:name>
@@ -270,7 +270,7 @@
       <pct:challenge>
         <pct:name>Clear Areas with Tempests</pct:name>
         <pct:description>Kill all the monsters in areas affected by at least 50 of these 54 Tempests. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>50</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Stinging Tempest</pct:name>
@@ -435,10 +435,10 @@
           <pct:name>Tempest of Fate</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>43</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Ambrius, Legion Slayer</pct:name>
@@ -570,10 +570,10 @@
           <pct:name>Voll, Emperor of Purity</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes in either Warbands or Tempest to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>36</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Scroll Fragment</pct:name>
@@ -684,139 +684,139 @@
           <pct:name>Prismatic Ring</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Corrupt these Unique Jewels</pct:name>
         <pct:description>Corrupt 36 of these 41 specific Unique Jewels to complete this challenge. Jewels in both the Warbands and Tempest leagues are counted for this challenge. You can trade the item away afterwards.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>36</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>Anatomical Knowledge </pct:name>
+          <pct:name>Anatomical Knowledge</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Apparitions </pct:name>
+          <pct:name>Apparitions</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Army of Bones </pct:name>
+          <pct:name>Army of Bones</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Assassin's Haste </pct:name>
+          <pct:name>Assassin's Haste</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Brawn </pct:name>
+          <pct:name>Brawn</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Brute Force Solution </pct:name>
+          <pct:name>Brute Force Solution</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Careful Planning </pct:name>
+          <pct:name>Careful Planning</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Clear Mind </pct:name>
+          <pct:name>Clear Mind</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Cold Steel </pct:name>
+          <pct:name>Cold Steel</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Conqueror's Efficiency </pct:name>
+          <pct:name>Conqueror's Efficiency</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Conqueror's Longevity </pct:name>
+          <pct:name>Conqueror's Longevity</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Conqueror's Potency </pct:name>
+          <pct:name>Conqueror's Potency</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Efficient Training </pct:name>
+          <pct:name>Efficient Training</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Eldritch Knowledge </pct:name>
+          <pct:name>Eldritch Knowledge</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Energised Armour </pct:name>
+          <pct:name>Energised Armour</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Energy From Within </pct:name>
+          <pct:name>Energy From Within</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Fertile Mind </pct:name>
+          <pct:name>Fertile Mind</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Fireborn </pct:name>
+          <pct:name>Fireborn</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Fluid Motion </pct:name>
+          <pct:name>Fluid Motion</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Fortified Legion</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Fragile Bloom </pct:name>
+          <pct:name>Fragile Bloom</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Healthy Mind </pct:name>
+          <pct:name>Healthy Mind</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Hidden Potential </pct:name>
+          <pct:name>Hidden Potential</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Hotfooted </pct:name>
+          <pct:name>Hotfooted</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Inertia </pct:name>
+          <pct:name>Inertia</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Inspired Learning</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Intuitive Leap </pct:name>
+          <pct:name>Intuitive Leap</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Lioneye's Fall </pct:name>
+          <pct:name>Lioneye's Fall</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Malicious Intent </pct:name>
+          <pct:name>Malicious Intent</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Mantra of Flames </pct:name>
+          <pct:name>Mantra of Flames</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Martial Artistry </pct:name>
+          <pct:name>Martial Artistry</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Might in All Forms</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Poacher's Aim </pct:name>
+          <pct:name>Poacher's Aim</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Pugilist </pct:name>
+          <pct:name>Pugilist</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Rain of Splinters </pct:name>
+          <pct:name>Rain of Splinters</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Spire of Stone </pct:name>
+          <pct:name>Spire of Stone</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Static Electricity </pct:name>
+          <pct:name>Static Electricity</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Survival Instincts </pct:name>
+          <pct:name>Survival Instincts</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Survival Secrets </pct:name>
+          <pct:name>Survival Secrets</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Survival Skills </pct:name>
+          <pct:name>Survival Skills</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Warlord's Reach </pct:name>
+          <pct:name>Warlord's Reach</pct:name>
         </pct:subchallenge>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Knowledge and Power</pct:name>
         <pct:description>Identify these Unique Items, kill a Rare Monster of each of these types, and kill all the monsters in the following areas in Warbands or Tempest. Character Uniques are any Unique Item named after that Character. 30 of these 33 deeds are required.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>30</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Full-Clear: Abyss Map</pct:name>

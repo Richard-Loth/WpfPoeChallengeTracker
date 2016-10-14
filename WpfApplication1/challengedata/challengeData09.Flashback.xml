@@ -6,102 +6,102 @@
       <pct:challenge>
         <pct:name>Full Clear: The Fetid Pool</pct:name>
         <pct:description>Fully clear the Fetid Pool. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Identify a Unique Item</pct:name>
         <pct:description>Identify any Unique Item. You can trade it away afterwards. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Kole the Cruel</pct:name>
         <pct:description>Kill Kole in Cruel difficulty or higher. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Room to Grow</pct:name>
         <pct:description>Create a medium-sized Hideout. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>The Golden Hand</pct:name>
         <pct:description>Complete the quest "Through Sacred Ground" in Merciless difficulty.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Full Clear: Vaal Fragment</pct:name>
         <pct:description>Fully clear a Vaal Side Area that was created using a Map Device. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Kill a Unique Map Boss</pct:name>
         <pct:description>Kill the boss of a Unique Map. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Reach level 85</pct:name>
         <pct:description>Reach level 85. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Defender</pct:name>
         <pct:description>Kill any Invasion Boss. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Exorcist</pct:name>
         <pct:description>Kill a Unique monster that has been possessed by a Tormented spirit. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Bait</pct:name>
         <pct:description>Open an unidentified Rare Strongbox. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Unstoppable</pct:name>
         <pct:description>Reach the fifth Rampage tier. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Finder of the Trove</pct:name>
         <pct:description>Kill a pack of Magic monsters with the Keepers of the Trove Bloodline mod. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Assassination</pct:name>
         <pct:description>Kill any Warband Leader. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>A Worthy Foe</pct:name>
         <pct:description>Kill the Boss of a Tier 8 or higher Map while it has Onslaught. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Seal the Portal</pct:name>
         <pct:description>Kill a Unique Beyond boss. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Weather the Storm</pct:name>
         <pct:description>Fully clear a Rare map that is affected by both a Tempest prefix and suffix. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Treasure Hunter</pct:name>
         <pct:description>Kill a Rare monster with the Inner Treasure Nemesis mod. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Fall of the Phoenix</pct:name>
         <pct:description>Kill Igna Phoenix. </pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Reach Out and Touch Faith</pct:name>
         <pct:description>Touch a Divine Shrine.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
     </pct:challenges>
   </pct:league>

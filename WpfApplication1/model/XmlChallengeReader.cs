@@ -24,9 +24,9 @@ namespace WpfPoeChallengeTracker.model
         const string CHALLENGE = "challenge";
         const string DESCRIPTION = "description";
         const string TYPE = "type";
-        const string BINARY = "binary";
-        const string PROGRESSABLE = "progressable";
-        const string PROGRESSABLE_NO_SUBS = "progressableNoSubs";
+        const string BINARY = "Binary";
+        const string PROGRESSABLE = "Progressable";
+        const string PROGRESSABLE_NO_SUBS = "ProgressableNoSubs";
         const string NEEDED_TO_COMPLETE = "neededToComplete";
         const string NEEDED_TO_COMPLETE_SUB = "neededToCompleteSub";
         const string SUBCHALLENGE = "subchallenge";

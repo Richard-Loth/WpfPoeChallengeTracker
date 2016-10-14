@@ -2,9 +2,6 @@
 <leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
   <pct:league>
     <pct:leaguename>Essence</pct:leaguename>
-    <pct:startedOn>
-      2016-09-02 20:00Z
-    </pct:startedOn>
     <pct:endsOn>
       2016-11-28 21:00Z
     </pct:endsOn>
@@ -12,7 +9,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Activate these Waypoints</pct:name>
         <pct:description>Activate the Waypoints in each of the following areas in Normal difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>The Climb</pct:name>
@@ -42,17 +39,18 @@
       <pct:challenge>
         <pct:name>Combine three Essences</pct:name>
         <pct:description>Trade any three identical Essences to a vendor.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Kill 50 Monsters with Essences</pct:name>
         <pct:description>Kill 50 monsters that have Essences.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>50</pct:neededToComplete>
       </pct:challenge>
       <pct:challenge createWikiLinks="true">
         <pct:name>Complete these Normal Quests</pct:name>
         <pct:description>Complete each of the following quests in Normal Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Mercy Mission</pct:name>
@@ -76,7 +74,7 @@
       <pct:challenge>
         <pct:name>Complete these Encounters I</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Complete a Master's Mission</pct:name>
@@ -100,7 +98,7 @@
       <pct:challenge>
         <pct:name>Kill these Normal Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique Bosses in Normal Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -118,7 +116,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Kill Rare Monsters in Cruel</pct:name>
         <pct:description>Kill a Rare Monster of each of these types in either Cruel or Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Death Bishop</pct:name>
@@ -160,7 +158,7 @@
       <pct:challenge>
         <pct:name>Complete these Encounters II</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Fully clear a Corrupted Vaal Side Area</pct:name>
@@ -184,7 +182,7 @@
       <pct:challenge>
         <pct:name>Corrupt Essences</pct:name>
         <pct:description>Obtain each of the following results when using a Remnant of Corruption on a monster trapped by an Essence.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Add an additional Essence</pct:name>
@@ -202,7 +200,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Monsters</pct:name>
         <pct:description>Kill each of the following Unique Monsters in either Cruel or Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Barkhul</pct:name>
@@ -232,7 +230,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use each of the following Currency items.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>15</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Armourer's Scrap</pct:name>
@@ -283,7 +281,7 @@
       <pct:challenge>
         <pct:name>Kill these Cruel Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique Bosses in Cruel Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -301,13 +299,13 @@
       <pct:challenge>
         <pct:name>Kill 40 Monsters Bearing Silver</pct:name>
         <pct:description>Kill 40 monsters that are carrying Silver Coins.</pct:description>
-        <pct:type>progressableNoSubs</pct:type>
+        <pct:type>ProgressableNoSubs</pct:type>
         <pct:neededToComplete>40</pct:neededToComplete>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Claim these Essences</pct:name>
         <pct:description>Kill a monster that has each of the following Essences.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>24</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Essence of Anger</pct:name>
@@ -385,7 +383,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Vaal Bosses</pct:name>
         <pct:description>Kill each of the following Unique monsters in any Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Beheader Ataguchu</pct:name>
@@ -427,7 +425,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Level these Masters</pct:name>
         <pct:description>Reach Reputation Level 5 with at least 6 of these 8 Forsaken Masters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Catarina, Master of the Dead</pct:name>
@@ -457,12 +455,13 @@
       <pct:challenge>
         <pct:name>Kill 500 Rare Monsters</pct:name>
         <pct:description>Kill 500 Rare Monsters in any Difficulty.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>500</pct:neededToComplete>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Kill Multi-Essence Monsters</pct:name>
         <pct:description>Kill Monsters that have multiple Essences, with these quantities.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Two Essences</pct:name>
@@ -477,7 +476,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Currency from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Cartographer's Chisel</pct:name>
@@ -507,7 +506,7 @@
       <pct:challenge>
         <pct:name>Use these Essences</pct:name>
         <pct:description>Use each of the following Essences to upgrade or reforge items.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Whispering</pct:name>
@@ -534,27 +533,28 @@
       <pct:challenge>
         <pct:name>Fully Upgrade your Hideout</pct:name>
         <pct:description>Create or Upgrade to a Large-sized Hideout.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Level a Gem to 20</pct:name>
         <pct:description>Upgrade a Skill Gem or a Support Gem to level 20. You can trade it away afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Identify 100 Unique Items</pct:name>
         <pct:description>Identify any 100 Unique Items. You can trade them away afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>100</pct:neededToComplete>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Fulfil a Prophecy Chain</pct:name>
         <pct:description>Complete a Prophecy Chain associated with Pale Council members.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Complete these Encounters III</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>5</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Kill Haast, Unrelenting Frost</pct:name>
@@ -576,7 +576,7 @@
       <pct:challenge>
         <pct:name>Kill these Merciless Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -594,7 +594,7 @@
       <pct:challenge>
         <pct:name>Achieve Ascension</pct:name>
         <pct:description>Use the Ascendancy Device in each of the following places.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>The Normal Labyrinth</pct:name>
@@ -612,12 +612,12 @@
       <pct:challenge>
         <pct:name>Reach Level 90</pct:name>
         <pct:description>Attain character level 90. This challenge still counts even if your character dies afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Shape these Maps</pct:name>
         <pct:description>Use a Shaper's Orb to upgrade Maps of the following Tiers.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tier 1</pct:name>
@@ -650,70 +650,142 @@
           <pct:name>Tier 10</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge createWikiLinks="true">
+      <pct:challenge>
         <pct:name>Kill these Warband Leaders</pct:name>
         <pct:description>Kill each of the following Warband Leaders.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>18</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Berrots, The Breaker</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Bin'aia, Crimson Rain</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>El'Abin, Bloodeater</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Invari, The Bloodshaper</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Jeinei Yuushu</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Kalria, The Risen</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Leli Goya, Daughter of Ash</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Lokan, The Deceiver</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Lussi "Rotmother" Roth</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Marchak, The Betrayer</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Morgrants, The Deafening</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Musky "Two-Eyes" Grenn</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Otesha, the Giantslayer</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Rama, The Kinslayer</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Susara, Siren of Pondium</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Uruk Baleh</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Vessider, The Unrivaled</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Yorishi, Aurora-sage</pct:name>
+          <pct:info>
+            <pct:text>Wiki</pct:text>
+            <pct:url>http://pathofexile.gamepedia.com/Warband#Warbands_Members</pct:url>
+          </pct:info>
         </pct:subchallenge>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Read Memory Fragments</pct:name>
         <pct:description>Read each of the following Memory Fragments.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Memory of Home</pct:name>
@@ -740,7 +812,7 @@
       <pct:challenge>
         <pct:name>Complete Twinned Maps</pct:name>
         <pct:description>Complete Maps in 10 of the following 15 tiers while they have the Twinned mod. These Maps are completed by killing their Unique Bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tier 1</pct:name>
@@ -791,7 +863,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Identify Rare Items</pct:name>
         <pct:description>Identify Rare Items of 6 of the following 11 types.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Steel Ring</pct:name>
@@ -830,7 +902,7 @@
       <pct:challenge createWikiLinks="true">
         <pct:name>Redeem Divination Card Sets</pct:name>
         <pct:description>Turn in sets of at least 7 of the following 12 Divination card types to Tasuni.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>The Fox</pct:name>
@@ -869,10 +941,10 @@
           <pct:name>The Enlightened</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge createWikiLinks="true" >
+      <pct:challenge createWikiLinks="true">
         <pct:name>Complete Unique Maps</pct:name>
         <pct:description>Complete any 10 of the following 16 Unique Maps. A Map is completed by killing its Unique Boss or Bosses if it has any. Maps without Unique Bosses are completed by opening specific Unique Chests.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Acton's Nightmare</pct:name>
@@ -926,7 +998,7 @@
       <pct:challenge>
         <pct:name>Complete Unided Rare Maps</pct:name>
         <pct:description>Complete Rare Maps in 10 of the following 15 tiers while they are unidentified. These Maps are completed by killing their Unique Boss or Bosses if they have any.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tier 1</pct:name>
@@ -977,12 +1049,13 @@
       <pct:challenge>
         <pct:name>Explore the Atlas</pct:name>
         <pct:description>Complete at least 100 different types of Maps. A Map is completed by killing its Unique Boss or Bosses if it has any. Maps without Unique Bosses are completed by opening specific Unique Chests.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>100</pct:neededToComplete>
       </pct:challenge>
       <pct:challenge createWikiLinks="true">
         <pct:name>Kill the Guardians of the Void</pct:name>
         <pct:description>Kill each of the four Guardians of the Void.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Guardian of the Phoenix</pct:name>
@@ -1000,12 +1073,12 @@
       <pct:challenge>
         <pct:name>Kill The Shaper</pct:name>
         <pct:description>Find The Shaper and kill him.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Complete three Endgame Grinds</pct:name>
         <pct:description>Kill three of these five Unique Bosses the following number of times.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Atziri, Queen of the Vaal</pct:name>

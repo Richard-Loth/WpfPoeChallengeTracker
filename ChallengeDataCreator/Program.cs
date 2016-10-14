@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Schema;
@@ -20,15 +21,27 @@ namespace ChallengeDataCreator
             var leagues = makeLeaguesList();
             var baseUrl = "https://www.pathofexile.com/account/view-profile/xGeronimo87x/challenges/";
             var start = DateTime.UtcNow;
+            var numberOfLeague = 0;
             foreach (var league in leagues)
             {
+                numberOfLeague++;
+                Debug.WriteLine("-------------------\nDownloading and parsing data for league " + league);
                 var list = parseUrlForChallengeData(baseUrl + league);
+                Debug.WriteLine("Creating xml object");
                 var doc = generateXmlDocumentByChallengeList(list, league);
-                writeXmlDocToFile(doc, "challengeData." + league.Replace("%2B", "-").Replace("%2F", "-") + ".xml");
+                var filename = "challengeData" + numberOfLeague.ToString("00") + "." + league.Replace("%2B", "-").Replace("%2F", "-") + ".xml";
+                Debug.WriteLine("Writing xml object to file " + filename);
+                writeXmlDocToFile(doc, filename);
+                if (numberOfLeague < leagues.Count)
+                {
+                    Debug.WriteLine("Doing a five second break to not make servers angry");
+                    Task.Delay(5000).Wait();
+                }
+
             }
             var end = DateTime.UtcNow;
             var span = end.Subtract(start);
-            Debug.WriteLine("Parsing, retrieving and converting all challenge data to xml took: " + span.Seconds + "s, " + span.Milliseconds + "ms");
+            Debug.WriteLine("\n\nParsing, retrieving and converting all challenge data to xml took: " + (span.Minutes > 0 ? span.Minutes + "m, " : "") + span.Seconds + "s, " + span.Milliseconds + "ms");
         }
 
         private static void writeXmlDocToFile(XmlDocument doc, string filename)
@@ -47,15 +60,15 @@ namespace ChallengeDataCreator
             XmlSchema schema = new XmlSchema();
             schema.Namespaces.Add("pct", ns);
             doc.Schemas.Add(schema);
-            
+
             var rootElement = doc.CreateElement("leagues");
             rootElement.SetAttribute("xmlns:pct", ns);
             string nsD = rootElement.GetPrefixOfNamespace(ns) + ":";
             doc.AppendChild(rootElement);
 
             //generate league element
-            var leagueEle = doc.CreateElement(nsD + "league",ns);
-            
+            var leagueEle = doc.CreateElement(nsD + "league", ns);
+
             rootElement.AppendChild(leagueEle);
 
             //leaguename
@@ -84,18 +97,19 @@ namespace ChallengeDataCreator
 
                 //type
                 var typeEle = doc.CreateElement(nsD + "type", ns);
-                typeEle.AppendChild(doc.CreateTextNode(data.Type.ToString().ToLower()));
+                typeEle.AppendChild(doc.CreateTextNode(data.Type.ToString()));
                 challengeEle.AppendChild(typeEle);
 
-                if (data.Type == ChallengeType.Progressable)
+                if (data.Type == ChallengeType.Progressable || data.Type == ChallengeType.ProgressableNoSubs)
                 {
                     //needed
                     var neededEle = doc.CreateElement(nsD + "neededToComplete", ns);
                     neededEle.AppendChild(doc.CreateTextNode(Convert.ToString(data.NeedForCompletion)));
                     challengeEle.AppendChild(neededEle);
-
+                    bool firstSub = true;
                     foreach (var subData in data.SubChallenges)
                     {
+
                         //subchallenge
                         var subChallengeEle = doc.CreateElement(nsD + "subchallenge", ns);
                         challengeEle.AppendChild(subChallengeEle);
@@ -104,6 +118,37 @@ namespace ChallengeDataCreator
                         var subNameEle = doc.CreateElement(nsD + "name", ns);
                         subNameEle.AppendChild(doc.CreateTextNode(subData.Description));
                         subChallengeEle.AppendChild(subNameEle);
+
+                        //progressable subs
+                        if (subData.IsProgressable)
+                        {
+                            var subProgressEle = doc.CreateElement(nsD + "neededToCompleteSub", ns);
+                            subProgressEle.AppendChild(doc.CreateTextNode(Convert.ToString(subData.NeededToComplete)));
+                            subChallengeEle.AppendChild(subProgressEle);
+                        }
+
+                        if (firstSub)
+                        {
+                            //checkIfWikiLinksExist
+                            Debug.WriteLine("Testing if wiki page exists: " + subData.Description);
+                            var baseWikiUrl = "http://pathofexile.gamepedia.com";
+                            HtmlWeb htmlWeb = new HtmlWeb();
+                            HtmlDocument document = htmlWeb.Load(baseWikiUrl + "/" + subData.Description.Replace(" ", "_"));
+                            var node = document.DocumentNode.SelectSingleNode("//html/body/div[2]/div[3]/div[1]/div[4]/div[4]/div/p");
+                            if (node == null)
+                            {
+                                Debug.WriteLine("Yes");
+                                var att = doc.CreateAttribute("createWikiLinks");
+                                att.Value = "true";
+                                challengeEle.Attributes.Append(att);
+                            }
+                            else
+                            {
+                                Debug.WriteLine("No");
+                            }
+                            Task.Delay(1000).Wait();
+                        }
+                        firstSub = false;
                     }
                 }
             }
@@ -133,20 +178,44 @@ namespace ChallengeDataCreator
                 if (completionNode != null)
                 {
                     //grab the subchallenge data
-                    data.Type = ChallengeType.Progressable;
+
                     string completiontext = completionNode.InnerHtml.Substring(completionNode.InnerHtml.LastIndexOf('/') + 1);
                     data.NeedForCompletion = Convert.ToInt32(completiontext);
                     var subNodes = node.SelectNodes("div[@class='detail']/span[@class='items']/ul/li");
                     if (subNodes != null)
                     {
+                        data.Type = ChallengeType.Progressable;
                         foreach (var subNode in subNodes)
                         {
-                            data.SubChallenges.Add(new SubChallengeData(subNode.InnerHtml));
+                            var isProgressableSub = false;
+                            var neededToComplete = 0;
+                            var desc = subNode.InnerHtml.Trim();
+                            var indexOfBracketOpen = checkIfProgressableSub(desc);
+                            if (indexOfBracketOpen > 0)
+                            {
+                                isProgressableSub = true;
+                                var indexOfSlash = desc.LastIndexOf("/");
+                                var needed = desc.Substring(indexOfSlash + 1, desc.Length - indexOfSlash - 2);
+                                if (needed.Contains(","))
+                                {
+                                    if (needed.Length == 5)
+                                    {
+                                        needed = needed.Remove(1, 1);
+                                    }
+                                }
+                                neededToComplete = Convert.ToInt32(needed);
+                                desc = desc.Substring(0, indexOfBracketOpen - 1).Trim();
+                            }
+
+                            var subdata = new SubChallengeData(desc);
+                            subdata.IsProgressable = isProgressableSub;
+                            subdata.NeededToComplete = neededToComplete;
+                            data.SubChallenges.Add(subdata);
                         }
                     }
                     else
                     {
-                        Debug.WriteLine(data.Name);
+                        data.Type = ChallengeType.ProgressableNoSubs;
                     }
                 }
                 else
@@ -158,21 +227,33 @@ namespace ChallengeDataCreator
             return challengesList;
         }
 
+        private static Regex progressableSubRegex = new Regex(@"(\d+/\d+)");
+
+        private static int checkIfProgressableSub(string subChallengeDescription)
+        {
+            var match = progressableSubRegex.Match(subChallengeDescription);
+            if (match.Success)
+            {
+                return match.Index;
+            }
+            return -1;
+        }
+
         private static List<string> makeLeaguesList()
         {
             var leagues = new List<string>();
-            //leagues.Add("Anarchy/Onslaught".Replace("/", "%2F"));
-            //leagues.Add("Domination/Nemesis".Replace("/", "%2F"));
-            //leagues.Add("Ambush/Invasion".Replace("/", "%2F"));
-            //leagues.Add("Rampage/Beyond".Replace("/", "%2F"));
-            //leagues.Add("Torment/Bloodlines".Replace("/", "%2F"));
-            //leagues.Add("Torment/Bloodlines+1-Month".Replace("/", "%2B"));
-            //leagues.Add("Torment/Bloodlines+1-Month+HC".Replace("/", "%2B"));
-            //leagues.Add("Warbands/Tempest".Replace("/", "%2F"));
-            //leagues.Add("Flashback".Replace("/", "%2F"));
-            //leagues.Add("Talisman".Replace("/", "%2F"));
-            //leagues.Add("Perandus".Replace("/", "%2F"));
-            //leagues.Add("Prophecy".Replace("/", "%2F"));
+            leagues.Add("Anarchy/Onslaught".Replace("/", "%2F"));
+            leagues.Add("Domination/Nemesis".Replace("/", "%2F"));
+            leagues.Add("Ambush/Invasion".Replace("/", "%2F"));
+            leagues.Add("Rampage/Beyond".Replace("/", "%2F"));
+            leagues.Add("Torment/Bloodlines".Replace("/", "%2F"));
+            leagues.Add("Torment/Bloodlines+1-Month".Replace("/", "%2B"));
+            leagues.Add("Torment/Bloodlines+1-Month+HC".Replace("/", "%2B"));
+            leagues.Add("Warbands/Tempest".Replace("/", "%2F"));
+            leagues.Add("Flashback".Replace("/", "%2F"));
+            leagues.Add("Talisman".Replace("/", "%2F"));
+            leagues.Add("Perandus".Replace("/", "%2F"));
+            leagues.Add("Prophecy".Replace("/", "%2F"));
             leagues.Add("Essence".Replace("/", "%2F"));
             return leagues;
         }

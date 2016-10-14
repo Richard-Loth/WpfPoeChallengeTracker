@@ -6,17 +6,17 @@
       <pct:challenge>
         <pct:name>Reach Level 80</pct:name>
         <pct:description>Attain character level 80 in the One Month Torment/Bloodlines Hardcore Event. This challenge still counts even if a character dies after reaching level 80.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Kill One of these Unique Bosses</pct:name>
         <pct:description>Kill at least one of the following six Unique Bosses in the One Month Torment/Bloodlines Hardcore Event.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Complete Forty Encounters</pct:name>
         <pct:description>Kill at least 40 of these 46 Tormented Spirits and packs of Magic monsters with Bloodline Mods in the One Month Torment/Bloodlines Hardcore Event. Killing Rare or Unique monsters possessed by Tormented Spirits still counts.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>40</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Bloodline: Bearers of the Guardian</pct:name>
@@ -160,7 +160,7 @@
       <pct:challenge>
         <pct:name>Complete Eighteen Missions</pct:name>
         <pct:description>Complete at least 18 of these 21 missions for the Forsaken Masters in the One Month Torment/Bloodlines Hardcore Event.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>18</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Defend a Relic from waves of Monsters for Elreon</pct:name>

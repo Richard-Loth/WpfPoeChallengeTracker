@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Domination-Nemesis</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Rare Monsters</pct:name>
         <pct:description>Kill a Rare Monster of each of these types in Domination or Nemesis.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>188</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Drowned</pct:name>
@@ -573,10 +573,10 @@
           <pct:name>Devourer</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Touch these Shrines</pct:name>
         <pct:description>Touch each of these shrines in the Domination league to gain their powers.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>17</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Acceleration Shrine</pct:name>
@@ -633,7 +633,7 @@
       <pct:challenge>
         <pct:name>Slay the Nemeses</pct:name>
         <pct:description>Kill Rare monsters with each of these Nemesis Mods.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>22</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Ancestral Power</pct:name>
@@ -702,10 +702,10 @@
           <pct:name>Volatile Stormblood</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach level 65</pct:name>
         <pct:description>Attain character level 65 with each class in the Domination or Nemesis leagues. This challenge still counts even if a character dies after reaching level 65.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Duelist</pct:name>
@@ -729,10 +729,10 @@
           <pct:name>Scion</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Own these Unique Items</pct:name>
         <pct:description>Own 65 specific Unique items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the item again. Uniques in both Domination and Nemesis leagues are counted for this challenge.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>65</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Abyssus</pct:name>
@@ -930,10 +930,10 @@
           <pct:name>Wideswing</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>116</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Hillock</pct:name>
@@ -1080,7 +1080,7 @@
           <pct:name>Pagan Bishop of Agony</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Penitentiary Incarcerator </pct:name>
+          <pct:name>Penitentiary Incarcerator</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Fire and Fury</pct:name>
@@ -1284,10 +1284,10 @@
           <pct:name>Ash Lessard</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use the following 23 currency items in either Domination or Nemesis.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>23</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Scroll of Wisdom</pct:name>
@@ -1359,10 +1359,10 @@
           <pct:name>Eternal Orb</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes in either Domination or Nemesis to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>33</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Scroll Fragment</pct:name>

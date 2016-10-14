@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Perandus</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Monsters</pct:name>
         <pct:description>Kill each of the following Unique monsters in any Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>16</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Amarissa, Daughter of Merveil</pct:name>
@@ -57,10 +57,10 @@
           <pct:name>The Deep Dweller</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Clear Act 2 Interiors</pct:name>
         <pct:description>Fully clear the following areas in Act 2. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Chamber of Sins Level 1</pct:name>
@@ -96,12 +96,12 @@
       <pct:challenge>
         <pct:name>Unseal the Labyrinth</pct:name>
         <pct:description>Open the Portal to the Labyrinth.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Complete these Encounters I</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Complete a Master's Mission</pct:name>
@@ -125,7 +125,7 @@
       <pct:challenge>
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Any Gem</pct:name>
@@ -155,7 +155,7 @@
       <pct:challenge>
         <pct:name>Kill these Normal Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Normal Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -173,12 +173,12 @@
       <pct:challenge>
         <pct:name>Create a Hideout</pct:name>
         <pct:description>Create a Hideout of any size.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Clear Act 2 Cruel Exteriors</pct:name>
         <pct:description>Fully clear the following areas in Act 2, in Cruel Difficulty or Higher. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>9</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>The Broken Bridge</pct:name>
@@ -208,10 +208,10 @@
           <pct:name>The Wetlands</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Rare Monsters in Cruel</pct:name>
         <pct:description>Kill a Rare Monster of each of these types in either Cruel or Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>16</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Carrion Queen</pct:name>
@@ -262,10 +262,10 @@
           <pct:name>Voidbearer</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use each of the following Currency Items.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Armourer's Scrap</pct:name>
@@ -307,7 +307,7 @@
       <pct:challenge>
         <pct:name>Complete these Encounters II</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Fully Clear a Corrupted Vaal Side Area</pct:name>
@@ -331,7 +331,7 @@
       <pct:challenge>
         <pct:name>Kill these Cruel Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Cruel Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -349,12 +349,12 @@
       <pct:challenge>
         <pct:name>Fully Upgrade your Hideout</pct:name>
         <pct:description>Create or Upgrade to a Large-sized Hideout.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Complete these Encounters III</pct:name>
         <pct:description>Complete the following Encounters in the Labyrinth.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Complete a Puzzle</pct:name>
@@ -375,10 +375,10 @@
           <pct:name>Use a Silver Key to open a Silver Door</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Vaal Bosses</pct:name>
         <pct:description>Kill each of the following Unique monsters in any Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Calxipher</pct:name>
@@ -417,10 +417,10 @@
           <pct:name>Wiraq, the Impaler</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Level these Masters</pct:name>
         <pct:description>Reach Reputation Level 5 with at least 6 of these 8 Forsaken Masters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Catarina, Master of the Dead</pct:name>
@@ -450,7 +450,7 @@
       <pct:challenge>
         <pct:name>Complete These Quests</pct:name>
         <pct:description>Complete each of the following quests.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Normal: A Dirty Job</pct:name>
@@ -492,17 +492,17 @@
       <pct:challenge>
         <pct:name>Identify a Lost Treasure</pct:name>
         <pct:description>Identify one of the following 5 Unique Items. You can trade them away afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Identify a Labyrinth Unique</pct:name>
         <pct:description>Identify one of the following 8 Unique Items. You can trade them away afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
       <pct:challenge>
         <pct:name>Open these Perandus Chests</pct:name>
         <pct:description>Open the following Perandus Chests.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Perandus Archive</pct:name>
@@ -541,10 +541,10 @@
           <pct:name>Perandus Wardrobe</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Argus in each Difficulty</pct:name>
         <pct:description>Kill Argus in each Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Normal</pct:name>
@@ -559,7 +559,7 @@
       <pct:challenge>
         <pct:name>Kill these Chest Guardians</pct:name>
         <pct:description>Kill each of the following Unique Perandus Chest Guardians.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>16</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Junith Perandus, Keeper of Vaults</pct:name>
@@ -610,10 +610,10 @@
           <pct:name>Percia, Indebted Poacher</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Achieve Ascension</pct:name>
         <pct:description>Use the Ascendancy Device in each Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Normal</pct:name>
@@ -628,7 +628,7 @@
       <pct:challenge>
         <pct:name>Challenge Izaro</pct:name>
         <pct:description>Defeat Izaro while the following conditions are active.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Izaro is supported by Conduits</pct:name>
@@ -655,10 +655,10 @@
           <pct:name>Izaro is surrounded by Charge Disruptors</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Trinkets</pct:name>
         <pct:description>Use each of the following Trinkets while in the Labyrinth.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Bane of the Loyal</pct:name>
@@ -688,7 +688,7 @@
       <pct:challenge>
         <pct:name>Apply these Enchantments</pct:name>
         <pct:description>Apply the following Enchantments to items via the Labyrinth.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>12</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Boots: Triggered on Kill</pct:name>
@@ -730,7 +730,7 @@
       <pct:challenge>
         <pct:name>Buy these Items</pct:name>
         <pct:description>Purchase each of the following items from Cadiro Perandus.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Any Currency Item</pct:name>
@@ -766,7 +766,7 @@
       <pct:challenge>
         <pct:name>Kill these Merciless Act Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses in Merciless Difficulty.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Act 1: Merveil, the Twisted</pct:name>
@@ -781,10 +781,10 @@
           <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Atziri's Elite</pct:name>
         <pct:description>Kill each of the following Unique monsters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>A'alai</pct:name>
@@ -802,12 +802,12 @@
       <pct:challenge>
         <pct:name>Reach level 90</pct:name>
         <pct:description>Attain character level 90. This challenge still counts even if your character dies afterwards.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Clear Unidentified Rare Maps</pct:name>
         <pct:description>Fully clear the following rare end-game Maps while they're unidentified. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Channel</pct:name>
@@ -840,10 +840,10 @@
           <pct:name>Tropical Island</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Map Bosses</pct:name>
         <pct:description>Kill each of the following Unique bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>9</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Carnage</pct:name>
@@ -858,7 +858,7 @@
           <pct:name>Master of the Blade</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>Penitentiary Incarcerator </pct:name>
+          <pct:name>Penitentiary Incarcerator</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
           <pct:name>Sallazzang</pct:name>
@@ -876,7 +876,7 @@
       <pct:challenge>
         <pct:name>Complete these Encounters IV</pct:name>
         <pct:description>Complete each of the following Encounters.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Enter the Vaal Temple end-game Map</pct:name>
@@ -900,12 +900,12 @@
       <pct:challenge>
         <pct:name>Clear Perandus Manor</pct:name>
         <pct:description>Fully clear the Perandus Manor end-game Map. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Redeem Divination Card Sets</pct:name>
         <pct:description>Turn in sets of at least 7 of the following 13 Divination card types to Tasuni:</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Chaotic Disposition</pct:name>
@@ -947,10 +947,10 @@
           <pct:name>Vinia's Token</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Two Deadly Bosses</pct:name>
         <pct:description>Kill 2 of the following 3 Unique bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>2</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Ambrius, Legion Slayer</pct:name>
@@ -965,7 +965,7 @@
       <pct:challenge>
         <pct:name>Clear Twinned Maps</pct:name>
         <pct:description>Fully clear maps in each of the following tiers while they have the Twinned mod. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>15</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tier 1</pct:name>
@@ -1013,10 +1013,10 @@
           <pct:name>Tier 15</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Identify these Treasures</pct:name>
         <pct:description>Identify four of these twelve Unique Items. You can trade them away afterwards.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Aegis Aurora</pct:name>
@@ -1058,7 +1058,7 @@
       <pct:challenge>
         <pct:name>Clear Maps with Eight Mods</pct:name>
         <pct:description>Fully clear maps in 10 of the following 15 tiers while they have 8 mods. Maps having 8 mods is a potential outcome of Vaal Orb corruption. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Tier 1</pct:name>
@@ -1109,7 +1109,7 @@
       <pct:challenge>
         <pct:name>Fully Level Zana</pct:name>
         <pct:description>Reach Reputation Level 8 with Zana, Master Cartographer.</pct:description>
-        <pct:type>binary</pct:type>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
     </pct:challenges>
   </pct:league>

@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Ambush-Invasion</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Have these Vaal Items</pct:name>
         <pct:description>Own 44 specific items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the items again. Items in both Ambush and Invasion leagues are counted for this challenge.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>44</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Atziri's Acuity</pct:name>
@@ -144,7 +144,7 @@
       <pct:challenge>
         <pct:name>Open Strongboxes</pct:name>
         <pct:description>Open Strongboxes with each of the following properties. Strongboxes do not need to be identified to complete the challenge. The ambushers must be defeated before it is counted as open.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>29</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Arctic</pct:name>
@@ -234,10 +234,10 @@
           <pct:name>Whispering</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill these Unique Invaders</pct:name>
         <pct:description>Kill each of the following Unique bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>36</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Alpha Paradisae</pct:name>
@@ -348,10 +348,10 @@
           <pct:name>Wonderwalker</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach Level 90</pct:name>
         <pct:description>Attain character level 90 in each challenge league. This challenge still counts even if a character dies after reaching level 90.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>2</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Ambush</pct:name>
@@ -360,10 +360,10 @@
           <pct:name>Invasion</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Clear these Corrupted Areas</pct:name>
         <pct:description>Kill all the monsters in every side area in Ambush or Invasion. You can complete this in any difficulty level. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>26</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Arcane Chambers</pct:name>
@@ -444,10 +444,10 @@
           <pct:name>Walled-off Ducts</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Kill Atziri and her Guardians</pct:name>
         <pct:description>Kill each of the following Unique bosses.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>5</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Vessel of the Vaal</pct:name>
@@ -465,10 +465,10 @@
           <pct:name>Atziri, Queen of the Vaal</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use the following 24 currency items in either Ambush or Invasion.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>24</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Armourer's Scrap</pct:name>
@@ -543,10 +543,10 @@
           <pct:name>Vaal Orb</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes in either Ambush or Invasion to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>33</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Agate Amulet</pct:name>

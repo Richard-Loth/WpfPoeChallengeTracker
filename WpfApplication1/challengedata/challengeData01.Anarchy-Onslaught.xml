@@ -3,10 +3,10 @@
   <pct:league>
     <pct:leaguename>Anarchy-Onslaught</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Slay the Rogue Exiles</pct:name>
         <pct:description>Hostile rogue exiles roam Wraeclast in the Anarchy league. Slay all 13 to complete this challenge. Everyone in the area will receive credit for the kill.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>13</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Antalie Napora</pct:name>
@@ -48,10 +48,10 @@
           <pct:name>Torr Olgosso</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Own these Unique Items</pct:name>
         <pct:description>Own 90 specific Unique items to complete this challenge. Note that if you trade any away, the challenge will un-complete until you obtain the item again. Uniques in both Anarchy and Onslaught leagues are counted for this challenge.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>90</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Aegis Aurora</pct:name>
@@ -324,10 +324,10 @@
           <pct:name>Zahndethus' Cassock</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use these Currency Items</pct:name>
         <pct:description>Use the following 23 currency items in either Anarchy or Onslaught.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>23</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Scroll of Wisdom</pct:name>
@@ -399,10 +399,10 @@
           <pct:name>Eternal Orb</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Reach Level 60 in Onslaught</pct:name>
         <pct:description>Attain character level 60 with each class in the Onslaught league. This challenge still counts even if a character dies after reaching level 60.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Duelist</pct:name>
@@ -423,10 +423,10 @@
           <pct:name>Witch</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Items from Vendor Recipes</pct:name>
         <pct:description>Complete vendor recipes in either Anarchy or Onslaught to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>34</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Scroll Fragment</pct:name>
@@ -531,10 +531,10 @@
           <pct:name>Any Gem</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Use each Map</pct:name>
         <pct:description>This challenge tracks which Maps are used by you in the Map Device in either Anarchy or Onslaught. It does not count Maps that you join, just ones you create.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>54</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Crypt</pct:name>
@@ -699,10 +699,10 @@
           <pct:name>Shrine</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-      <pct:challenge>
+      <pct:challenge createWikiLinks="true">
         <pct:name>Full-clear in any Difficulty</pct:name>
         <pct:description>Kill all the monsters in every area of the game in Anarchy or Onslaught. You can complete this in any difficulty level. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>60</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Twilight Strand</pct:name>
@@ -888,7 +888,7 @@
       <pct:challenge>
         <pct:name>Allocate these Passives</pct:name>
         <pct:description>Allocate this list of Passive Skills in either Anarchy or Onslaught. They will still count even if refunded by Orbs of Regret or quest rewards and can be spread across multiple characters. Skills that have been allocated are marked on the Passive Skill Tree with a small green tick.</pct:description>
-        <pct:type>progressable</pct:type>
+        <pct:type>Progressable</pct:type>
         <pct:neededToComplete>232</pct:neededToComplete>
         <pct:subchallenge>
           <pct:name>Acceleration</pct:name>

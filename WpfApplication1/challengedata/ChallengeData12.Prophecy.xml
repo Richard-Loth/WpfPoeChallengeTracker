@@ -1,3384 +1,843 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<pct:leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
   <pct:league>
-    <pct:leaguename>
-      Prophecy
-    </pct:leaguename>
-    <pct:startedOn>
-      2016-06-03 20:00Z
-    </pct:startedOn>
-    <pct:endsOn>
-      2016-08-29 22:00Z
-    </pct:endsOn>
+    <pct:leaguename>Prophecy</pct:leaguename>
     <pct:challenges>
-      <pct:challenge>
-        <pct:name>
-          Activate Normal Waypoints
-        </pct:name>
-        <pct:description>
-          Activate the Waypoints in each of the following areas on Normal Difficulty.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          8
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Activate Normal Waypoints</pct:name>
+        <pct:description>Activate the Waypoints in each of the following areas in Normal difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            The Coast
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Coast
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Coast</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Submerged Passage
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Submerged_Passage
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Submerged Passage</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Ledge
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Ledge
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Ledge</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Climb
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Climb
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Climb</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Lower Prison
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Lower_Prison
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-
-        <pct:subchallenge>
-          <pct:name>
-            Prisoner's Gate
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Prisoner%27s_Gate
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Lower Prison</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Ship Graveyard
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Ship_Graveyard
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Prisoner's Gate</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Cavern of Wrath
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Cavern_of_Wrath
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-
-
-      </pct:challenge>
-
-
-      <pct:challenge>
-        <pct:name>
-          Kill these Act 2 Uniques
-        </pct:name>
-        <pct:description>
-          Kill each of the following Unique bosses.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          8
-        </pct:neededToComplete>
-        <pct:subchallenge>
-          <pct:name>
-            Aidan the Frenzied
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in the Dread Thicket
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Aidan_the_Frenzied
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Ship Graveyard</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Bravalo
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in the Crossroads in upper-right quarter
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Bravalo
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Gneiss
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in The Old Fields
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Gneiss
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Nadia the Soothing
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in the Dread Thicket
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Nadia_the_Soothing
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Q'uru
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in The Caverns
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Q%27uru
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Soulmourn
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in The Fellshrine Ruins
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Soulmourn
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tailsinger
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in The Northern Forest
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Tailsinger
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Great White Beast
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Found in The Den
-            </pct:text>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Great_White_Beast_(unique_monster)
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Cavern of Wrath</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Kill 50 Monsters Bearing Silver
-        </pct:name>
-        <pct:description>
-          Kill 50 monsters that are carrying Silver Coins.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Fulfill a Prophecy
-        </pct:name>
-        <pct:description>
-          Complete any Prophecy.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-
-      </pct:challenge>
-      <pct:challenge>
-        <pct:name>
-          Complete these Encounters I
-        </pct:name>
-        <pct:description>
-          Complete each of the following Encounters.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          6
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill these Act 2 Uniques</pct:name>
+        <pct:description>Kill each of the following Unique bosses.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Complete a Master's Mission.
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Master
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Aidan the Frenzied</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a Possessed monster.
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Tormented_Spirit
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Bravalo</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a Rare monster with a Nemesis mod.
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Nemesis_modifier
-            </pct:url>
-          </pct:info>
+          <pct:name>Gneiss</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a Rogue Exile.
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Rogue_Exile
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Nadia the Soothing</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill all members of a Bloodline pack.
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Bloodline_mod
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Q'uru</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill the boss of a Corrupted Vaal Side Area.
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Corrupted_area
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Soulmourn</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tailsinger</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Great White Beast</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Kill these Normal Act Bosses
-        </pct:name>
-        <pct:description>
-          Kill each of the following Unique bosses in Normal Difficulty.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          4
-        </pct:neededToComplete>
+        <pct:name>Kill 50 Monsters Bearing Silver</pct:name>
+        <pct:description>Kill 50 monsters that are carrying Silver Coins.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>50</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Fulfill a Prophecy</pct:name>
+        <pct:description>Complete any Prophecy.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters I</pct:name>
+        <pct:description>Complete each of the following Encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Act 1: Merveil, the Twisted
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Merveil,_the_Siren
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Complete a Master's Mission</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 2: Vaal Oversoul
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Vaal_Oversoul
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a Possessed Monster</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 3: Dominus, Ascendant
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Dominus
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a Rare monster with a Nemesis mod</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 4: Malachai, The Nightmare
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Malachai,_The_Nightmare
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a Rogue Exile</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill all members of a Bloodline pack</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill the Boss of a Corrupted Vaal Side Area</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-
       <pct:challenge>
-        <pct:name>
-          Create a Hideout
-        </pct:name>
-        <pct:description>
-          Create a Hideout of any size.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-      </pct:challenge>
-
-
-      <pct:challenge>
-        <pct:name>
-          Clear Cruel Sewers
-        </pct:name>
-        <pct:description>
-          Fully clear each of the following areas in Cruel or Merciless Difficulty. Use the /remaining command to see how many monsters remain. Once you're getting close. Everyone in the area will receive credit for the clear.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          3
-        </pct:neededToComplete>
+        <pct:name>Kill these Normal Act Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses in Normal Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            The Slums Sewers
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Slums_Sewers
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Act 1: Merveil, the Twisted</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Warehouse Sewers
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Warehouse_Sewers
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Act 2: Vaal Oversoul</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            The Market Sewers
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Market_Sewers
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Act 3: Dominus, Ascendant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Complete These Cruel Quests
-        </pct:name>
-        <pct:description>
-          Complete each of the following quests in Cruel Difficulty.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          6
-        </pct:neededToComplete>
+        <pct:name>Create a Hideout</pct:name>
+        <pct:description>Create a Hideout of any size.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Clear Cruel Sewers</pct:name>
+        <pct:description>Fully clear each of the following areas in Cruel or Merciless Difficulty. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>3</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            A Fixture of Fate
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/A_Fixture_of_Fate
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Slums Sewers</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            A Swig of Hope
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/A_Swig_of_Hope
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Warehouse Sewers</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Mercy Mission
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Mercy_Mission
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Sever the Right Hand
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Sever_the_Right_Hand
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Great White Beast
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Great_White_Beast
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Through Sacred Ground
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Through_Sacred_Ground
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Market Sewers</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Use these Currency Items
-        </pct:name>
-        <pct:description>
-          Use each of the following Currency Items at least once.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          13
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Complete These Cruel Quests</pct:name>
+        <pct:description>Complete each of the following quests in Cruel Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Armourer's Scrap
-          </pct:name>
+          <pct:name>A Fixture of Fate</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Blacksmith's Whetstone
-          </pct:name>
+          <pct:name>A Swig of Hope</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Chromatic Orb
-          </pct:name>
+          <pct:name>Mercy Mission</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Glassblower's Bauble
-          </pct:name>
+          <pct:name>Sever the Right Hand</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Jeweller's Orb
-          </pct:name>
+          <pct:name>The Great White Beast</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Orb of Alchemy
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Orb of Alteration
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Orb of Augmentation
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Orb of Chance
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Orb of Fusing
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Orb of Transmutation
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Sealed Prophecy
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Vaal Orb
-          </pct:name>
-        </pct:subchallenge>
-
-      </pct:challenge>
-
-
-      <pct:challenge>
-        <pct:name>
-          Complete these Encounters II
-        </pct:name>
-        <pct:description>
-          Complete each of the following Encounters.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          3
-        </pct:neededToComplete>
-        <pct:subchallenge>
-          <pct:name>
-            Fully Clear a Corrupted Vaal Side Area
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Corrupted_area
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Kill a monster Possessed by a Tormented Warlord
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Tormented_Warlord
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Kill a Rogue Scion
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Rogue_Exile
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Master Craft any item
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Master_crafting
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Open a Gemcutter's Strongbox
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Strongbox
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Touch a Shrouded Shrine
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Shrine
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Through Sacred Ground</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Kill Cruel Act Bosses
-        </pct:name>
-        <pct:description>
-          Kill each of the following Unique bosses in Cruel Difficulty.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          4
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Use these Currency Items</pct:name>
+        <pct:description>Use each of the following Currency Items.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>13</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Act 1: Merveil, the Twisted
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Merveil,_the_Siren
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Armourer's Scrap</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 2: Vaal Oversoul
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Vaal_Oversoul
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Blacksmith's Whetstone</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 3: Dominus, Ascendant
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Dominus
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Chromatic Orb</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 4: Malachai, The Nightmare
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Malachai,_The_Nightmare
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Glassblower's Bauble</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alteration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Fusing</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Transmutation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sealed Prophecy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Clear Merciless Dried Lake
-        </pct:name>
-        <pct:description>
-          Fully clear The Dried Lake in Merciless Difficulty. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-        <pct:neededToComplete>
-
-        </pct:neededToComplete>
-
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Fulfill a Prophecy Chain
-        </pct:name>
-        <pct:description>
-          Complete each stage of a Prophecy Chain. You will lose your progress in a Chain if you Seal one of its Prophecies away.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Kill Merciless Rares
-        </pct:name>
-        <pct:description>
-          Kill a Rare monster of each of these types in Merciless Difficulty.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          17
-        </pct:neededToComplete>
+        <pct:name>Complete these Encounters II</pct:name>
+        <pct:description>Complete each of the following Encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Chaos Sentinel
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Mines 1/2, The Crystal Veins
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Chaos_Sentinel
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Fully Clear a Corrupted Vaal Side Area</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Fighting Bull
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Grand Arena
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Fighting_Bull
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a Monster possessed by a Tormented Warlord</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Fury Hound
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Kaom's Dream/Path/Stronghold
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Fury_Hound
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a Rogue Scion</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Hyrri's Sister
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Kaom's Dream/Path/Stronghold
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Hyrri%27s_Sister
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Master Craft any item</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Icy Manifestation
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Grand Arena
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Icy_Manifestation
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Open a Gemcutter's Strongbox</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kaom's Chosen
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Kaom's Dream/Path/Stronghold
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Kaom%27s_Chosen
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Lavianga's Acolyte
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Kaoms's Stronghold
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Lavianga%27s_Acolyte
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Mad Gladiator
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Grand Arena
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Mad_Gladiator
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Pitbull Demon
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Daresso's Dream
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Pitbull_Demon
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Pocked Behemoth
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Crystal Veins
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Pocked_Behemoth
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Pocked Lanternbearer
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Mines 1/2
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Pocked_Lanternbearer
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Pocked Miner
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Mines 1/2
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              hhttp://pathofexile.gamepedia.com/Pocked_Miner
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Rakango
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Kaom's Path/Stronghold
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Rakango
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Rooster Demon
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Daresso's Dream
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Rooster_Demon
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Shrieker
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Mines 1/2
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Shrieker
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tunneler
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in The Mines 2
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Tunneler
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Vakali Totem
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Kaom's Path/Stronghold
-            </pct:text>
-
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Vakali_Totem
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Touch a Shrouded Shrine</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Fulfill these Prophecy Types I
-        </pct:name>
-        <pct:description>
-          Complete a Prophecy of each of the following types.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          5
-        </pct:neededToComplete>
+        <pct:name>Kill Cruel Act Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses in Cruel Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Cleanse an area of Prophecized vermin
-          </pct:name>
-          <pct:info>
-            <pct:text>
-              Plaque of Rats or Frogs
-            </pct:text>
-          </pct:info>
+          <pct:name>Act 1: Merveil, the Twisted</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Complete a Prophecized Mission for a Master
-          </pct:name>
+          <pct:name>Act 2: Vaal Oversoul</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Enter an area with a Prophecized Tempest
-          </pct:name>
+          <pct:name>Act 3: Dominus, Ascendant</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a new Prophecized Unique boss
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Take an item to 20% quality with a Prophecy
-          </pct:name>
+          <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-
       <pct:challenge>
-        <pct:name>
-          Kill 25 Vaal Bosses
-        </pct:name>
-        <pct:description>
-          Kill 25 Unique Vaal side area bosses in any Difficulty.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
+        <pct:name>Clear Merciless Dried Lake</pct:name>
+        <pct:description>Fully clear The Dried Lake in Merciless Difficulty. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>Binary</pct:type>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Currency from Vendor Recipes
-        </pct:name>
-        <pct:description>
-          Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          8
-        </pct:neededToComplete>
+        <pct:name>Fulfill a Prophecy Chain</pct:name>
+        <pct:description>Complete a Prophecy Chain.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill Merciless Rares</pct:name>
+        <pct:description>Kill a Rare Monster of each of these types in Merciless Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>17</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Cartographer's Chisel
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Map with 20% quality / Maps with 40% quality in total / Stone Hammer/Rock Breaker/Gavel with 20% quality + any map
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Chaos Sentinel</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Chaos Orb
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Full equipment set of (unidentified) rare items with itemlevel between 60-74
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Fighting Bull</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Chromatic Orb
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Item with one socket of each colour (red, green, blue) linked together
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Fury Hound</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Jeweller's Orb
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Item with 6 sockets
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Hyrri's Sister</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Orb of Alchemy
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Orb_of_Alchemy
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Icy Manifestation</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Orb of Augmentation
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Item with 6 affixes
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Kaom's Chosen</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Orb of Chance
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              2 Identified rare items with same name (can be obtained from strongbox which contain mirrored items)
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Lavianga's Acolyte</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Vaal Orb
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              7 vaal gems + 1 sacrifice fragment
-            </pct:text>
-
-          </pct:info>
-
+          <pct:name>Mad Gladiator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pitbull Demon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pocked Behemoth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pocked Lanternbearer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pocked Miner</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rakango</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rooster Demon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrieker</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tunneler</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vakali Totem</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Level a Gem to 20
-        </pct:name>
-        <pct:description>
-          Upgrade a Skill Gem or a Support Gem to level 20. You can trade it away afterwards.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Open a Unique strongbox
-        </pct:name>
-        <pct:description>
-          Open one of the following six Unique Strongboxes. Strongboxes do not need to be identified to complete the challenge. The ambushers must be defeated before it is counted as open.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          1
-        </pct:neededToComplete>
+        <pct:name>Fulfill these Prophecy Types I</pct:name>
+        <pct:description>Complete a Prophecy of each of the following types.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Ashes of the Condemned
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Ashes_of_the_Condemned
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Cleanse an area of Prophecised vermin</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Brinerot Cache
-          </pct:name>
-
-
-
+          <pct:name>Complete a Prophecised Mission for a Master</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Deshret's Storm
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Deshret%27s_Storm
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Enter an area with a Prophecised Tempest</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Mutewind Cache
-          </pct:name>
-
-
-
+          <pct:name>Kill a new Prophecised Unique boss</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Redblade Cache
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Redblade_Cache
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Renegades Cache
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Renegades_Cache
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Take an item to 20% quality with a Prophecy</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-
       <pct:challenge>
-        <pct:name>
-          Fully Upgrade your Hideout
-        </pct:name>
-        <pct:description>
-          Create or Upgrade to a Large-sized Hideout. You need a lvl 7 master to do this.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
+        <pct:name>Kill 25 Vaal Bosses</pct:name>
+        <pct:description>Kill 25 Unique Corrupted Side Area Bosses in any Difficulty.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>25</pct:neededToComplete>
       </pct:challenge>
-
-
-      <pct:challenge>
-        <pct:name>
-          Kill Merciless Izaro
-        </pct:name>
-        <pct:description>
-          Kill Izaro in Merciless Difficulty.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Fulfill these Prophecy Types II
-        </pct:name>
-        <pct:description>
-          Complete a Prophecy of each of the following types.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          8
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Currency from Vendor Recipes</pct:name>
+        <pct:description>Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Clear an area of Prophecized Beyond monsters
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Mysterious Invaders
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Mysterious_Invaders
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Cartographer's Chisel</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Completed a Fated Unique item
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Fated
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        
-        <pct:subchallenge>
-          <pct:name>
-            Fulfil a Prophecy that modifies item sockets
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              The Jeweller's Touch
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Jeweller%27s_Touch
-            </pct:url>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Fated Connections
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Fated_Connections
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Chaos Orb</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Fulfill the first link in a Prophecy chain
-          </pct:name>
+          <pct:name>Chromatic Orb</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Get Prophecized Currency from a Slain monster
-          </pct:name>
-        </pct:subchallenge>
-
-        <pct:subchallenge>
-          <pct:name>
-            Get a Prophecized Unique item from a Rare monster
-          </pct:name>
-
+          <pct:name>Jeweller's Orb</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Get a random Unique item from a Prophecy
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              The Mysterious Gift
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Mysterious_Gift
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Orb of Alchemy</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a group of Prophecized Exiles in a Map
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              The Four Feral Exiles
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Four_Feral_Exiles
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Kill these Beyond Demons
-        </pct:name>
-        <pct:description>
-          Kill any five of the following six Unique bosses. You can encounter beyond demons by crafting the Otherworldly prefix on a map or use the Beyond Mod from Zana's map device.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          5
-        </pct:neededToComplete>
+        <pct:name>Level a Gem to 20</pct:name>
+        <pct:description>Upgrade a Skill Gem or a Support Gem to level 20. You can trade it away afterwards.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Open a Unique strongbox</pct:name>
+        <pct:description>Open one of the following six Unique Strongboxes. Strongboxes do not need to be identified to complete the challenge. The ambushers must be defeated before it is counted as open.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Fully Upgrade your Hideout</pct:name>
+        <pct:description>Create or Upgrade to a Large-sized Hideout.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill Merciless Izaro</pct:name>
+        <pct:description>Kill Izaro in Merciless Difficulty.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Fulfill these Prophecy Types II</pct:name>
+        <pct:description>Complete a Prophecy of each of the following types.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Bameth, Shifting Darkness
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Bameth,_Shifting_Darkness
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Clear an area of Prophecised Beyond monsters</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Ephij, Crackling Sky
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Ephij,_Crackling_Sky
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Complete a Fated Unique item</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Haast, Unrelenting Frost
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Haast,_Unrelenting_Frost
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Fulfill a prophecy that modifies item sockets</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Na'em, Bending Stone
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Na%27em,_Bending_Stone
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Fulfill the first link in a Prophecy chain</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tzteosh, Hungering Flame
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Tzteosh,_Hungering_Flame
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Get a Prophecised Unique item from a Rare monster</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Abaxoth, the End of All That Is
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Abaxoth,_the_End_of_All_That_Is
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Get a random Unique item from a Prophecy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Get Prophecised Currency from a Slain monster</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a group of Prophecised Exiles in a Map</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Identify 50 Unique Items
-        </pct:name>
-        <pct:description>
-          Identify any 50 Unique items. You can trade them away afterwards. Warning: Identifying multiple uniques within the same second may prevent them from being counted correctly.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-
-      </pct:challenge>
-
-
-      <pct:challenge>
-        <pct:name>
-          Complete these Encounters III
-        </pct:name>
-        <pct:description>
-          Complete each of the following Encounters.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          6
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill these Beyond Demons</pct:name>
+        <pct:description>Kill any five of the following six Unique bosses.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Fully clear a map affected by a Tempest
-          </pct:name>
+          <pct:name>Bameth, Shifting Darkness</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill 1000 monsters in a single Rampage kill streak
-          </pct:name>
+          <pct:name>Ephij, Crackling Sky</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a Keepers of the Trove Bloodline pack
-          </pct:name>
+          <pct:name>Haast, Unrelenting Frost</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a Rare monster with Inner Treasure
-          </pct:name>
+          <pct:name>Na'em, Bending Stone</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a Warband Leader
-          </pct:name>
+          <pct:name>Tzteosh, Hungering Flame</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill a monster Possessed by two Tormented Spirits
-          </pct:name>
+          <pct:name>Abaxoth, the End of All That Is</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-
       <pct:challenge>
-        <pct:name>
-          Kill these Merciless Act Bosses
-        </pct:name>
-        <pct:description>
-          Kill each of the following Unique bosses in Merciless Difficulty.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          4
-        </pct:neededToComplete>
+        <pct:name>Identify 50 Unique Items</pct:name>
+        <pct:description>Identify any 50 Unique Items. You can trade them away afterwards. Warning: Identifying multiple uniques within the same second may prevent them from being counted correctly.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>50</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters III</pct:name>
+        <pct:description>Complete each of the following Encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Act 1: Merveil, the Twisted
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Merveil,_the_Siren
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Fully clear a map affected by a Tempest</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 2: Vaal Oversoul
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Vaal_Oversoul
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill 1000 Monsters in a single Rampage kill streak</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 3: Dominus, Ascendant
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Dominus
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a Keepers of the Trove Bloodline Pack</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Act 4: Malachai, The Nightmare
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Malachai,_The_Nightmare
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill a monster possessed by two Torment Spirits</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Rare monster with Inner Treasure</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Warband Leader</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Fulfill these Prophecy Chains
-        </pct:name>
-        <pct:description>
-          Fulfill 4 of the following 8 Prophecy Chains.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          4
-        </pct:neededToComplete>
+        <pct:name>Kill these Merciless Act Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses in Merciless Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Anarchy's End
-          </pct:name>
+          <pct:name>Act 1: Merveil, the Twisted</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Ancient Rivalries
-          </pct:name>
+          <pct:name>Act 2: Vaal Oversoul</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Beyond Sight
-          </pct:name>
+          <pct:name>Act 3: Dominus, Ascendant</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Day of Sacrifice
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Deadly Rivalry
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Thaumaturgical History
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Ambitious Bandit
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Warmongers
-          </pct:name>
+          <pct:name>Act 4: Malachai, The Nightmare</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Reach Level 90
-        </pct:name>
-        <pct:description>
-          Attain character level 90. This challenge still counts even if your character dies afterwards.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Clear Unidentified Rare Maps
-        </pct:name>
-        <pct:description>
-          Fully clear the following rare end-game Maps while they're unidentified. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          10
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Fulfill these Prophecy Chains</pct:name>
+        <pct:description>Complete 4 of the following 8 Prophecy Chains.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Desert Map
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/azukowahameiki
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/enoniraredahuk
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Anarchy's End</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Dunes
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/otomamahinemna
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/amatazuhakikak
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Ancient Rivalries</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Cemetery
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/azunonakusimet
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/kinikusitonama
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Beyond Sight</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Thicket
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/oyamonihokayas
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/itezohikinador
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Day of Sacrifice</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Mud Geyser
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/adanikoerasino
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/osirataresinas
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Deadly Rivalry</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Quarry
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/nahikonariayua
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/auokehakotauta
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Thaumaturgical History</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Phantasmagoria
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/akomeyubonaran
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/azihitikasanar
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Ambitious Bandit</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Shore
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/akogenutesinau
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/oatanohoesamot
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Graveyard
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/oatunasimatoos
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/okiasitotosate
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Villa
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Buy in SC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/akomaritiokika
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/inokarigiutere
-            </pct:url>
-          </pct:info>
-
+          <pct:name>The Warmongers</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Unseal the Endgame Labyrinth
-        </pct:name>
-        <pct:description>
-          Complete all of the Map Ascendancy Trials to unlock the Endgame Labyrinth. People share findings of these trials in /global 820.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          6
-        </pct:neededToComplete>
+        <pct:name>Reach Level 90</pct:name>
+        <pct:description>Attain character level 90. This challenge still counts even if your character dies afterwards.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Clear Unidentified Rare Maps</pct:name>
+        <pct:description>Fully clear the following rare end-game Maps while they're unidentified. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>10</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Trial of Crippling Grief
-          </pct:name>
+          <pct:name>Desert</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Trial of Burning Rage
-          </pct:name>
+          <pct:name>Dunes</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Trial of Swirling Fear
-          </pct:name>
+          <pct:name>Cemetery</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Trial of Piercing Truth
-          </pct:name>
+          <pct:name>Thicket</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Trial of Stinging Doubt
-          </pct:name>
+          <pct:name>Mud Geyser</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Trial of Lingering Pain
-          </pct:name>
+          <pct:name>Quarry</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Phantasmagoria</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shore</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Graveyard</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Villa</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Kill these Map Bosses
-        </pct:name>
-        <pct:description>
-          Kill each of the following Unique bosses.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          9
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Unseal the Endgame Labyrinth</pct:name>
+        <pct:description>Complete all of the Map Ascendancy Trials to unlock the Endgame Labyrinth.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Atziri's Chosen
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Vaal Pyramid Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Atziri%27s_Chosen
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Trial of Crippling Grief</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Belcer, the Pirate Lord
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Sewer Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Belcer,_the_Pirate_Lord
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Trial of Burning Rage</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Glace
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Shore Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Glace
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Trial of Swirling Fear</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Nightmare Manifest
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Malformation Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Malformation_Map
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Trial of Piercing Truth</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Oak the Mighty
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Dark Forest map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Oak_the_Mighty
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Trial of Stinging Doubt</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Shock and Horror
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Torture Chamber Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Torture_Chamber_Map
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Idol Beyond
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Underground Sea Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Idol_Beyond
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Wicked One
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Temple Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Temple_Map
-            </pct:url>
-          </pct:info>
-
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tore, Towering Ancient
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Found in Pit Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Pit_Map
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Trial of Lingering Pain</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Kill Argus in the Endgame Labyrinth
-        </pct:name>
-        <pct:description>
-          Kill Argus in the Endgame Labyrinth.
-        </pct:description>
-        <pct:type>
-          binary
-        </pct:type>
-
-
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Defeat the Pale Council
-        </pct:name>
-        <pct:description>
-          Open a portal to the Pale Court and defeat the Pale Council.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          4
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill these Map Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>9</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Eber, the Plaguemaw
-          </pct:name>
+          <pct:name>Atziri's Chosen</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Inya, the Unbearable Whispers
-          </pct:name>
+          <pct:name>Belcer, The Pirate Lord</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Volkuur, the Unbreathing Queen
-          </pct:name>
+          <pct:name>Glace</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Yriel, the Feral Lord
-          </pct:name>
+          <pct:name>Nightmare Manifest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Oak the Mighty</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shock and Horror</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Idol Beyond</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Wicked One</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tore, Towering Ancient</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Redeem Divination Card Sets
-        </pct:name>
-        <pct:description>
-          Turn in sets of at least 7 of the following 12 Divination card types to Tasuni.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          7
-        </pct:neededToComplete>
+        <pct:name>Kill Argus in the Endgame Labyrinth</pct:name>
+        <pct:description>Kill Argus in the Endgame Labyrinth.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Defeat the Pale Council</pct:name>
+        <pct:description>Open a portal to the Pale Court and defeat the Pale Council.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Assassin's Favour
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Marketplace (N,C,M), Arcade Map, Bazaar Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Assassin%27s_Favour
-            </pct:url>
-          </pct:info>
-
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/omasenatedutey
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/enihitimetunom
-            </pct:url>
-          </pct:info>
+          <pct:name>Eber, the Plaguemaw</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Cartographer's Delight
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Docks (M)
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Cartographer%27s_Delight
-            </pct:url>
-          </pct:info>
- <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/ohasitatotarah
-            </pct:url>
-          </pct:info>
- <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/tetarehamimate
-            </pct:url>
-          </pct:info>
+          <pct:name>Inya, the Unbearable Whispers</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Humility
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Aqueduct (N,C,M), Channel Map, Waterways Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Humility
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/ikomoritositas
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/otosotaasumana
-            </pct:url>
-          </pct:info>
+          <pct:name>Volkuur, the Unbreathing Queen</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Hunter's Resolve
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Riverways (C,M), Springs
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Hunter%27s_Resolve
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/inikutononoimo
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/himahakakubeno
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Lysah's Respite
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in Graveyard Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Lysah%27s_Respite
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/ouwomarihahaor
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/owoutomgomomom
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Battle Born
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in Kaom's Dream/Path/Stronghold (N,C,M), Abyss Map, Volcano Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Battle_Born
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/tinitarohiyedu
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/arutaunodorena
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Body
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops from Armourer's Strongbox
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Body
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/tanisumamonaus
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/kimokeukimkane
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Brittle Emperor
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops from Voll, Emperor of Purity (M) Boss of The Dried Lake, The Brittle Emperor (Boss of Wasteland Map)
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Brittle_Emperor
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/durukokohitohi
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/eusemonikoiohi
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Gentleman
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Slums (N,C,M), Ghetto Map, Precint Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Gentleman
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/agiomomotutari
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/omamauritairim
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Mercenary
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Broken Bridge (C), Coves Map, Gorge Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Mercenary
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/omatanazahinag
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/somosasitaunot
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            The Trial
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in a lot of Tier 5+ Maps
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/The_Trial
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/hoyeuminikikon
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/wobebiyusitaka
-            </pct:url>
-          </pct:info>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Volatile Power
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Drops in The Crystal Veins, The Mines 1/2 (N,C,M), Excavation Map, Quarry Map
-            </pct:text>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Volatile_Power
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in Sc
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/dutaookiturita
-            </pct:url>
-          </pct:info>
-          <pct:info>
-            <pct:text>
-              Buy in HC
-            </pct:text>
-            <pct:url>
-              http://poe.trade/search/nohamamaotonzu
-            </pct:url>
-          </pct:info>
+          <pct:name>Yriel, the Feral Lord</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Clear Twinned Maps
-        </pct:name>
-        <pct:description>
-          Fully clear maps in each of the following tiers while they have the Twinned mod. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          15
-        </pct:neededToComplete>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Redeem Divination Card Sets</pct:name>
+        <pct:description>Turn in sets of at least 7 of the following 12 Divination card types to Tasuni.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>7</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Tier 1
-          </pct:name>
+          <pct:name>Assassin's Favour</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 2
-          </pct:name>
+          <pct:name>Cartographer's Delight</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 3
-          </pct:name>
+          <pct:name>Humility</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 4
-          </pct:name>
+          <pct:name>Hunter's Resolve</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 5
-          </pct:name>
+          <pct:name>Lysah's Respite</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 6
-          </pct:name>
+          <pct:name>The Battle Born</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 7
-          </pct:name>
+          <pct:name>The Body</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 8
-          </pct:name>
+          <pct:name>The Brittle Emperor</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 9
-          </pct:name>
+          <pct:name>The Gentleman</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 10
-          </pct:name>
+          <pct:name>The Mercenary</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 11
-          </pct:name>
+          <pct:name>The Trial</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 12
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tier 13
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tier 14
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tier 15
-          </pct:name>
+          <pct:name>Volatile Power</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Get Maps from Map Bosses
-        </pct:name>
-        <pct:description>
-          Complete 300 Map boss encounters that result in at least one Map being dropped by the boss. Maps do not have to be allocated to you to count for this challenge.
-        </pct:description>
-        <pct:type>
-          progressableNoSubs
-        </pct:type>
-        <pct:neededToComplete>
-          300
-        </pct:neededToComplete>
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Complete these Encounters IV
-        </pct:name>
-        <pct:description>
-          Complete each of the following encounters.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          4
-        </pct:neededToComplete>
+        <pct:name>Clear Twinned Maps</pct:name>
+        <pct:description>Fully clear maps in each of the following tiers while they have the Twinned mod. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>15</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Complete a Master's Mission (200)
-          </pct:name>
+          <pct:name>Tier 1</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Kill all members of a Bloodline pack (200)
-          </pct:name>
+          <pct:name>Tier 2</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Open any Strongbox (200)
-          </pct:name>
+          <pct:name>Tier 3</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Touch any Shrine (200)
-          </pct:name>
-        </pct:subchallenge>
-      </pct:challenge>
-
-      <pct:challenge>
-        <pct:name>
-          Clear Maps with Eight Mods
-        </pct:name>
-        <pct:description>
-          Fully clear maps in 10 of the following 15 tiers while they have 8 mods. You can create maps with 8 mods by using a vaal orb on a map. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          10
-        </pct:neededToComplete>
-        <pct:subchallenge>
-          <pct:name>
-            Tier 1
-          </pct:name>
+          <pct:name>Tier 4</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 2
-          </pct:name>
+          <pct:name>Tier 5</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 3
-          </pct:name>
+          <pct:name>Tier 6</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 4
-          </pct:name>
+          <pct:name>Tier 7</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 5
-          </pct:name>
+          <pct:name>Tier 8</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 6
-          </pct:name>
+          <pct:name>Tier 9</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 7
-          </pct:name>
+          <pct:name>Tier 10</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 8
-          </pct:name>
+          <pct:name>Tier 11</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 9
-          </pct:name>
+          <pct:name>Tier 12</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 10
-          </pct:name>
+          <pct:name>Tier 13</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 11
-          </pct:name>
+          <pct:name>Tier 14</pct:name>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Tier 12
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tier 13
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tier 14
-          </pct:name>
-        </pct:subchallenge>
-        <pct:subchallenge>
-          <pct:name>
-            Tier  15
-          </pct:name>
+          <pct:name>Tier 15</pct:name>
         </pct:subchallenge>
       </pct:challenge>
-
       <pct:challenge>
-        <pct:name>
-          Complete Two Endgame Grinds
-        </pct:name>
-        <pct:description>
-          Kill two of these four Unique bosses the following numbers of times.
-        </pct:description>
-        <pct:type>
-          progressable
-        </pct:type>
-        <pct:neededToComplete>
-          2
-        </pct:neededToComplete>
+        <pct:name>Get Maps From Map Bosses</pct:name>
+        <pct:description>Complete 300 Map boss encounters that result in at least one Map being dropped by the boss. Maps do not have to be allocated to you to count for this challenge.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>300</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters IV</pct:name>
+        <pct:description>Complete each of the following encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
         <pct:subchallenge>
-          <pct:name>
-            Ambrius, Legion Slayer (20)
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Ambrius,_Legion_Slayer
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Complete a Master's Mission</pct:name>
+          <pct:neededToCompleteSub>200</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Atziri, Queen of the Vaal (100)
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Atziri,_Queen_of_the_Vaal
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Kill all members of a Bloodline pack</pct:name>
+          <pct:neededToCompleteSub>200</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Izaro in the Endgame Labyrinth (40)
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Izaro
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Open any Strongbox</pct:name>
+          <pct:neededToCompleteSub>200</pct:neededToCompleteSub>
         </pct:subchallenge>
         <pct:subchallenge>
-          <pct:name>
-            Voll, Emperor of Purity in Merciless (1,200)
-          </pct:name>
-
-          <pct:info>
-            <pct:text>
-              Wiki
-            </pct:text>
-            <pct:url>
-              http://pathofexile.gamepedia.com/Voll,_Emperor_of_Purity
-            </pct:url>
-          </pct:info>
-
+          <pct:name>Touch any Shrine</pct:name>
+          <pct:neededToCompleteSub>200</pct:neededToCompleteSub>
         </pct:subchallenge>
       </pct:challenge>
-
-
+      <pct:challenge>
+        <pct:name>Clear Maps with Eight Mods</pct:name>
+        <pct:description>Fully clear maps in 10 of the following 15 tiers while they have 8 mods. Maps having 8 mods is a potential outcome of Vaal Orb corruption. Use the /remaining command to see how many monsters remain, once you're getting close. Everyone in the area will receive credit for the clear.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>10</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Tier 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 4</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 5</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 6</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 7</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 8</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 9</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 10</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 11</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 12</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 13</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 14</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 15</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Complete Two Endgame Grinds</pct:name>
+        <pct:description>Kill two of these four Unique Bosses the following numbers of times.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>2</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Ambrius, Legion Slayer</pct:name>
+          <pct:neededToCompleteSub>20</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri, Queen of the Vaal</pct:name>
+          <pct:neededToCompleteSub>100</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Izaro in the Endgame Labyrinth</pct:name>
+          <pct:neededToCompleteSub>40</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Voll, Emperor of Purity in Merciless</pct:name>
+          <pct:neededToCompleteSub>1200</pct:neededToCompleteSub>
+        </pct:subchallenge>
+      </pct:challenge>
     </pct:challenges>
   </pct:league>
-</pct:leagues>
+</leagues>

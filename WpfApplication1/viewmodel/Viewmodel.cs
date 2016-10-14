@@ -272,7 +272,10 @@ namespace WpfPoeChallengeTracker.viewmodel
         public void suspend()
         {
             model.suspend();
-            Remaining.Dispose();
+            if (Remaining!= null)
+            {
+                Remaining.Dispose(); 
+            }
             Properties.Settings.Default.Save();
         }
 
