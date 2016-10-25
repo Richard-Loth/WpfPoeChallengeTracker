@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfPoeChallengeTracker.view;
 using WpfPoeChallengeTracker.model;
+using WPF.JoshSmith.ServiceProviders.UI;
 
 namespace WpfPoeChallengeTracker
 {
@@ -54,7 +55,7 @@ namespace WpfPoeChallengeTracker
                 this.Height = Properties.Settings.Default.WindowHeight;
                 this.Width = Properties.Settings.Default.WindowWidth;
                 this.Left = Properties.Settings.Default.WindowPositionLeft;
-                this.Top = Properties.Settings.Default.WindowPositionTop; 
+                this.Top = Properties.Settings.Default.WindowPositionTop;
             }
             switch (Properties.Settings.Default.CompletedChallenges)
             {
@@ -73,6 +74,12 @@ namespace WpfPoeChallengeTracker
             viewmodel.changeCompletedBehaviour(Properties.Settings.Default.CompletedChallenges);
         }
 
+        private void DragDropManager_ProcessDrop(object sender, ProcessDropEventArgs<ChallengeView> e)
+        {
+            e.ItemsSource.Move(e.OldIndex, e.NewIndex);
+            challengesListview.SelectedItem = null;
+        }
+
         internal void persistFirstStart()
         {
             if (Properties.Settings.Default.FirstStart)
@@ -86,7 +93,7 @@ namespace WpfPoeChallengeTracker
 
         private void Viewmodel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == "CurrentLeague") 
+            if (e.PropertyName == "CurrentLeague")
             {
                 filterTextBox.Text = "";
             }
@@ -107,6 +114,7 @@ namespace WpfPoeChallengeTracker
             ChallengeView c = (ChallengeView)btn.DataContext;
             c.IsCollapsed = !c.IsCollapsed;
             challengesListview.UpdateLayout();
+            e.Handled = false;
         }
 
         private void ChallengeIsDoneClick(object sender, RoutedEventArgs e)
@@ -181,12 +189,6 @@ namespace WpfPoeChallengeTracker
             }
         }
 
-        private void challengesListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var listview = (ListView)sender;
-            listview.SelectedItem = null;
-        }
-
         private void subChallengeInfoListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listview = (ListView)sender;
@@ -219,6 +221,8 @@ namespace WpfPoeChallengeTracker
             viewmodel.changeCompletedBehaviour(behave);
         }
 
+
+        #region Window Events
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             var size = e.NewSize;
@@ -231,6 +235,7 @@ namespace WpfPoeChallengeTracker
             Properties.Settings.Default.Save();
             viewmodel.suspend();
         }
+        #endregion
 
         private void challengesListview_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
@@ -331,6 +336,23 @@ namespace WpfPoeChallengeTracker
         {
             var window = new AboutDialog();
             window.ShowDialog();
+        }
+      
+        ListViewDragDropManager<ChallengeView> dragDropManager;
+        internal void initDragAndDrop()
+        {
+            Dispatcher.Invoke(() =>
+            {
+                dragDropManager = new ListViewDragDropManager<ChallengeView>(challengesListview);
+                dragDropManager.ShowDragAdorner = true;
+                dragDropManager.ProcessDrop += DragDropManager_ProcessDrop;
+            });
+        }
+
+        private void challengesListview_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            ListView listview = (ListView)sender;
+            listview.SelectedItem = null;
         }
     }
 }

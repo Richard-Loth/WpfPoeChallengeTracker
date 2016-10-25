@@ -21,8 +21,8 @@
         <v:IsCollapsedToButtonTextConverter x:Key="IsCollapsedToTextConverter" />
         <v:IsDoneToTextConverter x:Key="IsDoneToTextConverter" />
         <v:ChallengeIsDoneToCheckColorConverter x:Key="ChallengeIsDoneToCheckColorConverter"/>
-        
-       
+
+
         <Thickness x:Key="TileMargin" Left="5" Right="5" Bottom="5" Top="0"></Thickness>
         <Style  x:Key="ButtonmenuStyle"
     TargetType="Button">
@@ -157,7 +157,7 @@
                 <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
                     <TextBlock Text="{Binding LeagueName}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
                     <TextBlock Name="CountCompletedTextBlock" Text="{Binding CountCompleted}" Foreground="{DynamicResource ChallengeDescriptionBrush}" HorizontalAlignment="Center" />
-                 </StackPanel>
+                </StackPanel>
                 <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding Remaining.IsLeagueOver, Converter={StaticResource BoolVisibilityConverter}}" Text="League is over" Foreground="{DynamicResource ChallengeDescriptionBrush}" />
                 <Grid Grid.Column="1" Width="Auto" Margin="20,0,0,0" HorizontalAlignment="Stretch" Visibility="{Binding Remaining.IsLeagueOver, Converter={StaticResource ReverseBoolVisibilityConverter}}">
                     <Grid.RowDefinitions>
@@ -213,13 +213,15 @@
             </Grid>
 
         </Border>
-        <ListView ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="challengesListview" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  PreviewMouseWheel="challengesListview_PreviewMouseWheel"   Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}"  AllowDrop="True" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PoeCtBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}"   SelectionChanged="challengesListView_SelectionChanged" >
+        <ListView Name="challengesListview" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible"  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  PreviewMouseWheel="challengesListview_PreviewMouseWheel"   Margin="{DynamicResource TileMargin}" Visibility="{Binding TileVisibilityProp.IsChallengesVisible}"  HorizontalAlignment="Stretch" MinWidth="250" MaxWidth="500" ItemsSource="{Binding ChallengeViews, Mode=OneWay}" BorderBrush="{StaticResource ChallengeStackBorder}" BorderThickness="{DynamicResource PoeCtBorderThickness}" Background="{StaticResource InsideChallengeBackgrundBrush}" MouseLeftButtonUp="challengesListview_MouseLeftButtonUp">
 
+         
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                 </Style>
             </ListView.ItemContainerStyle>
+
             <ListView.ItemTemplate >
                 <DataTemplate DataType="vm:ChallengeView">
                     <Grid>

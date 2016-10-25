@@ -197,6 +197,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="view\DragAndDrop\DragAdorner.cs" />
+    <Compile Include="view\DragAndDrop\ListViewDragDropManager.cs" />
+    <Compile Include="view\DragAndDrop\MouseUtilities.cs" />
     <Compile Include="view\EnterAccountName.xaml.cs">
       <DependentUpon>EnterAccountName.xaml</DependentUpon>
     </Compile>

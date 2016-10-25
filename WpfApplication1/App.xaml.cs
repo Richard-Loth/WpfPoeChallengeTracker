@@ -22,6 +22,7 @@ namespace WpfPoeChallengeTracker
         private Timer appInitTimer;
         private Model model;
         private Viewmodel viewmodel;
+        private MainWindow mainWindow;
 
         protected override void OnStartup(StartupEventArgs e)
         {
@@ -30,13 +31,13 @@ namespace WpfPoeChallengeTracker
             viewmodel = new Viewmodel(model);
             viewmodel.PropertyChanged += Viewmodel_PropertyChanged;
             appInitTimer = new Timer(appInitTimerCallback, null, 0, Timeout.Infinite);
-            var window = new MainWindow(viewmodel);
-            window.Title = "Poe Challenge Tracker";
+            mainWindow = new MainWindow(viewmodel);
+            mainWindow.Title = "Poe Challenge Tracker";
             var uri = new Uri("pack://application:,,,/resources/logo.png");
             var bitmap = BitmapFrame.Create(uri);
-            window.Icon = bitmap;
-            window.Show();
-            window.persistFirstStart();
+            mainWindow.Icon = bitmap;
+            mainWindow.Show();
+            mainWindow.persistFirstStart();
         }
 
 
@@ -45,6 +46,7 @@ namespace WpfPoeChallengeTracker
         {
             model.initModel();
             viewmodel.initViewmodel();
+            mainWindow.initDragAndDrop();
             appInitTimer.Dispose();
         }
 
