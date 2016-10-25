@@ -207,8 +207,8 @@
                 <WrapPanel Name="ButtonsWrapPanel" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1" Margin="0,5" HorizontalAlignment="Center">
                     <Button Name="SyncProgressButton" Click="SyncProgressButton_Click" Content="Synchronize Progress" HorizontalAlignment="Center" Margin="5,0"  />
                     <Button Name="CreateChatMessageButton" Content="Create Chat Message" Click="CreateChatMessageButton_Click" Margin="5,0" />
-                    <Button Name="CollapseAllButton" Margin="5,0" Content="Collapse All" Click="collapseAllButton_Click"/>
-                    <Button x:Name="UncollapseAllButton" Content="Uncollapse All" Margin="5,0" Click="unCollapseAllButton_Click"/>
+                    <Button Name="UncollapseAllButton" Margin="5,0" Content="Uncollapse All" Click="unCollapseAllButton_Click"/>
+                    <Button x:Name="CollapseAllButton" Content="Collapse All" Margin="5,0" Click="collapseAllButton_Click"/>
                 </WrapPanel>
             </Grid>
 

@@ -162,13 +162,13 @@ namespace WpfPoeChallengeTracker
 
         private void unCollapseAllButton_Click(object sender, RoutedEventArgs e)
         {
-            viewmodel.unCollapseAll();
+            viewmodel.collapseAll();
 
         }
 
         private void collapseAllButton_Click(object sender, RoutedEventArgs e)
         {
-            viewmodel.collapseAll();
+            viewmodel.unCollapseAll();
         }
 
         private void subChallengesListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
