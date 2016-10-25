@@ -11,6 +11,11 @@ What does the app do?
 - Challenge counter and countdown to the end of the league
 - Browse challenges from past leagues
 
+Update Notes v1.1
+
+- Added ordering of challenges by drag and drop
+- Corrected the labeling of the collapse / uncollapse buttons
+
 Update Notes v1.0
 - Automatically sync your progress with your account
 - Easily create chat messages with your missing challenges
