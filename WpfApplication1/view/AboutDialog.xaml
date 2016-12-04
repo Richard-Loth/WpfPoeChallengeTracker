@@ -59,7 +59,7 @@
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Contact:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
         <TextBlock Grid.Row="2" Grid.Column="1" Text="r.loth@web.de" Foreground="{DynamicResource ChallengeHeaderForeground}" />
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Version:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
-        <TextBlock Grid.Row="3" Grid.Column="1" Text="1.0" Foreground="{DynamicResource ChallengeHeaderForeground}" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="1.1" Foreground="{DynamicResource ChallengeHeaderForeground}" />
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Links:" Foreground="{DynamicResource ChallengeHeaderForeground}" />
         <TextBlock  Grid.Column="1" Grid.Row="4"  Foreground="{StaticResource ChallengeHeaderForeground}" Margin="0,0,0,15">
