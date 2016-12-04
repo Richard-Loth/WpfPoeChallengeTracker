@@ -31,11 +31,12 @@ namespace WpfPoeChallengeTracker.view
             set { accountName = value; }
         }
 
-
+       private bool enteredAccountnameIsCurrentlyValid;
 
         public EnterAccountName()
         {
             InitializeComponent();
+            enteredAccountnameIsCurrentlyValid = false;
         }
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
@@ -63,13 +64,14 @@ namespace WpfPoeChallengeTracker.view
                 {
                     status = AccountCheck.checkAccountName(accName);
                 }
-                catch (System.Net.WebException)
+                catch (System.Net.WebException webException)
                 {
                     statusTextBlock.Foreground = ColorConstants.ErrorTextColor;
-                    statusTextBlock.Text = "There is a problem with your internet connection";
+                    statusTextBlock.Text = "There is a problem with your internet connection:" + webException.Message;
                     return;
                 }
             }
+            CheckButton.IsEnabled = false;
             switch (status)
             {
                 case LoginStatus.NoAccountName:
@@ -92,6 +94,7 @@ namespace WpfPoeChallengeTracker.view
                     statusTextBlock.Foreground = ColorConstants.SucessTextColor;
                     statusTextBlock.Text = "Your account name is valid";
                     OkButton.IsEnabled = true;
+                    enteredAccountnameIsCurrentlyValid = true;
                     break;
                 default:
                     break;
@@ -101,13 +104,30 @@ namespace WpfPoeChallengeTracker.view
         private void AccountNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             OkButton.IsEnabled = false;
+            CheckButton.IsEnabled = true;
             statusTextBlock.Visibility = Visibility.Hidden;
+            enteredAccountnameIsCurrentlyValid = false;
         }
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
+        }
+
+        private void AccountNameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (enteredAccountnameIsCurrentlyValid)
+                {
+                    OkButton_Click(OkButton, new RoutedEventArgs());
+                }
+                else
+                {
+                    CheckButton_Click(CheckButton, new RoutedEventArgs());
+                }
+            }   
         }
     }
 }

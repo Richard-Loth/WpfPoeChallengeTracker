@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeDataCreator", "Cha
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ACCE7999-27BC-4769-9223-A62D11C1E1CD}"
 	ProjectSection(SolutionItems) = preProject
+		WpfApplication1\bin\x86\Poe Challenge Tracker - V1.1 - x64.zip = WpfApplication1\bin\x86\Poe Challenge Tracker - V1.1 - x64.zip
+		WpfApplication1\bin\x86\Poe Challenge Tracker - V1.1 - x86.zip = WpfApplication1\bin\x86\Poe Challenge Tracker - V1.1 - x86.zip
 		Tasklist.txt = Tasklist.txt
 	EndProjectSection
 EndProject
