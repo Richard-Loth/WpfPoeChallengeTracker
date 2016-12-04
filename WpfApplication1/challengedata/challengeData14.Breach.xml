@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leagues xmlns:pct="de/loth/richard/projects/PoeChallengeTracker/xmlns">
+  <pct:league>
+    <pct:leaguename>Breach</pct:leaguename>
+    <pct:endsOn>
+      2017-02-27 21:00Z
+    </pct:endsOn>
+    <pct:challenges>
+      <pct:challenge>
+        <pct:name>Keep a Breach open</pct:name>
+        <pct:description>Successfully keep a Breach open for 30 seconds or longer.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters I</pct:name>
+        <pct:description>Complete each of the following Encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Kill a Rogue Exile</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Rare monster with a Nemesis mod</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill all members of a Bloodline pack</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Possessed Monster</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Open any Strongbox of Abundance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Complete a Master's Mission</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Use these Currency Items</pct:name>
+        <pct:description>Use each of the following Currency items.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Orb of Transmutation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alteration</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blacksmith's Whetstone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Armourer's Scrap</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Activate these Waypoints</pct:name>
+        <pct:description>Activate the Waypoints in each of the following areas in Normal difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>The Northern Forest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Caverns</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Marketplace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Battlefront</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Docks</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Library</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Clear Vaal Side Area</pct:name>
+        <pct:description>Fully clear a Corrupted Vaal side area.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Normal Act Bosses</pct:name>
+        <pct:description>Kill each of the following Unique Bosses in Normal Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Act 1: Merveil, the Twisted</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 2: Vaal Oversoul</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 3: Dominus, Ascendant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 4: Malachai, The Nightmare</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Use these Essences</pct:name>
+        <pct:description>Use each of the following Essences to upgrade or reforge items.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Essence of Hatred</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Essence of Woe</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Essence of Greed</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Essence of Contempt</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill 500 Breach Monsters</pct:name>
+        <pct:description>Kill 500 Monsters that have been revealed by Breaches.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>500</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters II</pct:name>
+        <pct:description>Complete each of the following Encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Kill a Rogue Witch</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a monster possessed by two Tormented Spirits</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fulfil a Prophecy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Shared Boon Bloodline Pack</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill a Rare monster with Inner Treasure</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Open an Arcanist's Strongbox</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Complete these Cruel Quests</pct:name>
+        <pct:description>Complete each of the following quests in Cruel Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Mercy Mission</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Through Sacred Ground</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Great White Beast</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sever the Right Hand</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>A Swig of Hope</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>A Fixture of Fate</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Complete these Master Missions</pct:name>
+        <pct:description>Complete 10 missions each for any 5 of these Forsaken Masters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Vorici, Master Assassin</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tora, Master of the Hunt</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Catarina, Master of the Dead</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Haku, Armourmaster</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Elreon, Loremaster</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vagan, Weaponmaster</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Zana, Master Cartographer</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Cruel Act Bosses</pct:name>
+        <pct:description>Kill each of the following Unique Bosses in Cruel Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Act 1: Merveil, the Twisted</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 2: Vaal Oversoul</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 3: Dominus, Ascendant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 4: Malachai, The Nightmare</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Currency from Vendor Recipes</pct:name>
+        <pct:description>Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Chromatic Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Augmentation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Chance</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Orb of Alchemy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Jeweller's Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos Orb</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cartographer's Chisel</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Gain Splinters from Monsters</pct:name>
+        <pct:description>Gain Splinters from the following unique Breach monsters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Xoph, Dark Embers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tul, Creeping Avalanche</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Esh, Forked Thought</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Uul-Netol, Unburdened Flesh</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chayula, Who Dreamt</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill these Vaal Bosses</pct:name>
+        <pct:description>Kill each of the following Unique monsters in any Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>10</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Torrent of Fear</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ossecati, Boneshaper</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Shrapnelbearer</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Konu, Maker of Wind</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Quetzerxi</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Commander of Flesh</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Pride</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kutec, Vaal Fleshsmith</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Perquil the Lucky</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Coniraya, Shadow of Malice</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Open a Unique Strongbox</pct:name>
+        <pct:description>Open one of the following four Unique Strongboxes. Strongboxes do not need to be identified to complete the challenge. The ambushers must be defeated before it is counted as open.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill Rare Monsters in Merciless</pct:name>
+        <pct:description>Kill a Rare Monster of each of these types in Merciless Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Hyrri's Sister</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kaom's Chosen</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lavianga's Acolyte</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fury Hound</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pitbull Demon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Rooster Demon</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mad Gladiator</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fighting Bull</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill these Unique Monsters</pct:name>
+        <pct:description>Kill each of the following Unique Monsters in Merciless Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>8</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Kole</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Spinecrack</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Thistlesage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Trinian, Intellectus Prime</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Caliga, Imperatrix</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Burning Man</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Triskeriaki</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Barkhul</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Enter a Breachlord's Domain</pct:name>
+        <pct:description>Enter any 3 of the following Breachlords' Domains.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>3</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Uul-Netol's Domain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chayula's Domain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Xoph's Domain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tul's Domain</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Esh's Domain</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill 1000 Rare Monsters</pct:name>
+        <pct:description>Kill 1000 Rare Monsters in any Difficulty.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>1000</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Identify 100 Unique Items</pct:name>
+        <pct:description>Identify any 100 Unique Items. You can trade them away afterwards.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>100</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Fully Upgrade your Hideout</pct:name>
+        <pct:description>Create or Upgrade to a Large-sized Hideout.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill these Merciless Act Bosses</pct:name>
+        <pct:description>Kill each of the following Unique bosses in Merciless Difficulty.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Act 1: Merveil, the Twisted</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 2: Vaal Oversoul</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 3: Dominus, Ascendant</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Act 4: Malachai, The Nightmare</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Reach Level 90</pct:name>
+        <pct:description>Attain character level 90. This challenge still counts even if your character dies afterwards.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Level up a Gem to 20</pct:name>
+        <pct:description>Level up a Skill Gem or a Support Gem to level 20. You can trade it away afterwards.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Identify Breach Uniques</pct:name>
+        <pct:description>Identify a unique item from each type of Breach.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Fire</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Cold</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Lightning</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Physical</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chaos</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Achieve Ascension</pct:name>
+        <pct:description>Use the Ascendancy Device in each of the following places.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>The Normal Labyrinth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Cruel Labyrinth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Merciless Labyrinth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Endgame Labyrinth</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Encounters III</pct:name>
+        <pct:description>Complete each of the following Encounters.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>4</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Kill a Warband Leader</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Open 100 Strongboxes</pct:name>
+          <pct:neededToCompleteSub>100</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill 100 Nemesis Rares</pct:name>
+          <pct:neededToCompleteSub>100</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Open 10 Perandus Coffers</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill Breachlords</pct:name>
+        <pct:description>Kill each of the following Breachlords.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Xoph, Dark Embers</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tul, Creeping Avalanche</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Esh, Forked Thought</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Uul-Netol, Unburdened Flesh</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chayula, Who Dreamt</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Upgrade Breach Unique Items</pct:name>
+        <pct:description>Upgrade to any 10 out of the following 17 Unique items.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>10</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Xoph's Inception</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Formless Inferno</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Xoph'ethula's Heart</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tulfall</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Perfect Form</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Pandemonius</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hand of Wisdom and Action</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Esh's Visage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Choir of the Storm</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Red Trail</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Uul-Netol's Embrace</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Surrender</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>United in Dream</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Skin of the Lords</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Red Nightmare</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Green Nightmare</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>The Blue Nightmare</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Kill these Beyond Demons</pct:name>
+        <pct:description>Kill any 5 of the following 6 Unique bosses.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>5</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Bameth, Shifting Darkness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ephij, Crackling Sky</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Haast, Unrelenting Frost</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Na'em, Bending Stone</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tzteosh, Hungering Flame</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Abaxoth, the End of All That Is</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge createWikiLinks="true">
+        <pct:name>Create these Corrupted Jewels</pct:name>
+        <pct:description>Corrupt Jewels into any 10 of the following Unique Jewels.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>10</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Ancient Waystones</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Atziri's Reign</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Blood Sacrifice</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Combustibles</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fragility</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Chill of Corruption</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Hungry Abyss</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Pacifism</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Sacrificial Harvest</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Self-Flagellation</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Weight of Sin</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Brittle Barrier</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Corrupted Energy</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fevered Mind</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Mutated Growth</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Powerlessness</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Vaal Sentencing</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete Unided Rare Maps</pct:name>
+        <pct:description>Complete Rare Maps in 10 of the following 16 tiers while they are unidentified. These Maps are completed by killing their Unique Boss or Bosses if they have any.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>10</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Tier 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 4</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 5</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 6</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 7</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 8</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 9</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 10</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 11</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 12</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 13</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 14</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 15</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 16</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete these Sextant Mods</pct:name>
+        <pct:description>Complete Maps that have been affected by these 6 Sextant mods.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>6</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Nemesis monsters drop additional Currency Items</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Area contains Slipstreams</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Players cannot take Reflected Damage</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Area contains additional clusters of Mysterious Barrels</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Area contains hunted traitors</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Unique boss is accompanied by bodyguards</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete Atlas Bonus Objectives</pct:name>
+        <pct:description>Complete the bonus objective in 25 different maps of Tier 11 or higher. A Map is completed by killing its Unique Boss or Bosses if it has any. Maps without Unique Bosses are completed by opening specific Unique Chests.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>25</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete Twinned Maps</pct:name>
+        <pct:description>Complete Maps in the following 15 tiers while they have the Twinned mod. These Maps are completed by killing their Unique Bosses.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>15</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Tier 1</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 2</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 3</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 4</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 5</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 6</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 7</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 8</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 9</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 10</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 11</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 12</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 13</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 14</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Tier 15</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Redeem Sets of Divination Cards</pct:name>
+        <pct:description>Turn in Divination card sets of the following sizes to Tasuni.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>12</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>One</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Two</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Three</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Four</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Five</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Six</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Seven</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eight</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Nine</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Ten</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Eleven</pct:name>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Twelve</pct:name>
+        </pct:subchallenge>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete Map Tiers</pct:name>
+        <pct:description>Complete 10000 map tiers. Completing a tier 1 map gives 1 tier, completing a tier 2 map gives 2 tiers, and so on. Completing maps opened by Zana do not count towards this challenge.</pct:description>
+        <pct:type>ProgressableNoSubs</pct:type>
+        <pct:neededToComplete>10000</pct:neededToComplete>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Kill The Shaper</pct:name>
+        <pct:description>Find The Shaper and kill him.</pct:description>
+        <pct:type>Binary</pct:type>
+      </pct:challenge>
+      <pct:challenge>
+        <pct:name>Complete three Endgame Grinds</pct:name>
+        <pct:description>Complete any 3 of these encounters the specified number of times.</pct:description>
+        <pct:type>Progressable</pct:type>
+        <pct:neededToComplete>3</pct:neededToComplete>
+        <pct:subchallenge>
+          <pct:name>Kill any of the Shaper's Guardians</pct:name>
+          <pct:neededToCompleteSub>40</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill Atziri in the Alluring Abyss</pct:name>
+          <pct:neededToCompleteSub>10</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill Izaro in the Endgame Labyrinth</pct:name>
+          <pct:neededToCompleteSub>100</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Kill any Breachlord</pct:name>
+          <pct:neededToCompleteSub>100</pct:neededToCompleteSub>
+        </pct:subchallenge>
+        <pct:subchallenge>
+          <pct:name>Fulfil a Prophecy in a Map</pct:name>
+          <pct:neededToCompleteSub>300</pct:neededToCompleteSub>
+        </pct:subchallenge>
+      </pct:challenge>
+    </pct:challenges>
+  </pct:league>
+</leagues>

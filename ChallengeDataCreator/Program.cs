@@ -242,19 +242,20 @@ namespace ChallengeDataCreator
         private static List<string> makeLeaguesList()
         {
             var leagues = new List<string>();
-            leagues.Add("Anarchy/Onslaught".Replace("/", "%2F"));
-            leagues.Add("Domination/Nemesis".Replace("/", "%2F"));
-            leagues.Add("Ambush/Invasion".Replace("/", "%2F"));
-            leagues.Add("Rampage/Beyond".Replace("/", "%2F"));
-            leagues.Add("Torment/Bloodlines".Replace("/", "%2F"));
-            leagues.Add("Torment/Bloodlines+1-Month".Replace("/", "%2B"));
-            leagues.Add("Torment/Bloodlines+1-Month+HC".Replace("/", "%2B"));
-            leagues.Add("Warbands/Tempest".Replace("/", "%2F"));
-            leagues.Add("Flashback".Replace("/", "%2F"));
-            leagues.Add("Talisman".Replace("/", "%2F"));
-            leagues.Add("Perandus".Replace("/", "%2F"));
-            leagues.Add("Prophecy".Replace("/", "%2F"));
-            leagues.Add("Essence".Replace("/", "%2F"));
+            //leagues.Add("Anarchy/Onslaught".Replace("/", "%2F"));
+            //leagues.Add("Domination/Nemesis".Replace("/", "%2F"));
+            //leagues.Add("Ambush/Invasion".Replace("/", "%2F"));
+            //leagues.Add("Rampage/Beyond".Replace("/", "%2F"));
+            //leagues.Add("Torment/Bloodlines".Replace("/", "%2F"));
+            //leagues.Add("Torment/Bloodlines+1-Month".Replace("/", "%2B"));
+            //leagues.Add("Torment/Bloodlines+1-Month+HC".Replace("/", "%2B"));
+            //leagues.Add("Warbands/Tempest".Replace("/", "%2F"));
+            //leagues.Add("Flashback".Replace("/", "%2F"));
+            //leagues.Add("Talisman".Replace("/", "%2F"));
+            //leagues.Add("Perandus".Replace("/", "%2F"));
+            //leagues.Add("Prophecy".Replace("/", "%2F"));
+            //leagues.Add("Essence".Replace("/", "%2F"));
+            leagues.Add("Breach".Replace("/", "%2F"));
             return leagues;
         }
     }
