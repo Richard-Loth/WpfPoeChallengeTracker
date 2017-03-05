@@ -255,7 +255,8 @@ namespace ChallengeDataCreator
             //leagues.Add("Perandus".Replace("/", "%2F"));
             //leagues.Add("Prophecy".Replace("/", "%2F"));
             //leagues.Add("Essence".Replace("/", "%2F"));
-            leagues.Add("Breach".Replace("/", "%2F"));
+            //  leagues.Add("Breach".Replace("/", "%2F"));
+            leagues.Add("Legacy");
             return leagues;
         }
     }

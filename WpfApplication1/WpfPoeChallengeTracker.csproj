@@ -269,6 +269,12 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="challengedata\challengeData15.Legacy.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="bin\x64\Debug\challengedata\challengeData15.Legacy.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="challengedata\challengeData01.Anarchy-Onslaught.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
